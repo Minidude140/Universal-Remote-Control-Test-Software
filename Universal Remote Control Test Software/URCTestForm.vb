@@ -15,9 +15,10 @@ Public Class URCTestForm
     Dim joystick1LR As Integer
     Dim joystick2UD As Integer
     Dim joystick2LR As Integer
-    Dim joystick3UP As Integer
+    Dim joystick3UD As Integer
     Dim Joystick3LR As Integer
-
+    Dim buttonByte1 As Byte
+    Dim buttonByte2 As Byte
 
     '**********************************************Custom Methods*******************************************
     ''' <summary>
@@ -97,13 +98,26 @@ Public Class URCTestForm
                 Select Case data(2)
                     Case = 74
                         'Command Byte is an ASCII J Save Joystick Data
-
+                        'Save Joystick 1 Up Down Data
+                        joystick1UD = data(3)
+                        'Save Joystick 2 Up Down Data
+                        joystick2UD = data(4)
+                        'Save Joystick 1 Left Right Data
+                        joystick1LR = data(5)
                     Case = 106
                         'Command Byte is an ASCII j save Joystick Data
-
+                        'Save Joystick 2 Left Right Data
+                        joystick2LR = data(3)
+                        'Save Joystick 3 Up Down Data
+                        joystick3UD = data(4)
+                        'Save Joystick 3 Left Right Data
+                        Joystick3LR = data(5)
                     Case = 66
                         'Command Byte is an ASCII B save Button Data
-
+                        'Save Button Data Byte 1
+                        buttonByte1 = data(3)
+                        'Save Button Data Byte 2
+                        buttonByte2 = data(4)
                     Case Else
                         'Command byte unknown
                 End Select
