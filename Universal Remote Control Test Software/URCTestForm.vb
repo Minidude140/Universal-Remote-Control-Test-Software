@@ -69,7 +69,17 @@ Public Class URCTestForm
     ''' Using Global Data Variables Updates Labels with Current Data Info
     ''' </summary>
     Sub UpdateDisplay()
-
+        'Update Robot Address
+        RobotAddressLabel.Text = CStr(robotAddress)
+        'Update Joystick 1
+        Joystick1UDLabel.Text = CStr(joystick1UD)
+        Joystick1LRLabel.Text = CStr(joystick1LR)
+        'Update Joystick 2
+        Joystick2UDLabel.Text = CStr(joystick2UD)
+        Joystick2LRLabel.Text = CStr(joystick2LR)
+        'Update Joystick 3
+        Joystick3UDLabel.Text = CStr(joystick3UD)
+        Joystick3LRLabel.Text = CStr(Joystick3LR)
     End Sub
 
     '**********************************************Event Handlers*******************************************
@@ -142,9 +152,11 @@ Public Class URCTestForm
             COMSerialPort.DiscardInBuffer()
             'Report Error to User
             MsgBox("Sorry a connection error occurred.  The COM Channel has been disconnected")
+            MsgBox($"{ex.Message}")
         End Try
         'Clear RX Buffer
         COMSerialPort.DiscardInBuffer()
+        UpdateDisplay()
     End Sub
 
 

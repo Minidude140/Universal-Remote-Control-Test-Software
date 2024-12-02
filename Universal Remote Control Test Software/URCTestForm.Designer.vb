@@ -37,6 +37,9 @@ Partial Class URCTestForm
         Me.Joystick1LRLabel = New System.Windows.Forms.Label()
         Me.Joystick2LRLabel = New System.Windows.Forms.Label()
         Me.Joystick2UDLabel = New System.Windows.Forms.Label()
+        Me.Joystick3LRLabel = New System.Windows.Forms.Label()
+        Me.Joystick3UDLabel = New System.Windows.Forms.Label()
+        Me.RobotAddressLabel = New System.Windows.Forms.Label()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -141,11 +144,41 @@ Partial Class URCTestForm
         Me.Joystick2UDLabel.TabIndex = 4
         Me.Joystick2UDLabel.Text = "Label1"
         '
+        'Joystick3LRLabel
+        '
+        Me.Joystick3LRLabel.AutoSize = True
+        Me.Joystick3LRLabel.Location = New System.Drawing.Point(636, 99)
+        Me.Joystick3LRLabel.Name = "Joystick3LRLabel"
+        Me.Joystick3LRLabel.Size = New System.Drawing.Size(51, 17)
+        Me.Joystick3LRLabel.TabIndex = 7
+        Me.Joystick3LRLabel.Text = "Label1"
+        '
+        'Joystick3UDLabel
+        '
+        Me.Joystick3UDLabel.AutoSize = True
+        Me.Joystick3UDLabel.Location = New System.Drawing.Point(701, 154)
+        Me.Joystick3UDLabel.Name = "Joystick3UDLabel"
+        Me.Joystick3UDLabel.Size = New System.Drawing.Size(51, 17)
+        Me.Joystick3UDLabel.TabIndex = 6
+        Me.Joystick3UDLabel.Text = "Label1"
+        '
+        'RobotAddressLabel
+        '
+        Me.RobotAddressLabel.AutoSize = True
+        Me.RobotAddressLabel.Location = New System.Drawing.Point(365, 50)
+        Me.RobotAddressLabel.Name = "RobotAddressLabel"
+        Me.RobotAddressLabel.Size = New System.Drawing.Size(51, 17)
+        Me.RobotAddressLabel.TabIndex = 8
+        Me.RobotAddressLabel.Text = "Label1"
+        '
         'URCTestForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.RobotAddressLabel)
+        Me.Controls.Add(Me.Joystick3LRLabel)
+        Me.Controls.Add(Me.Joystick3UDLabel)
         Me.Controls.Add(Me.Joystick2LRLabel)
         Me.Controls.Add(Me.Joystick2UDLabel)
         Me.Controls.Add(Me.Joystick1LRLabel)
@@ -175,4 +208,7 @@ Partial Class URCTestForm
     Friend WithEvents Joystick1LRLabel As Label
     Friend WithEvents Joystick2LRLabel As Label
     Friend WithEvents Joystick2UDLabel As Label
+    Friend WithEvents Joystick3LRLabel As Label
+    Friend WithEvents Joystick3UDLabel As Label
+    Friend WithEvents RobotAddressLabel As Label
 End Class
