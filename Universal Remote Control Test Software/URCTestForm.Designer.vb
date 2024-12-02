@@ -40,7 +40,19 @@ Partial Class URCTestForm
         Me.Joystick3LRLabel = New System.Windows.Forms.Label()
         Me.Joystick3UDLabel = New System.Windows.Forms.Label()
         Me.RobotAddressLabel = New System.Windows.Forms.Label()
+        Me.Joystick1LRTrackBar = New System.Windows.Forms.TrackBar()
+        Me.Joystick1UDTrackBar = New System.Windows.Forms.TrackBar()
+        Me.Joystick2LRTrackBar = New System.Windows.Forms.TrackBar()
+        Me.Joystick2UDTrackBar = New System.Windows.Forms.TrackBar()
+        Me.Joystick3LRTrackBar = New System.Windows.Forms.TrackBar()
+        Me.Joystick3UDTrackBar = New System.Windows.Forms.TrackBar()
         Me.ToolStrip1.SuspendLayout()
+        CType(Me.Joystick1LRTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Joystick1UDTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Joystick2LRTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Joystick2UDTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Joystick3LRTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Joystick3UDTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ToolStrip1
@@ -111,84 +123,162 @@ Partial Class URCTestForm
         'Joystick1UDLabel
         '
         Me.Joystick1UDLabel.AutoSize = True
-        Me.Joystick1UDLabel.Location = New System.Drawing.Point(242, 302)
+        Me.Joystick1UDLabel.Location = New System.Drawing.Point(255, 341)
         Me.Joystick1UDLabel.Name = "Joystick1UDLabel"
-        Me.Joystick1UDLabel.Size = New System.Drawing.Size(51, 17)
+        Me.Joystick1UDLabel.Size = New System.Drawing.Size(94, 17)
         Me.Joystick1UDLabel.TabIndex = 2
-        Me.Joystick1UDLabel.Text = "Label1"
+        Me.Joystick1UDLabel.Text = "Joystick 1 UD"
         '
         'Joystick1LRLabel
         '
         Me.Joystick1LRLabel.AutoSize = True
-        Me.Joystick1LRLabel.Location = New System.Drawing.Point(177, 247)
+        Me.Joystick1LRLabel.Location = New System.Drawing.Point(115, 243)
         Me.Joystick1LRLabel.Name = "Joystick1LRLabel"
-        Me.Joystick1LRLabel.Size = New System.Drawing.Size(51, 17)
+        Me.Joystick1LRLabel.Size = New System.Drawing.Size(92, 17)
         Me.Joystick1LRLabel.TabIndex = 3
-        Me.Joystick1LRLabel.Text = "Label1"
+        Me.Joystick1LRLabel.Text = "Joystick 1 LR"
         '
         'Joystick2LRLabel
         '
         Me.Joystick2LRLabel.AutoSize = True
-        Me.Joystick2LRLabel.Location = New System.Drawing.Point(504, 247)
+        Me.Joystick2LRLabel.Location = New System.Drawing.Point(453, 243)
         Me.Joystick2LRLabel.Name = "Joystick2LRLabel"
-        Me.Joystick2LRLabel.Size = New System.Drawing.Size(51, 17)
+        Me.Joystick2LRLabel.Size = New System.Drawing.Size(92, 17)
         Me.Joystick2LRLabel.TabIndex = 5
-        Me.Joystick2LRLabel.Text = "Label1"
+        Me.Joystick2LRLabel.Text = "Joystick 2 LR"
         '
         'Joystick2UDLabel
         '
         Me.Joystick2UDLabel.AutoSize = True
-        Me.Joystick2UDLabel.Location = New System.Drawing.Point(569, 302)
+        Me.Joystick2UDLabel.Location = New System.Drawing.Point(591, 341)
         Me.Joystick2UDLabel.Name = "Joystick2UDLabel"
-        Me.Joystick2UDLabel.Size = New System.Drawing.Size(51, 17)
+        Me.Joystick2UDLabel.Size = New System.Drawing.Size(94, 17)
         Me.Joystick2UDLabel.TabIndex = 4
-        Me.Joystick2UDLabel.Text = "Label1"
+        Me.Joystick2UDLabel.Text = "Joystick 2 UD"
         '
         'Joystick3LRLabel
         '
         Me.Joystick3LRLabel.AutoSize = True
-        Me.Joystick3LRLabel.Location = New System.Drawing.Point(636, 99)
+        Me.Joystick3LRLabel.Location = New System.Drawing.Point(554, 65)
         Me.Joystick3LRLabel.Name = "Joystick3LRLabel"
-        Me.Joystick3LRLabel.Size = New System.Drawing.Size(51, 17)
+        Me.Joystick3LRLabel.Size = New System.Drawing.Size(92, 17)
         Me.Joystick3LRLabel.TabIndex = 7
-        Me.Joystick3LRLabel.Text = "Label1"
+        Me.Joystick3LRLabel.Text = "Joystick 3 LR"
         '
         'Joystick3UDLabel
         '
         Me.Joystick3UDLabel.AutoSize = True
-        Me.Joystick3UDLabel.Location = New System.Drawing.Point(701, 154)
+        Me.Joystick3UDLabel.Location = New System.Drawing.Point(693, 166)
         Me.Joystick3UDLabel.Name = "Joystick3UDLabel"
-        Me.Joystick3UDLabel.Size = New System.Drawing.Size(51, 17)
+        Me.Joystick3UDLabel.Size = New System.Drawing.Size(94, 17)
         Me.Joystick3UDLabel.TabIndex = 6
-        Me.Joystick3UDLabel.Text = "Label1"
+        Me.Joystick3UDLabel.Text = "Joystick 3 UD"
         '
         'RobotAddressLabel
         '
         Me.RobotAddressLabel.AutoSize = True
         Me.RobotAddressLabel.Location = New System.Drawing.Point(365, 50)
         Me.RobotAddressLabel.Name = "RobotAddressLabel"
-        Me.RobotAddressLabel.Size = New System.Drawing.Size(51, 17)
+        Me.RobotAddressLabel.Size = New System.Drawing.Size(95, 17)
         Me.RobotAddressLabel.TabIndex = 8
-        Me.RobotAddressLabel.Text = "Label1"
+        Me.RobotAddressLabel.Text = "Robot Addres"
+        '
+        'Joystick1LRTrackBar
+        '
+        Me.Joystick1LRTrackBar.Location = New System.Drawing.Point(109, 263)
+        Me.Joystick1LRTrackBar.Maximum = 255
+        Me.Joystick1LRTrackBar.Name = "Joystick1LRTrackBar"
+        Me.Joystick1LRTrackBar.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.Joystick1LRTrackBar.Size = New System.Drawing.Size(101, 56)
+        Me.Joystick1LRTrackBar.TabIndex = 9
+        Me.Joystick1LRTrackBar.TabStop = False
+        '
+        'Joystick1UDTrackBar
+        '
+        Me.Joystick1UDTrackBar.Location = New System.Drawing.Point(216, 302)
+        Me.Joystick1UDTrackBar.Maximum = 255
+        Me.Joystick1UDTrackBar.Name = "Joystick1UDTrackBar"
+        Me.Joystick1UDTrackBar.Orientation = System.Windows.Forms.Orientation.Vertical
+        Me.Joystick1UDTrackBar.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.Joystick1UDTrackBar.Size = New System.Drawing.Size(56, 101)
+        Me.Joystick1UDTrackBar.TabIndex = 10
+        Me.Joystick1UDTrackBar.TabStop = False
+        Me.Joystick1UDTrackBar.TickStyle = System.Windows.Forms.TickStyle.TopLeft
+        '
+        'Joystick2LRTrackBar
+        '
+        Me.Joystick2LRTrackBar.Location = New System.Drawing.Point(448, 263)
+        Me.Joystick2LRTrackBar.Maximum = 255
+        Me.Joystick2LRTrackBar.Name = "Joystick2LRTrackBar"
+        Me.Joystick2LRTrackBar.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.Joystick2LRTrackBar.Size = New System.Drawing.Size(101, 56)
+        Me.Joystick2LRTrackBar.TabIndex = 11
+        Me.Joystick2LRTrackBar.TabStop = False
+        '
+        'Joystick2UDTrackBar
+        '
+        Me.Joystick2UDTrackBar.Location = New System.Drawing.Point(555, 302)
+        Me.Joystick2UDTrackBar.Maximum = 255
+        Me.Joystick2UDTrackBar.Name = "Joystick2UDTrackBar"
+        Me.Joystick2UDTrackBar.Orientation = System.Windows.Forms.Orientation.Vertical
+        Me.Joystick2UDTrackBar.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.Joystick2UDTrackBar.Size = New System.Drawing.Size(56, 101)
+        Me.Joystick2UDTrackBar.TabIndex = 12
+        Me.Joystick2UDTrackBar.TabStop = False
+        Me.Joystick2UDTrackBar.TickStyle = System.Windows.Forms.TickStyle.TopLeft
+        '
+        'Joystick3LRTrackBar
+        '
+        Me.Joystick3LRTrackBar.Location = New System.Drawing.Point(549, 85)
+        Me.Joystick3LRTrackBar.Maximum = 255
+        Me.Joystick3LRTrackBar.Name = "Joystick3LRTrackBar"
+        Me.Joystick3LRTrackBar.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.Joystick3LRTrackBar.Size = New System.Drawing.Size(101, 56)
+        Me.Joystick3LRTrackBar.TabIndex = 13
+        Me.Joystick3LRTrackBar.TabStop = False
+        '
+        'Joystick3UDTrackBar
+        '
+        Me.Joystick3UDTrackBar.Location = New System.Drawing.Point(656, 124)
+        Me.Joystick3UDTrackBar.Maximum = 255
+        Me.Joystick3UDTrackBar.Name = "Joystick3UDTrackBar"
+        Me.Joystick3UDTrackBar.Orientation = System.Windows.Forms.Orientation.Vertical
+        Me.Joystick3UDTrackBar.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.Joystick3UDTrackBar.Size = New System.Drawing.Size(56, 101)
+        Me.Joystick3UDTrackBar.TabIndex = 14
+        Me.Joystick3UDTrackBar.TabStop = False
+        Me.Joystick3UDTrackBar.TickStyle = System.Windows.Forms.TickStyle.TopLeft
         '
         'URCTestForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Joystick3UDLabel)
+        Me.Controls.Add(Me.Joystick3UDTrackBar)
+        Me.Controls.Add(Me.Joystick3LRTrackBar)
+        Me.Controls.Add(Me.Joystick2UDLabel)
+        Me.Controls.Add(Me.Joystick2UDTrackBar)
+        Me.Controls.Add(Me.Joystick2LRTrackBar)
+        Me.Controls.Add(Me.Joystick1UDLabel)
+        Me.Controls.Add(Me.Joystick1UDTrackBar)
+        Me.Controls.Add(Me.Joystick1LRTrackBar)
         Me.Controls.Add(Me.RobotAddressLabel)
         Me.Controls.Add(Me.Joystick3LRLabel)
-        Me.Controls.Add(Me.Joystick3UDLabel)
         Me.Controls.Add(Me.Joystick2LRLabel)
-        Me.Controls.Add(Me.Joystick2UDLabel)
         Me.Controls.Add(Me.Joystick1LRLabel)
-        Me.Controls.Add(Me.Joystick1UDLabel)
         Me.Controls.Add(Me.ExitButton)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Name = "URCTestForm"
         Me.Text = "Universal Remote Controller Testing"
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
+        CType(Me.Joystick1LRTrackBar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Joystick1UDTrackBar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Joystick2LRTrackBar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Joystick2UDTrackBar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Joystick3LRTrackBar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Joystick3UDTrackBar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -211,4 +301,10 @@ Partial Class URCTestForm
     Friend WithEvents Joystick3LRLabel As Label
     Friend WithEvents Joystick3UDLabel As Label
     Friend WithEvents RobotAddressLabel As Label
+    Friend WithEvents Joystick1LRTrackBar As TrackBar
+    Friend WithEvents Joystick1UDTrackBar As TrackBar
+    Friend WithEvents Joystick2LRTrackBar As TrackBar
+    Friend WithEvents Joystick2UDTrackBar As TrackBar
+    Friend WithEvents Joystick3LRTrackBar As TrackBar
+    Friend WithEvents Joystick3UDTrackBar As TrackBar
 End Class

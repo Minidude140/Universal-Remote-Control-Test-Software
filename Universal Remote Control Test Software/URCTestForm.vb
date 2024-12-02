@@ -74,12 +74,18 @@ Public Class URCTestForm
         'Update Joystick 1
         Joystick1UDLabel.Text = CStr(joystick1UD)
         Joystick1LRLabel.Text = CStr(joystick1LR)
+        Joystick1UDTrackBar.Value = joystick1UD
+        Joystick1LRTrackBar.Value = joystick1LR
         'Update Joystick 2
         Joystick2UDLabel.Text = CStr(joystick2UD)
         Joystick2LRLabel.Text = CStr(joystick2LR)
+        Joystick2UDTrackBar.Value = joystick2UD
+        Joystick2LRTrackBar.Value = joystick2LR
         'Update Joystick 3
         Joystick3UDLabel.Text = CStr(joystick3UD)
         Joystick3LRLabel.Text = CStr(Joystick3LR)
+        Joystick3UDTrackBar.Value = joystick3UD
+        Joystick3LRTrackBar.Value = Joystick3LR
     End Sub
 
     '**********************************************Event Handlers*******************************************
@@ -158,6 +164,5 @@ Public Class URCTestForm
         COMSerialPort.DiscardInBuffer()
         UpdateDisplay()
     End Sub
-
 
 End Class
