@@ -22,6 +22,7 @@ Partial Class URCTestForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.COMSelectToolStripComboBox = New System.Windows.Forms.ToolStripComboBox()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
@@ -29,6 +30,9 @@ Partial Class URCTestForm
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.DisconnetToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
+        Me.COMSerialPort = New System.IO.Ports.SerialPort(Me.components)
+        Me.ExitButton = New System.Windows.Forms.Button()
+        Me.SerialCOMTimer = New System.Windows.Forms.Timer(Me.components)
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -80,11 +84,29 @@ Partial Class URCTestForm
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
         Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 28)
         '
+        'COMSerialPort
+        '
+        Me.COMSerialPort.ReadTimeout = 250
+        Me.COMSerialPort.WriteTimeout = 250
+        '
+        'ExitButton
+        '
+        Me.ExitButton.Location = New System.Drawing.Point(694, 387)
+        Me.ExitButton.Name = "ExitButton"
+        Me.ExitButton.Size = New System.Drawing.Size(90, 52)
+        Me.ExitButton.TabIndex = 1
+        Me.ExitButton.Text = "Exit"
+        Me.ExitButton.UseVisualStyleBackColor = True
+        '
+        'SerialCOMTimer
+        '
+        '
         'URCTestForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.ExitButton)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Name = "URCTestForm"
         Me.Text = "Universal Remote Controller Testing"
@@ -102,4 +124,7 @@ Partial Class URCTestForm
     Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
     Friend WithEvents DisconnetToolStripButton As ToolStripButton
     Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
+    Friend WithEvents COMSerialPort As IO.Ports.SerialPort
+    Friend WithEvents ExitButton As Button
+    Friend WithEvents SerialCOMTimer As Timer
 End Class
