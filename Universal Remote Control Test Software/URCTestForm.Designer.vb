@@ -33,6 +33,10 @@ Partial Class URCTestForm
         Me.COMSerialPort = New System.IO.Ports.SerialPort(Me.components)
         Me.ExitButton = New System.Windows.Forms.Button()
         Me.SerialCOMTimer = New System.Windows.Forms.Timer(Me.components)
+        Me.Joystick1UDLabel = New System.Windows.Forms.Label()
+        Me.Joystick1LRLabel = New System.Windows.Forms.Label()
+        Me.Joystick2LRLabel = New System.Windows.Forms.Label()
+        Me.Joystick2UDLabel = New System.Windows.Forms.Label()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -101,11 +105,51 @@ Partial Class URCTestForm
         'SerialCOMTimer
         '
         '
+        'Joystick1UDLabel
+        '
+        Me.Joystick1UDLabel.AutoSize = True
+        Me.Joystick1UDLabel.Location = New System.Drawing.Point(242, 302)
+        Me.Joystick1UDLabel.Name = "Joystick1UDLabel"
+        Me.Joystick1UDLabel.Size = New System.Drawing.Size(51, 17)
+        Me.Joystick1UDLabel.TabIndex = 2
+        Me.Joystick1UDLabel.Text = "Label1"
+        '
+        'Joystick1LRLabel
+        '
+        Me.Joystick1LRLabel.AutoSize = True
+        Me.Joystick1LRLabel.Location = New System.Drawing.Point(177, 247)
+        Me.Joystick1LRLabel.Name = "Joystick1LRLabel"
+        Me.Joystick1LRLabel.Size = New System.Drawing.Size(51, 17)
+        Me.Joystick1LRLabel.TabIndex = 3
+        Me.Joystick1LRLabel.Text = "Label1"
+        '
+        'Joystick2LRLabel
+        '
+        Me.Joystick2LRLabel.AutoSize = True
+        Me.Joystick2LRLabel.Location = New System.Drawing.Point(504, 247)
+        Me.Joystick2LRLabel.Name = "Joystick2LRLabel"
+        Me.Joystick2LRLabel.Size = New System.Drawing.Size(51, 17)
+        Me.Joystick2LRLabel.TabIndex = 5
+        Me.Joystick2LRLabel.Text = "Label1"
+        '
+        'Joystick2UDLabel
+        '
+        Me.Joystick2UDLabel.AutoSize = True
+        Me.Joystick2UDLabel.Location = New System.Drawing.Point(569, 302)
+        Me.Joystick2UDLabel.Name = "Joystick2UDLabel"
+        Me.Joystick2UDLabel.Size = New System.Drawing.Size(51, 17)
+        Me.Joystick2UDLabel.TabIndex = 4
+        Me.Joystick2UDLabel.Text = "Label1"
+        '
         'URCTestForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Joystick2LRLabel)
+        Me.Controls.Add(Me.Joystick2UDLabel)
+        Me.Controls.Add(Me.Joystick1LRLabel)
+        Me.Controls.Add(Me.Joystick1UDLabel)
         Me.Controls.Add(Me.ExitButton)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Name = "URCTestForm"
@@ -127,4 +171,8 @@ Partial Class URCTestForm
     Friend WithEvents COMSerialPort As IO.Ports.SerialPort
     Friend WithEvents ExitButton As Button
     Friend WithEvents SerialCOMTimer As Timer
+    Friend WithEvents Joystick1UDLabel As Label
+    Friend WithEvents Joystick1LRLabel As Label
+    Friend WithEvents Joystick2LRLabel As Label
+    Friend WithEvents Joystick2UDLabel As Label
 End Class

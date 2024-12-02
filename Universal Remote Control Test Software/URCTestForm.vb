@@ -65,6 +65,13 @@ Public Class URCTestForm
         DisconnetToolStripButton.Enabled = False
     End Sub
 
+    ''' <summary>
+    ''' Using Global Data Variables Updates Labels with Current Data Info
+    ''' </summary>
+    Sub UpdateDisplay()
+
+    End Sub
+
     '**********************************************Event Handlers*******************************************
     Private Sub URCTestForm_Load(sender As Object, e As EventArgs) Handles Me.Load
         'Fill Combo Box With Serial Options
@@ -91,7 +98,11 @@ Public Class URCTestForm
             Dim data(COMSerialPort.BytesToRead) As Byte
             'Populate array with input data
             COMSerialPort.Read(data, 0, COMSerialPort.BytesToRead)
-            If data(0) = 36 Then
+            If data(0) = &H24 Then
+                For i = 0 To UBound(data)
+                    Console.Write(Hex(data(i)).ToString.PadLeft(4))
+                Next
+                Console.WriteLine()
                 'Handshake found connection success
                 robotAddress = data(1)
                 'Test Command Byte for Data Packet
@@ -123,17 +134,17 @@ Public Class URCTestForm
                 End Select
             Else
                 'Handshake not found disconnect
-                'Error Occurred Close COM Channel
-                CloseCOM()
-                'Report Error to User
-                MsgBox("Sorry a connection error occurred.  The COM Channel has been disconnected")
+                'Clear RX Buffer
+                COMSerialPort.DiscardInBuffer()
             End If
         Catch ex As Exception
-            'Error Occurred Close COM Channel
-            CloseCOM()
+            'Clear RX Buffer
+            COMSerialPort.DiscardInBuffer()
             'Report Error to User
             MsgBox("Sorry a connection error occurred.  The COM Channel has been disconnected")
         End Try
+        'Clear RX Buffer
+        COMSerialPort.DiscardInBuffer()
     End Sub
 
 
