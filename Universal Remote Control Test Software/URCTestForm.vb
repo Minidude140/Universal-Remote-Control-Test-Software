@@ -88,6 +88,21 @@ Public Class URCTestForm
         Joystick3LRTrackBar.Value = Joystick3LR
     End Sub
 
+    ''' <summary>
+    ''' Test a given byte at a given index return true if high.  Return False if low.
+    ''' </summary>
+    ''' <param name="data"></param>
+    ''' <param name="index"></param>
+    ''' <returns></returns>
+    Function TestBit(data As Byte, index As Integer) As Boolean
+        Dim testArray As New BitArray(data)
+        If testArray(index) = True Then
+            Return True
+        Else
+            Return False
+        End If
+    End Function
+
     '**********************************************Event Handlers*******************************************
     Private Sub URCTestForm_Load(sender As Object, e As EventArgs) Handles Me.Load
         'Fill Combo Box With Serial Options
