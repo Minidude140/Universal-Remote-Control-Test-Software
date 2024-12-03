@@ -111,26 +111,76 @@ Public Class URCTestForm
     Sub TestButtons()
         'Test Button 1
         If TestBit(buttonByte1, 0) = True Then
+            'Button is Pressed
             Button1Indicator.BackColor = Color.GreenYellow
         Else
+            'Button is Not Pressed
             Button1Indicator.BackColor = Color.Gray
         End If
         'Test Button 2
-
+        If TestBit(buttonByte1, 1) = True Then
+            'Button is Pressed
+            Button2Indicator.BackColor = Color.GreenYellow
+        Else
+            'Button is Not Pressed
+            Button2Indicator.BackColor = Color.Gray
+        End If
         'Test Button 3
-
+        If TestBit(buttonByte1, 2) = True Then
+            'Button is Pressed
+            Button3Indicator.BackColor = Color.GreenYellow
+        Else
+            'Button is Not Pressed
+            Button3Indicator.BackColor = Color.Gray
+        End If
         'Test Button 4
-
+        If TestBit(buttonByte1, 3) = True Then
+            'Button is Pressed
+            Button4Indicator.BackColor = Color.GreenYellow
+        Else
+            'Button is Not Pressed
+            Button4Indicator.BackColor = Color.Gray
+        End If
         'Test Left Bumper
-
+        If TestBit(buttonByte1, 4) = True Then
+            'Button is Pressed
+            LeftBumperIndicatorButton.BackColor = Color.GreenYellow
+        Else
+            'Button is Not Pressed
+            LeftBumperIndicatorButton.BackColor = Color.Gray
+        End If
         'Test Right Bumper
-
+        If TestBit(buttonByte1, 5) = True Then
+            'Button is Pressed
+            RightBumperIndicatorButton.BackColor = Color.GreenYellow
+        Else
+            'Button is Not Pressed
+            RightBumperIndicatorButton.BackColor = Color.Gray
+        End If
         'Test Joystick 1 Button
-
+        If TestBit(buttonByte1, 6) = True Then
+            'Button is Pressed
+            Joystick1IndicatorButton.BackColor = Color.GreenYellow
+        Else
+            'Button is Not Pressed
+            Joystick1IndicatorButton.BackColor = Color.Gray
+        End If
         'Test Joystick 2 Button
-
+        If TestBit(buttonByte1, 7) = True Then
+            'Button is Pressed
+            Joystick2IndicatorButton.BackColor = Color.GreenYellow
+        Else
+            'Button is Not Pressed
+            Joystick2IndicatorButton.BackColor = Color.Gray
+        End If
         'Test Joystick 3 Button
-
+        If TestBit(buttonByte2, 0) = True Then
+            'Button is Pressed
+            Joystick3IndicatorButton.BackColor = Color.GreenYellow
+        Else
+            'Button is Not Pressed
+            Joystick3IndicatorButton.BackColor = Color.Gray
+        End If
     End Sub
 
     '**********************************************Event Handlers*******************************************
