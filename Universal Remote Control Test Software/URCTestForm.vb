@@ -115,10 +115,6 @@ Public Class URCTestForm
             'Populate array with input data
             COMSerialPort.Read(data, 0, COMSerialPort.BytesToRead)
             If data(0) = &H24 Then
-                For i = 0 To UBound(data)
-                    Console.Write(Hex(data(i)).ToString.PadLeft(4))
-                Next
-                Console.WriteLine()
                 'Handshake found connection success
                 robotAddress = data(1)
                 'Test Command Byte for Data Packet

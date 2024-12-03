@@ -322,7 +322,9 @@ Partial Class URCTestForm
         Me.Controls.Add(Me.Joystick1LRLabel)
         Me.Controls.Add(Me.ExitButton)
         Me.Controls.Add(Me.ToolStrip1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "URCTestForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Universal Remote Controller Testing"
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
