@@ -164,5 +164,4 @@ Public Class URCTestForm
         COMSerialPort.DiscardInBuffer()
         UpdateDisplay()
     End Sub
-
 End Class
