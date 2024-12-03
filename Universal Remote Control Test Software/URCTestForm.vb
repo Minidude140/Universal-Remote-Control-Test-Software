@@ -86,6 +86,8 @@ Public Class URCTestForm
         Joystick3LRLabel.Text = CStr(Joystick3LR)
         Joystick3UDTrackBar.Value = joystick3UD
         Joystick3LRTrackBar.Value = Joystick3LR
+        'Update Button Indicators
+        TestButtons()
     End Sub
 
     ''' <summary>
@@ -95,13 +97,41 @@ Public Class URCTestForm
     ''' <param name="index"></param>
     ''' <returns></returns>
     Function TestBit(data As Byte, index As Integer) As Boolean
-        Dim testArray As New BitArray(data)
+        Dim testArray As New BitArray({data})
         If testArray(index) = True Then
             Return True
         Else
             Return False
         End If
     End Function
+
+    ''' <summary>
+    ''' Test the Button Data Bytes and Updates the Display With Buttons Pressed
+    ''' </summary>
+    Sub TestButtons()
+        'Test Button 1
+        If TestBit(buttonByte1, 0) = True Then
+            Button1Indicator.BackColor = Color.GreenYellow
+        Else
+            Button1Indicator.BackColor = Color.Gray
+        End If
+        'Test Button 2
+
+        'Test Button 3
+
+        'Test Button 4
+
+        'Test Left Bumper
+
+        'Test Right Bumper
+
+        'Test Joystick 1 Button
+
+        'Test Joystick 2 Button
+
+        'Test Joystick 3 Button
+
+    End Sub
 
     '**********************************************Event Handlers*******************************************
     Private Sub URCTestForm_Load(sender As Object, e As EventArgs) Handles Me.Load
@@ -175,4 +205,5 @@ Public Class URCTestForm
         COMSerialPort.DiscardInBuffer()
         UpdateDisplay()
     End Sub
+
 End Class
