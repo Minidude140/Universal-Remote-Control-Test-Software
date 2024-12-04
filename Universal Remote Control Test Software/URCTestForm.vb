@@ -88,6 +88,9 @@ Public Class URCTestForm
         Joystick3LRTrackBar.Value = Joystick3LR
         'Update Button Indicators
         TestButtons()
+        'Draw Joystick 1 Display
+        DrawJoystick1(joystick1LR, joystick1UD)
+
     End Sub
 
     ''' <summary>
@@ -181,6 +184,23 @@ Public Class URCTestForm
             'Button is Not Pressed
             Joystick3IndicatorButton.BackColor = Color.Gray
         End If
+    End Sub
+
+    ''' <summary>
+    ''' Draws a Filled Ellipse Into Joystick 1 PictureBox.  Scaled to 255 Max Inputs
+    ''' </summary>
+    ''' <param name="x"></param>
+    ''' <param name="y"></param>
+    Sub DrawJoystick1(x As Integer, y As Integer)
+        Joystick1PictureBox.Refresh()
+        'initialize graphics object and set drawing surface to picture box
+        Dim g As Graphics = Joystick1PictureBox.CreateGraphics
+        'Scale to 255 Input Data
+        Dim sX As Single = CSng(Joystick1PictureBox.Width / 255)
+        Dim sY As Single = CSng(Joystick1PictureBox.Height / 255)
+        g.ScaleTransform(sX, sY)
+        'Draw Center Dot
+        g.FillEllipse(Brushes.Aqua, ((255 - x) - 20), ((255 - y) - 20), 40, 40)
     End Sub
 
     '**********************************************Event Handlers*******************************************
