@@ -192,9 +192,14 @@ Public Class URCTestForm
     ''' <param name="x"></param>
     ''' <param name="y"></param>
     Sub DrawJoystick1(x As Integer, y As Integer)
+        'Clear Last Dot
         Joystick1PictureBox.Refresh()
         'initialize graphics object and set drawing surface to picture box
         Dim g As Graphics = Joystick1PictureBox.CreateGraphics
+        'initialize pen as color Black and pen size
+        Dim pen As New Pen(Color.Black, 4)
+        'Draw Border
+        g.DrawRectangle(pen, 0, 0, Joystick1PictureBox.Width, Joystick1PictureBox.Height)
         'Scale to 255 Input Data
         Dim sX As Single = CSng(Joystick1PictureBox.Width / 255)
         Dim sY As Single = CSng(Joystick1PictureBox.Height / 255)
