@@ -70,6 +70,8 @@ Partial Class URCTestForm
         Me.Joystick3IndicatorButton = New System.Windows.Forms.Button()
         Me.Joystick1PictureBox = New System.Windows.Forms.PictureBox()
         Me.StartUpTimer = New System.Windows.Forms.Timer(Me.components)
+        Me.Joystick2PictureBox = New System.Windows.Forms.PictureBox()
+        Me.Joystick3PictureBox = New System.Windows.Forms.PictureBox()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.Joystick1LRTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Joystick1UDTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -78,6 +80,8 @@ Partial Class URCTestForm
         CType(Me.Joystick3LRTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Joystick3UDTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Joystick1PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Joystick2PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Joystick3PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ToolStrip1
@@ -229,51 +233,51 @@ Partial Class URCTestForm
         Me.Joystick1UDTrackBar.Name = "Joystick1UDTrackBar"
         Me.Joystick1UDTrackBar.Orientation = System.Windows.Forms.Orientation.Vertical
         Me.Joystick1UDTrackBar.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.Joystick1UDTrackBar.Size = New System.Drawing.Size(56, 109)
+        Me.Joystick1UDTrackBar.Size = New System.Drawing.Size(56, 110)
         Me.Joystick1UDTrackBar.TabIndex = 10
         Me.Joystick1UDTrackBar.TabStop = False
         Me.Joystick1UDTrackBar.TickStyle = System.Windows.Forms.TickStyle.TopLeft
         '
         'Joystick2LRTrackBar
         '
-        Me.Joystick2LRTrackBar.Location = New System.Drawing.Point(506, 373)
+        Me.Joystick2LRTrackBar.Location = New System.Drawing.Point(510, 373)
         Me.Joystick2LRTrackBar.Maximum = 255
         Me.Joystick2LRTrackBar.Name = "Joystick2LRTrackBar"
         Me.Joystick2LRTrackBar.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.Joystick2LRTrackBar.Size = New System.Drawing.Size(101, 56)
+        Me.Joystick2LRTrackBar.Size = New System.Drawing.Size(110, 56)
         Me.Joystick2LRTrackBar.TabIndex = 11
         Me.Joystick2LRTrackBar.TabStop = False
         '
         'Joystick2UDTrackBar
         '
-        Me.Joystick2UDTrackBar.Location = New System.Drawing.Point(613, 412)
+        Me.Joystick2UDTrackBar.Location = New System.Drawing.Point(613, 403)
         Me.Joystick2UDTrackBar.Maximum = 255
         Me.Joystick2UDTrackBar.Name = "Joystick2UDTrackBar"
         Me.Joystick2UDTrackBar.Orientation = System.Windows.Forms.Orientation.Vertical
         Me.Joystick2UDTrackBar.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.Joystick2UDTrackBar.Size = New System.Drawing.Size(56, 101)
+        Me.Joystick2UDTrackBar.Size = New System.Drawing.Size(56, 110)
         Me.Joystick2UDTrackBar.TabIndex = 12
         Me.Joystick2UDTrackBar.TabStop = False
         Me.Joystick2UDTrackBar.TickStyle = System.Windows.Forms.TickStyle.TopLeft
         '
         'Joystick3LRTrackBar
         '
-        Me.Joystick3LRTrackBar.Location = New System.Drawing.Point(630, 139)
+        Me.Joystick3LRTrackBar.Location = New System.Drawing.Point(635, 139)
         Me.Joystick3LRTrackBar.Maximum = 255
         Me.Joystick3LRTrackBar.Name = "Joystick3LRTrackBar"
         Me.Joystick3LRTrackBar.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.Joystick3LRTrackBar.Size = New System.Drawing.Size(101, 56)
+        Me.Joystick3LRTrackBar.Size = New System.Drawing.Size(110, 56)
         Me.Joystick3LRTrackBar.TabIndex = 13
         Me.Joystick3LRTrackBar.TabStop = False
         '
         'Joystick3UDTrackBar
         '
-        Me.Joystick3UDTrackBar.Location = New System.Drawing.Point(737, 175)
+        Me.Joystick3UDTrackBar.Location = New System.Drawing.Point(737, 173)
         Me.Joystick3UDTrackBar.Maximum = 255
         Me.Joystick3UDTrackBar.Name = "Joystick3UDTrackBar"
         Me.Joystick3UDTrackBar.Orientation = System.Windows.Forms.Orientation.Vertical
         Me.Joystick3UDTrackBar.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.Joystick3UDTrackBar.Size = New System.Drawing.Size(56, 101)
+        Me.Joystick3UDTrackBar.Size = New System.Drawing.Size(56, 110)
         Me.Joystick3UDTrackBar.TabIndex = 14
         Me.Joystick3UDTrackBar.TabStop = False
         Me.Joystick3UDTrackBar.TickStyle = System.Windows.Forms.TickStyle.TopLeft
@@ -502,11 +506,29 @@ Partial Class URCTestForm
         '
         Me.StartUpTimer.Interval = 1
         '
+        'Joystick2PictureBox
+        '
+        Me.Joystick2PictureBox.Location = New System.Drawing.Point(522, 412)
+        Me.Joystick2PictureBox.Name = "Joystick2PictureBox"
+        Me.Joystick2PictureBox.Size = New System.Drawing.Size(85, 85)
+        Me.Joystick2PictureBox.TabIndex = 38
+        Me.Joystick2PictureBox.TabStop = False
+        '
+        'Joystick3PictureBox
+        '
+        Me.Joystick3PictureBox.Location = New System.Drawing.Point(646, 184)
+        Me.Joystick3PictureBox.Name = "Joystick3PictureBox"
+        Me.Joystick3PictureBox.Size = New System.Drawing.Size(85, 85)
+        Me.Joystick3PictureBox.TabIndex = 39
+        Me.Joystick3PictureBox.TabStop = False
+        '
         'URCTestForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(880, 565)
+        Me.Controls.Add(Me.Joystick3PictureBox)
+        Me.Controls.Add(Me.Joystick2PictureBox)
         Me.Controls.Add(Me.Joystick1PictureBox)
         Me.Controls.Add(Me.Joystick3ButtonLabel)
         Me.Controls.Add(Me.Joystick3IndicatorButton)
@@ -558,6 +580,8 @@ Partial Class URCTestForm
         CType(Me.Joystick3LRTrackBar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Joystick3UDTrackBar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Joystick1PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Joystick2PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Joystick3PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -610,4 +634,6 @@ Partial Class URCTestForm
     Friend WithEvents Joystick3IndicatorButton As Button
     Friend WithEvents Joystick1PictureBox As PictureBox
     Friend WithEvents StartUpTimer As Timer
+    Friend WithEvents Joystick2PictureBox As PictureBox
+    Friend WithEvents Joystick3PictureBox As PictureBox
 End Class

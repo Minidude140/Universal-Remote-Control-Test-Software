@@ -90,6 +90,10 @@ Public Class URCTestForm
         TestButtons()
         'Draw Joystick 1 Display
         DrawJoystick1(joystick1LR, joystick1UD)
+        'Draw Joystick 2 Display
+        DrawJoystick2(joystick2LR, joystick2UD)
+        'Draw Joystick 3 Display
+        DrawJoystick3(Joystick3LR, joystick3UD)
 
     End Sub
 
@@ -208,6 +212,50 @@ Public Class URCTestForm
         g.FillEllipse(Brushes.Aqua, ((255 - x) - 20), ((255 - y) - 20), 40, 40)
     End Sub
 
+    ''' <summary>
+    ''' Draws a Filled Ellipse Into Joystick 2 PictureBox.  Scaled to 255 Max Inputs
+    ''' </summary>
+    ''' <param name="x"></param>
+    ''' <param name="y"></param>
+    Sub DrawJoystick2(x As Integer, y As Integer)
+        'Clear Last Dot
+        Joystick2PictureBox.Refresh()
+        'initialize graphics object and set drawing surface to picture box
+        Dim g As Graphics = Joystick2PictureBox.CreateGraphics
+        'initialize pen as color Black and pen size
+        Dim pen As New Pen(Color.Black, 4)
+        'Draw Border
+        g.DrawRectangle(pen, 0, 0, Joystick2PictureBox.Width, Joystick2PictureBox.Height)
+        'Scale to 255 Input Data
+        Dim sX As Single = CSng(Joystick2PictureBox.Width / 255)
+        Dim sY As Single = CSng(Joystick2PictureBox.Height / 255)
+        g.ScaleTransform(sX, sY)
+        'Draw Center Dot
+        g.FillEllipse(Brushes.Aqua, ((255 - x) - 20), ((255 - y) - 20), 40, 40)
+    End Sub
+
+    ''' <summary>
+    ''' Draws a Filled Ellipse Into Joystick 2 PictureBox.  Scaled to 255 Max Inputs
+    ''' </summary>
+    ''' <param name="x"></param>
+    ''' <param name="y"></param>
+    Sub DrawJoystick3(x As Integer, y As Integer)
+        'Clear Last Dot
+        Joystick3PictureBox.Refresh()
+        'initialize graphics object and set drawing surface to picture box
+        Dim g As Graphics = Joystick3PictureBox.CreateGraphics
+        'initialize pen as color Black and pen size
+        Dim pen As New Pen(Color.Black, 4)
+        'Draw Border
+        g.DrawRectangle(pen, 0, 0, Joystick3PictureBox.Width, Joystick3PictureBox.Height)
+        'Scale to 255 Input Data
+        Dim sX As Single = CSng(Joystick3PictureBox.Width / 255)
+        Dim sY As Single = CSng(Joystick3PictureBox.Height / 255)
+        g.ScaleTransform(sX, sY)
+        'Draw Center Dot
+        g.FillEllipse(Brushes.Aqua, ((255 - x) - 20), ((255 - y) - 20), 40, 40)
+    End Sub
+
     '**********************************************Event Handlers*******************************************
     Private Sub URCTestForm_Load(sender As Object, e As EventArgs) Handles Me.Load
         'Fill Combo Box With Serial Options
@@ -294,5 +342,7 @@ Public Class URCTestForm
         StartUpTimer.Enabled = False
         'Draw Border and Initial Center Dot On Picture Boxes
         DrawJoystick1(128, 128)
+        DrawJoystick2(128, 128)
+        DrawJoystick3(128, 128)
     End Sub
 End Class
