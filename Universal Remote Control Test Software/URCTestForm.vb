@@ -214,6 +214,15 @@ Public Class URCTestForm
         PopulateCOMSelect()
         'Disable Disconnect Button
         DisconnetToolStripButton.Enabled = False
+        'Start With Each Joystick Axis at Half
+        Joystick1LRTrackBar.Value = 128
+        Joystick1UDTrackBar.Value = 128
+        Joystick2LRTrackBar.Value = 128
+        Joystick2UDTrackBar.Value = 128
+        Joystick3LRTrackBar.Value = 128
+        Joystick3UDTrackBar.Value = 128
+        'Enable Start Up Timer for Drawing Box Borders (Need Delay For Picture Box to Initialize)
+        StartUpTimer.Enabled = True
     End Sub
     Private Sub ExitButton_Click(sender As Object, e As EventArgs) Handles ExitButton.Click
         Me.Close()
@@ -281,4 +290,9 @@ Public Class URCTestForm
         UpdateDisplay()
     End Sub
 
+    Private Sub StartUpTimer_Tick(sender As Object, e As EventArgs) Handles StartUpTimer.Tick
+        StartUpTimer.Enabled = False
+        'Draw Border and Initial Center Dot On Picture Boxes
+        DrawJoystick1(128, 128)
+    End Sub
 End Class

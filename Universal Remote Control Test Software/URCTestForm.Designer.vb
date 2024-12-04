@@ -69,6 +69,7 @@ Partial Class URCTestForm
         Me.Joystick3ButtonLabel = New System.Windows.Forms.Label()
         Me.Joystick3IndicatorButton = New System.Windows.Forms.Button()
         Me.Joystick1PictureBox = New System.Windows.Forms.PictureBox()
+        Me.StartUpTimer = New System.Windows.Forms.Timer(Me.components)
         Me.ToolStrip1.SuspendLayout()
         CType(Me.Joystick1LRTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Joystick1UDTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -497,6 +498,10 @@ Partial Class URCTestForm
         Me.Joystick1PictureBox.TabIndex = 37
         Me.Joystick1PictureBox.TabStop = False
         '
+        'StartUpTimer
+        '
+        Me.StartUpTimer.Interval = 1
+        '
         'URCTestForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -604,4 +609,5 @@ Partial Class URCTestForm
     Friend WithEvents Joystick3ButtonLabel As Label
     Friend WithEvents Joystick3IndicatorButton As Button
     Friend WithEvents Joystick1PictureBox As PictureBox
+    Friend WithEvents StartUpTimer As Timer
 End Class
