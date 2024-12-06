@@ -79,7 +79,8 @@ Public Class URCTestForm
     ''' </summary>
     Sub UpdateDisplay()
         'Update Robot Address
-        RobotAddressLabel.Text = CStr(robotAddress)
+        RobotAddressDecLabel.Text = CStr(robotAddress)
+        RobotAddressHexLabel.Text = CStr(Hex(robotAddress))
         'Update Joystick 1
         Joystick1UDLabel.Text = CStr(joystick1UD)
         Joystick1LRLabel.Text = CStr(joystick1LR)
