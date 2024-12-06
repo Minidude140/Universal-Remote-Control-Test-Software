@@ -348,11 +348,116 @@ Public Class URCTestForm
         DrawJoystick3(128, 128)
     End Sub
 
-    Private Sub ToggleLeftRightDataToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ToggleLeftRightDataToolStripMenuItem.Click
+    '************************Toggle GUI Controls Visible or Not*********************************************************
+    'Joystick 1
+    Private Sub ToggleLeftRightDataToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Joy1ToggleLeftRightDataMenuItem.Click
         If Joystick1LRLabel.Visible = True Then
             Joystick1LRLabel.Visible = False
         Else
             Joystick1LRLabel.Visible = True
+        End If
+    End Sub
+    Private Sub ToggleLeftRightTrackBarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Joy1ToggleLeftRightTrackBarMenuItem.Click
+        If Joystick1LRTrackBar.Visible = True Then
+            Joystick1LRTrackBar.Visible = False
+        Else
+            Joystick1LRTrackBar.Visible = True
+        End If
+    End Sub
+    Private Sub ToggleUpDownDataToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Joy1ToggleUpDownDataMenuItem.Click
+        If Joystick1UDLabel.Visible = True Then
+            Joystick1UDLabel.Visible = False
+        Else
+            Joystick1UDLabel.Visible = True
+        End If
+    End Sub
+    Private Sub ToggleUpDownTrackBarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Joy1ToggleUpDownTrackBarMenuItem.Click
+        If Joystick1UDTrackBar.Visible = True Then
+            Joystick1UDTrackBar.Visible = False
+        Else
+            Joystick1UDTrackBar.Visible = True
+        End If
+    End Sub
+    Private Sub TogglePositionGraphToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Joy1TogglePositionGraphMenuItem.Click
+        If Joystick1PictureBox.Visible = True Then
+            Joystick1PictureBox.Visible = False
+        Else
+            Joystick1PictureBox.Visible = True
+            DrawJoystick1(128, 128)
+        End If
+    End Sub
+    'Joystick 2
+    Private Sub Joy2ToggleLeftRightDataMenuItem_Click(sender As Object, e As EventArgs) Handles Joy2ToggleLeftRightDataMenuItem.Click
+        If Joystick2LRLabel.Visible = True Then
+            Joystick2LRLabel.Visible = False
+        Else
+            Joystick2LRLabel.Visible = True
+        End If
+    End Sub
+    Private Sub Joy2ToggleLeftRightTrackBarMenuItem_Click(sender As Object, e As EventArgs) Handles Joy2ToggleLeftRightTrackBarMenuItem.Click
+        If Joystick2LRTrackBar.Visible = True Then
+            Joystick2LRTrackBar.Visible = False
+        Else
+            Joystick2LRTrackBar.Visible = True
+        End If
+    End Sub
+    Private Sub Joy2ToggleUpDownDataMenuItem_Click(sender As Object, e As EventArgs) Handles Joy2ToggleUpDownDataMenuItem.Click
+        If Joystick2UDLabel.Visible = True Then
+            Joystick2UDLabel.Visible = False
+        Else
+            Joystick2UDLabel.Visible = True
+        End If
+    End Sub
+    Private Sub Joy2ToggleUpDownTrackBarMenuItem_Click(sender As Object, e As EventArgs) Handles Joy2ToggleUpDownTrackBarMenuItem.Click
+        If Joystick2UDTrackBar.Visible = True Then
+            Joystick2UDTrackBar.Visible = False
+        Else
+            Joystick2UDTrackBar.Visible = True
+        End If
+    End Sub
+    Private Sub Joy2TogglePositionGraphMenuItem_Click(sender As Object, e As EventArgs) Handles Joy2TogglePositionGraphMenuItem.Click
+        If Joystick2PictureBox.Visible = True Then
+            Joystick2PictureBox.Visible = False
+        Else
+            Joystick2PictureBox.Visible = True
+            DrawJoystick2(128, 128)
+        End If
+    End Sub
+    'Joystick 3
+    Private Sub Joy3ToggleLeftRightDataMenuItem_Click(sender As Object, e As EventArgs) Handles Joy3ToggleLeftRightDataMenuItem.Click
+        If Joystick3LRLabel.Visible = True Then
+            Joystick3LRLabel.Visible = False
+        Else
+            Joystick3LRLabel.Visible = True
+        End If
+    End Sub
+    Private Sub Joy3ToggleLeftRightTrackBarMenuItem_Click(sender As Object, e As EventArgs) Handles Joy3ToggleLeftRightTrackBarMenuItem.Click
+        If Joystick3LRTrackBar.Visible = True Then
+            Joystick3LRTrackBar.Visible = False
+        Else
+            Joystick3LRTrackBar.Visible = True
+        End If
+    End Sub
+    Private Sub Joy3ToggleUpDownDataMenuItem_Click(sender As Object, e As EventArgs) Handles Joy3ToggleUpDownDataMenuItem.Click
+        If Joystick3UDLabel.Visible = True Then
+            Joystick3UDLabel.Visible = False
+        Else
+            Joystick3UDLabel.Visible = True
+        End If
+    End Sub
+    Private Sub Joy3ToggleUpDownTrackBarMenuItem_Click(sender As Object, e As EventArgs) Handles Joy3ToggleUpDownTrackBarMenuItem.Click
+        If Joystick3UDTrackBar.Visible = True Then
+            Joystick3UDTrackBar.Visible = False
+        Else
+            Joystick3UDTrackBar.Visible = True
+        End If
+    End Sub
+    Private Sub Joy3TogglePositionGraphMenuItem_Click(sender As Object, e As EventArgs) Handles Joy3TogglePositionGraphMenuItem.Click
+        If Joystick3PictureBox.Visible = True Then
+            Joystick3PictureBox.Visible = False
+        Else
+            Joystick3PictureBox.Visible = True
+            DrawJoystick3(128, 128)
         End If
     End Sub
 End Class
