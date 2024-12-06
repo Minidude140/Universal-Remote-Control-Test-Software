@@ -26,9 +26,7 @@ Partial Class URCTestForm
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.COMSelectToolStripComboBox = New System.Windows.Forms.ToolStripComboBox()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ConnectCOMToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.DisconnetToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.COMSerialPort = New System.IO.Ports.SerialPort(Me.components)
         Me.ExitButton = New System.Windows.Forms.Button()
@@ -68,10 +66,7 @@ Partial Class URCTestForm
         Me.Joystick2IndicatorButton = New System.Windows.Forms.Button()
         Me.Joystick3ButtonLabel = New System.Windows.Forms.Label()
         Me.Joystick3IndicatorButton = New System.Windows.Forms.Button()
-        Me.Joystick1PictureBox = New System.Windows.Forms.PictureBox()
         Me.StartUpTimer = New System.Windows.Forms.Timer(Me.components)
-        Me.Joystick2PictureBox = New System.Windows.Forms.PictureBox()
-        Me.Joystick3PictureBox = New System.Windows.Forms.PictureBox()
         Me.MenuStrip = New System.Windows.Forms.MenuStrip()
         Me.ConnectionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConnectMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -107,6 +102,11 @@ Partial Class URCTestForm
         Me.Joy1SetDefaultJoystickDisplayMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Joy2SetDefaultJoystickDisplayMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Joy3SetDefaultJoystickDisplayMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Joystick3PictureBox = New System.Windows.Forms.PictureBox()
+        Me.Joystick2PictureBox = New System.Windows.Forms.PictureBox()
+        Me.Joystick1PictureBox = New System.Windows.Forms.PictureBox()
+        Me.ConnectCOMToolStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.DisconnetToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.Joystick1LRTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Joystick1UDTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -114,10 +114,10 @@ Partial Class URCTestForm
         CType(Me.Joystick2UDTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Joystick3LRTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Joystick3UDTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Joystick1PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Joystick2PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Joystick3PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip.SuspendLayout()
+        CType(Me.Joystick3PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Joystick2PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Joystick1PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ToolStrip1
@@ -140,28 +140,10 @@ Partial Class URCTestForm
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
         Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 28)
         '
-        'ConnectCOMToolStripButton
-        '
-        Me.ConnectCOMToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ConnectCOMToolStripButton.Image = Global.Universal_Remote_Control_Test_Software.My.Resources.Resources.icons8_usb_connector_30
-        Me.ConnectCOMToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ConnectCOMToolStripButton.Name = "ConnectCOMToolStripButton"
-        Me.ConnectCOMToolStripButton.Size = New System.Drawing.Size(29, 25)
-        Me.ConnectCOMToolStripButton.Text = "ToolStripButton1"
-        '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
         Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 28)
-        '
-        'DisconnetToolStripButton
-        '
-        Me.DisconnetToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.DisconnetToolStripButton.Image = Global.Universal_Remote_Control_Test_Software.My.Resources.Resources.icons8_disconnect_30
-        Me.DisconnetToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.DisconnetToolStripButton.Name = "DisconnetToolStripButton"
-        Me.DisconnetToolStripButton.Size = New System.Drawing.Size(29, 25)
-        Me.DisconnetToolStripButton.Text = "ToolStripButton1"
         '
         'ToolStripSeparator3
         '
@@ -530,33 +512,9 @@ Partial Class URCTestForm
         Me.Joystick3IndicatorButton.TabIndex = 35
         Me.Joystick3IndicatorButton.UseVisualStyleBackColor = False
         '
-        'Joystick1PictureBox
-        '
-        Me.Joystick1PictureBox.Location = New System.Drawing.Point(234, 412)
-        Me.Joystick1PictureBox.Name = "Joystick1PictureBox"
-        Me.Joystick1PictureBox.Size = New System.Drawing.Size(85, 85)
-        Me.Joystick1PictureBox.TabIndex = 37
-        Me.Joystick1PictureBox.TabStop = False
-        '
         'StartUpTimer
         '
         Me.StartUpTimer.Interval = 1
-        '
-        'Joystick2PictureBox
-        '
-        Me.Joystick2PictureBox.Location = New System.Drawing.Point(522, 412)
-        Me.Joystick2PictureBox.Name = "Joystick2PictureBox"
-        Me.Joystick2PictureBox.Size = New System.Drawing.Size(85, 85)
-        Me.Joystick2PictureBox.TabIndex = 38
-        Me.Joystick2PictureBox.TabStop = False
-        '
-        'Joystick3PictureBox
-        '
-        Me.Joystick3PictureBox.Location = New System.Drawing.Point(646, 184)
-        Me.Joystick3PictureBox.Name = "Joystick3PictureBox"
-        Me.Joystick3PictureBox.Size = New System.Drawing.Size(85, 85)
-        Me.Joystick3PictureBox.TabIndex = 39
-        Me.Joystick3PictureBox.TabStop = False
         '
         'MenuStrip
         '
@@ -598,7 +556,7 @@ Partial Class URCTestForm
         '
         Me.Joystick1MenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Joy1ToggleLeftRightDataMenuItem, Me.Joy1ToggleLeftRightTrackBarMenuItem, Me.Joy1ToggleUpDownDataMenuItem, Me.Joy1ToggleUpDownTrackBarMenuItem, Me.Joy1TogglePositionGraphMenuItem, Me.Joy1ChangPositionDotColorMenuItem, Me.Joy1SetDefaultJoystickDisplayMenuItem})
         Me.Joystick1MenuItem.Name = "Joystick1MenuItem"
-        Me.Joystick1MenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Joystick1MenuItem.Size = New System.Drawing.Size(154, 26)
         Me.Joystick1MenuItem.Text = "Joystick 1"
         '
         'Joy1ToggleLeftRightDataMenuItem
@@ -641,7 +599,7 @@ Partial Class URCTestForm
         '
         Me.Jostick2ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Joy2ToggleLeftRightDataMenuItem, Me.Joy2ToggleLeftRightTrackBarMenuItem, Me.Joy2ToggleUpDownDataMenuItem, Me.Joy2ToggleUpDownTrackBarMenuItem, Me.Joy2TogglePositionGraphMenuItem, Me.Joy2ChangePositionDotColorMenuItem, Me.Joy2SetDefaultJoystickDisplayMenuItem})
         Me.Jostick2ToolStripMenuItem.Name = "Jostick2ToolStripMenuItem"
-        Me.Jostick2ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Jostick2ToolStripMenuItem.Size = New System.Drawing.Size(154, 26)
         Me.Jostick2ToolStripMenuItem.Text = "Joystick 2"
         '
         'Joy2ToggleLeftRightDataMenuItem
@@ -678,7 +636,7 @@ Partial Class URCTestForm
         '
         Me.Joystick3ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Joy3ToggleLeftRightDataMenuItem, Me.Joy3ToggleLeftRightTrackBarMenuItem, Me.Joy3ToggleUpDownDataMenuItem, Me.Joy3ToggleUpDownTrackBarMenuItem, Me.Joy3TogglePositionGraphMenuItem, Me.Joy3ChangePositionDotColorMenuItem, Me.Joy3SetDefaultJoystickDisplayMenuItem})
         Me.Joystick3ToolStripMenuItem.Name = "Joystick3ToolStripMenuItem"
-        Me.Joystick3ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Joystick3ToolStripMenuItem.Size = New System.Drawing.Size(154, 26)
         Me.Joystick3ToolStripMenuItem.Text = "Joystick 3"
         '
         'Joy3ToggleLeftRightDataMenuItem
@@ -715,7 +673,7 @@ Partial Class URCTestForm
         '
         Me.ButtonsMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ChangeButtonOffColorMenuItem, Me.ChangeButtonOnColorMenuItem, Me.SetDefaultButtonColorsMenuItem})
         Me.ButtonsMenuItem.Name = "ButtonsMenuItem"
-        Me.ButtonsMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.ButtonsMenuItem.Size = New System.Drawing.Size(154, 26)
         Me.ButtonsMenuItem.Text = "Buttons"
         '
         'ChangeButtonOffColorMenuItem
@@ -771,6 +729,48 @@ Partial Class URCTestForm
         Me.Joy3SetDefaultJoystickDisplayMenuItem.Name = "Joy3SetDefaultJoystickDisplayMenuItem"
         Me.Joy3SetDefaultJoystickDisplayMenuItem.Size = New System.Drawing.Size(273, 26)
         Me.Joy3SetDefaultJoystickDisplayMenuItem.Text = "Set Default Joystick Display"
+        '
+        'Joystick3PictureBox
+        '
+        Me.Joystick3PictureBox.Location = New System.Drawing.Point(646, 184)
+        Me.Joystick3PictureBox.Name = "Joystick3PictureBox"
+        Me.Joystick3PictureBox.Size = New System.Drawing.Size(85, 85)
+        Me.Joystick3PictureBox.TabIndex = 39
+        Me.Joystick3PictureBox.TabStop = False
+        '
+        'Joystick2PictureBox
+        '
+        Me.Joystick2PictureBox.Location = New System.Drawing.Point(522, 412)
+        Me.Joystick2PictureBox.Name = "Joystick2PictureBox"
+        Me.Joystick2PictureBox.Size = New System.Drawing.Size(85, 85)
+        Me.Joystick2PictureBox.TabIndex = 38
+        Me.Joystick2PictureBox.TabStop = False
+        '
+        'Joystick1PictureBox
+        '
+        Me.Joystick1PictureBox.Location = New System.Drawing.Point(234, 412)
+        Me.Joystick1PictureBox.Name = "Joystick1PictureBox"
+        Me.Joystick1PictureBox.Size = New System.Drawing.Size(85, 85)
+        Me.Joystick1PictureBox.TabIndex = 37
+        Me.Joystick1PictureBox.TabStop = False
+        '
+        'ConnectCOMToolStripButton
+        '
+        Me.ConnectCOMToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ConnectCOMToolStripButton.Image = Global.Universal_Remote_Control_Test_Software.My.Resources.Resources.icons8_usb_connector_30
+        Me.ConnectCOMToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ConnectCOMToolStripButton.Name = "ConnectCOMToolStripButton"
+        Me.ConnectCOMToolStripButton.Size = New System.Drawing.Size(29, 25)
+        Me.ConnectCOMToolStripButton.Text = "ToolStripButton1"
+        '
+        'DisconnetToolStripButton
+        '
+        Me.DisconnetToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.DisconnetToolStripButton.Image = Global.Universal_Remote_Control_Test_Software.My.Resources.Resources.icons8_disconnect_30
+        Me.DisconnetToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.DisconnetToolStripButton.Name = "DisconnetToolStripButton"
+        Me.DisconnetToolStripButton.Size = New System.Drawing.Size(29, 25)
+        Me.DisconnetToolStripButton.Text = "ToolStripButton1"
         '
         'URCTestForm
         '
@@ -831,11 +831,11 @@ Partial Class URCTestForm
         CType(Me.Joystick2UDTrackBar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Joystick3LRTrackBar, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Joystick3UDTrackBar, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Joystick1PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Joystick2PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Joystick3PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip.ResumeLayout(False)
         Me.MenuStrip.PerformLayout()
+        CType(Me.Joystick3PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Joystick2PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Joystick1PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
