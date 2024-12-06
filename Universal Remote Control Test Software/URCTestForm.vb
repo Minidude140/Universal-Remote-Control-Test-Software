@@ -28,8 +28,6 @@ Public Class URCTestForm
     Public GrowlGreyMed As Color = Color.FromArgb(167, 167, 167)
     Public GrowlGrey As Color = Color.FromArgb(130, 130, 130)
     Public Roarange As Color = Color.FromArgb(244, 121, 32)
-    Public RoarangeL As Color = Color.FromArgb(246, 146, 64)
-    Public BengalBlack As Color = Color.FromArgb(0, 0, 0)
 
     '**********************************************Custom Methods*******************************************
     ''' <summary>
@@ -105,7 +103,6 @@ Public Class URCTestForm
         DrawJoystick2(joystick2LR, joystick2UD)
         'Draw Joystick 3 Display
         DrawJoystick3(Joystick3LR, joystick3UD)
-
     End Sub
 
     ''' <summary>
@@ -353,8 +350,7 @@ Public Class URCTestForm
             'Clear RX Buffer
             COMSerialPort.DiscardInBuffer()
             'Report Error to User
-            MsgBox("Sorry a connection error occurred.  The COM Channel has been disconnected")
-            MsgBox($"{ex.Message}")
+            MsgBox("Sorry a connection error has occurred.")
         End Try
         'Clear RX Buffer
         COMSerialPort.DiscardInBuffer()
