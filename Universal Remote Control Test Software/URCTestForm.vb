@@ -21,6 +21,9 @@ Public Class URCTestForm
     Dim buttonByte2 As Byte
     Dim buttonOnColor As Color
     Dim buttonOffColor As Color
+    Dim joy1PosColor As Brush
+    Dim joy2PosColor As Brush
+    Dim joy3PosColor As Brush
 
     '**********************************************Custom Methods*******************************************
     ''' <summary>
@@ -211,7 +214,7 @@ Public Class URCTestForm
         Dim sY As Single = CSng(Joystick1PictureBox.Height / 255)
         g.ScaleTransform(sX, sY)
         'Draw Center Dot
-        g.FillEllipse(Brushes.Aqua, ((255 - x) - 20), ((255 - y) - 20), 40, 40)
+        g.FillEllipse(joy1PosColor, ((255 - x) - 20), ((255 - y) - 20), 40, 40)
     End Sub
 
     ''' <summary>
@@ -233,7 +236,7 @@ Public Class URCTestForm
         Dim sY As Single = CSng(Joystick2PictureBox.Height / 255)
         g.ScaleTransform(sX, sY)
         'Draw Center Dot
-        g.FillEllipse(Brushes.Aqua, ((255 - x) - 20), ((255 - y) - 20), 40, 40)
+        g.FillEllipse(joy2PosColor, ((255 - x) - 20), ((255 - y) - 20), 40, 40)
     End Sub
 
     ''' <summary>
@@ -255,7 +258,7 @@ Public Class URCTestForm
         Dim sY As Single = CSng(Joystick3PictureBox.Height / 255)
         g.ScaleTransform(sX, sY)
         'Draw Center Dot
-        g.FillEllipse(Brushes.Aqua, ((255 - x) - 20), ((255 - y) - 20), 40, 40)
+        g.FillEllipse(joy3PosColor, ((255 - x) - 20), ((255 - y) - 20), 40, 40)
     End Sub
 
     '**********************************************Event Handlers*******************************************
@@ -267,6 +270,10 @@ Public Class URCTestForm
         'Set Default Button Colors
         buttonOnColor = Color.GreenYellow
         buttonOffColor = Color.Gray
+        'Set Default Joystick Dot Colors
+        joy1PosColor = Brushes.Aqua
+        joy2PosColor = Brushes.Aqua
+        joy3PosColor = Brushes.Aqua
         'Start With Each Joystick Axis at Half
         Joystick1LRTrackBar.Value = 128
         Joystick1UDTrackBar.Value = 128
@@ -465,7 +472,7 @@ Public Class URCTestForm
             DrawJoystick3(128, 128)
         End If
     End Sub
-    '************************Change GUI Button Color*********************************************************
+    '************************Change GUI Colors*********************************************************
     Private Sub ChangeButtonOffColorMenuItem_Click(sender As Object, e As EventArgs) Handles ChangeButtonOffColorMenuItem.Click
         ColorDialog.ShowDialog()
         buttonOffColor = ColorDialog.Color
@@ -480,5 +487,23 @@ Public Class URCTestForm
         buttonOnColor = Color.GreenYellow
         buttonOffColor = Color.Gray
         TestButtons()
+    End Sub
+    Private Sub Joy1ChangPositionDotColorMenuItem_Click(sender As Object, e As EventArgs) Handles Joy1ChangPositionDotColorMenuItem.Click
+        ColorDialog.ShowDialog()
+        Dim tempBrush As New SolidBrush(ColorDialog.Color)
+        joy1PosColor = tempBrush
+        DrawJoystick1(128, 128)
+    End Sub
+    Private Sub Joy2ChangePositionDotColorMenuItem_Click(sender As Object, e As EventArgs) Handles Joy2ChangePositionDotColorMenuItem.Click
+        ColorDialog.ShowDialog()
+        Dim tempBrush As New SolidBrush(ColorDialog.Color)
+        joy2PosColor = tempBrush
+        DrawJoystick2(128, 128)
+    End Sub
+    Private Sub Joy3ChangePositionDotColorMenuItem_Click(sender As Object, e As EventArgs) Handles Joy3ChangePositionDotColorMenuItem.Click
+        ColorDialog.ShowDialog()
+        Dim tempBrush As New SolidBrush(ColorDialog.Color)
+        joy3PosColor = tempBrush
+        DrawJoystick3(128, 128)
     End Sub
 End Class

@@ -80,17 +80,17 @@ Partial Class URCTestForm
         Me.Joystick1MenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Joy1ToggleLeftRightDataMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Joy1ToggleLeftRightTrackBarMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Jostick2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Joystick3ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Joy1ToggleUpDownDataMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Joy1ToggleUpDownTrackBarMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Joy1TogglePositionGraphMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Joy1ChangPositionDotColorMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Jostick2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Joy2ToggleLeftRightDataMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Joy2ToggleLeftRightTrackBarMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Joy2ToggleUpDownDataMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Joy2ToggleUpDownTrackBarMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Joy2TogglePositionGraphMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Joystick3ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Joy3ToggleLeftRightDataMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Joy3ToggleLeftRightTrackBarMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Joy3ToggleUpDownDataMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -99,8 +99,14 @@ Partial Class URCTestForm
         Me.ButtonsMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ChangeButtonOffColorMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ChangeButtonOnColorMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ColorDialog = New System.Windows.Forms.ColorDialog()
         Me.SetDefaultButtonColorsMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ColorDialog = New System.Windows.Forms.ColorDialog()
+        Me.Joy2ChangePositionDotColorMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Joy3ChangePositionDotColorMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Joy1SetDefaultJoystickDisplayMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Joy2SetDefaultJoystickDisplayMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Joy3SetDefaultJoystickDisplayMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.Joystick1LRTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Joystick1UDTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -590,7 +596,7 @@ Partial Class URCTestForm
         '
         'Joystick1MenuItem
         '
-        Me.Joystick1MenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Joy1ToggleLeftRightDataMenuItem, Me.Joy1ToggleLeftRightTrackBarMenuItem, Me.Joy1ToggleUpDownDataMenuItem, Me.Joy1ToggleUpDownTrackBarMenuItem, Me.Joy1TogglePositionGraphMenuItem})
+        Me.Joystick1MenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Joy1ToggleLeftRightDataMenuItem, Me.Joy1ToggleLeftRightTrackBarMenuItem, Me.Joy1ToggleUpDownDataMenuItem, Me.Joy1ToggleUpDownTrackBarMenuItem, Me.Joy1TogglePositionGraphMenuItem, Me.Joy1ChangPositionDotColorMenuItem, Me.Joy1SetDefaultJoystickDisplayMenuItem})
         Me.Joystick1MenuItem.Name = "Joystick1MenuItem"
         Me.Joystick1MenuItem.Size = New System.Drawing.Size(224, 26)
         Me.Joystick1MenuItem.Text = "Joystick 1"
@@ -598,111 +604,111 @@ Partial Class URCTestForm
         'Joy1ToggleLeftRightDataMenuItem
         '
         Me.Joy1ToggleLeftRightDataMenuItem.Name = "Joy1ToggleLeftRightDataMenuItem"
-        Me.Joy1ToggleLeftRightDataMenuItem.Size = New System.Drawing.Size(272, 26)
+        Me.Joy1ToggleLeftRightDataMenuItem.Size = New System.Drawing.Size(273, 26)
         Me.Joy1ToggleLeftRightDataMenuItem.Text = "Toggle Left-Right Data"
         '
         'Joy1ToggleLeftRightTrackBarMenuItem
         '
         Me.Joy1ToggleLeftRightTrackBarMenuItem.Name = "Joy1ToggleLeftRightTrackBarMenuItem"
-        Me.Joy1ToggleLeftRightTrackBarMenuItem.Size = New System.Drawing.Size(272, 26)
+        Me.Joy1ToggleLeftRightTrackBarMenuItem.Size = New System.Drawing.Size(273, 26)
         Me.Joy1ToggleLeftRightTrackBarMenuItem.Text = "Toggle Left-Right Track Bar"
-        '
-        'Jostick2ToolStripMenuItem
-        '
-        Me.Jostick2ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Joy2ToggleLeftRightDataMenuItem, Me.Joy2ToggleLeftRightTrackBarMenuItem, Me.Joy2ToggleUpDownDataMenuItem, Me.Joy2ToggleUpDownTrackBarMenuItem, Me.Joy2TogglePositionGraphMenuItem})
-        Me.Jostick2ToolStripMenuItem.Name = "Jostick2ToolStripMenuItem"
-        Me.Jostick2ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
-        Me.Jostick2ToolStripMenuItem.Text = "Joystick 2"
-        '
-        'Joystick3ToolStripMenuItem
-        '
-        Me.Joystick3ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Joy3ToggleLeftRightDataMenuItem, Me.Joy3ToggleLeftRightTrackBarMenuItem, Me.Joy3ToggleUpDownDataMenuItem, Me.Joy3ToggleUpDownTrackBarMenuItem, Me.Joy3TogglePositionGraphMenuItem})
-        Me.Joystick3ToolStripMenuItem.Name = "Joystick3ToolStripMenuItem"
-        Me.Joystick3ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
-        Me.Joystick3ToolStripMenuItem.Text = "Joystick 3"
-        '
-        'AboutToolStripMenuItem
-        '
-        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(64, 24)
-        Me.AboutToolStripMenuItem.Text = "About"
         '
         'Joy1ToggleUpDownDataMenuItem
         '
         Me.Joy1ToggleUpDownDataMenuItem.Name = "Joy1ToggleUpDownDataMenuItem"
-        Me.Joy1ToggleUpDownDataMenuItem.Size = New System.Drawing.Size(272, 26)
+        Me.Joy1ToggleUpDownDataMenuItem.Size = New System.Drawing.Size(273, 26)
         Me.Joy1ToggleUpDownDataMenuItem.Text = "Toggle Up-Down Data"
         '
         'Joy1ToggleUpDownTrackBarMenuItem
         '
         Me.Joy1ToggleUpDownTrackBarMenuItem.Name = "Joy1ToggleUpDownTrackBarMenuItem"
-        Me.Joy1ToggleUpDownTrackBarMenuItem.Size = New System.Drawing.Size(272, 26)
+        Me.Joy1ToggleUpDownTrackBarMenuItem.Size = New System.Drawing.Size(273, 26)
         Me.Joy1ToggleUpDownTrackBarMenuItem.Text = "Toggle Up-Down Track Bar"
         '
         'Joy1TogglePositionGraphMenuItem
         '
         Me.Joy1TogglePositionGraphMenuItem.Name = "Joy1TogglePositionGraphMenuItem"
-        Me.Joy1TogglePositionGraphMenuItem.Size = New System.Drawing.Size(272, 26)
+        Me.Joy1TogglePositionGraphMenuItem.Size = New System.Drawing.Size(273, 26)
         Me.Joy1TogglePositionGraphMenuItem.Text = "Toggle Position Graph"
+        '
+        'Joy1ChangPositionDotColorMenuItem
+        '
+        Me.Joy1ChangPositionDotColorMenuItem.Name = "Joy1ChangPositionDotColorMenuItem"
+        Me.Joy1ChangPositionDotColorMenuItem.Size = New System.Drawing.Size(273, 26)
+        Me.Joy1ChangPositionDotColorMenuItem.Text = "Chang Position Dot Color"
+        '
+        'Jostick2ToolStripMenuItem
+        '
+        Me.Jostick2ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Joy2ToggleLeftRightDataMenuItem, Me.Joy2ToggleLeftRightTrackBarMenuItem, Me.Joy2ToggleUpDownDataMenuItem, Me.Joy2ToggleUpDownTrackBarMenuItem, Me.Joy2TogglePositionGraphMenuItem, Me.Joy2ChangePositionDotColorMenuItem, Me.Joy2SetDefaultJoystickDisplayMenuItem})
+        Me.Jostick2ToolStripMenuItem.Name = "Jostick2ToolStripMenuItem"
+        Me.Jostick2ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Jostick2ToolStripMenuItem.Text = "Joystick 2"
         '
         'Joy2ToggleLeftRightDataMenuItem
         '
         Me.Joy2ToggleLeftRightDataMenuItem.Name = "Joy2ToggleLeftRightDataMenuItem"
-        Me.Joy2ToggleLeftRightDataMenuItem.Size = New System.Drawing.Size(272, 26)
+        Me.Joy2ToggleLeftRightDataMenuItem.Size = New System.Drawing.Size(273, 26)
         Me.Joy2ToggleLeftRightDataMenuItem.Text = "Toggle Left-Right Data"
         '
         'Joy2ToggleLeftRightTrackBarMenuItem
         '
         Me.Joy2ToggleLeftRightTrackBarMenuItem.Name = "Joy2ToggleLeftRightTrackBarMenuItem"
-        Me.Joy2ToggleLeftRightTrackBarMenuItem.Size = New System.Drawing.Size(272, 26)
+        Me.Joy2ToggleLeftRightTrackBarMenuItem.Size = New System.Drawing.Size(273, 26)
         Me.Joy2ToggleLeftRightTrackBarMenuItem.Text = "Toggle Left-Right Track Bar"
         '
         'Joy2ToggleUpDownDataMenuItem
         '
         Me.Joy2ToggleUpDownDataMenuItem.Name = "Joy2ToggleUpDownDataMenuItem"
-        Me.Joy2ToggleUpDownDataMenuItem.Size = New System.Drawing.Size(272, 26)
+        Me.Joy2ToggleUpDownDataMenuItem.Size = New System.Drawing.Size(273, 26)
         Me.Joy2ToggleUpDownDataMenuItem.Text = "Toggle Up-Down Data"
         '
         'Joy2ToggleUpDownTrackBarMenuItem
         '
         Me.Joy2ToggleUpDownTrackBarMenuItem.Name = "Joy2ToggleUpDownTrackBarMenuItem"
-        Me.Joy2ToggleUpDownTrackBarMenuItem.Size = New System.Drawing.Size(272, 26)
+        Me.Joy2ToggleUpDownTrackBarMenuItem.Size = New System.Drawing.Size(273, 26)
         Me.Joy2ToggleUpDownTrackBarMenuItem.Text = "Toggle Up-Down Track Bar"
         '
         'Joy2TogglePositionGraphMenuItem
         '
         Me.Joy2TogglePositionGraphMenuItem.Name = "Joy2TogglePositionGraphMenuItem"
-        Me.Joy2TogglePositionGraphMenuItem.Size = New System.Drawing.Size(272, 26)
+        Me.Joy2TogglePositionGraphMenuItem.Size = New System.Drawing.Size(273, 26)
         Me.Joy2TogglePositionGraphMenuItem.Text = "Toggle Position Graph"
+        '
+        'Joystick3ToolStripMenuItem
+        '
+        Me.Joystick3ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Joy3ToggleLeftRightDataMenuItem, Me.Joy3ToggleLeftRightTrackBarMenuItem, Me.Joy3ToggleUpDownDataMenuItem, Me.Joy3ToggleUpDownTrackBarMenuItem, Me.Joy3TogglePositionGraphMenuItem, Me.Joy3ChangePositionDotColorMenuItem, Me.Joy3SetDefaultJoystickDisplayMenuItem})
+        Me.Joystick3ToolStripMenuItem.Name = "Joystick3ToolStripMenuItem"
+        Me.Joystick3ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Joystick3ToolStripMenuItem.Text = "Joystick 3"
         '
         'Joy3ToggleLeftRightDataMenuItem
         '
         Me.Joy3ToggleLeftRightDataMenuItem.Name = "Joy3ToggleLeftRightDataMenuItem"
-        Me.Joy3ToggleLeftRightDataMenuItem.Size = New System.Drawing.Size(272, 26)
+        Me.Joy3ToggleLeftRightDataMenuItem.Size = New System.Drawing.Size(273, 26)
         Me.Joy3ToggleLeftRightDataMenuItem.Text = "Toggle Left-Right Data"
         '
         'Joy3ToggleLeftRightTrackBarMenuItem
         '
         Me.Joy3ToggleLeftRightTrackBarMenuItem.Name = "Joy3ToggleLeftRightTrackBarMenuItem"
-        Me.Joy3ToggleLeftRightTrackBarMenuItem.Size = New System.Drawing.Size(272, 26)
+        Me.Joy3ToggleLeftRightTrackBarMenuItem.Size = New System.Drawing.Size(273, 26)
         Me.Joy3ToggleLeftRightTrackBarMenuItem.Text = "Toggle Left-Right Track Bar"
         '
         'Joy3ToggleUpDownDataMenuItem
         '
         Me.Joy3ToggleUpDownDataMenuItem.Name = "Joy3ToggleUpDownDataMenuItem"
-        Me.Joy3ToggleUpDownDataMenuItem.Size = New System.Drawing.Size(272, 26)
+        Me.Joy3ToggleUpDownDataMenuItem.Size = New System.Drawing.Size(273, 26)
         Me.Joy3ToggleUpDownDataMenuItem.Text = "Toggle Up-Down Data"
         '
         'Joy3ToggleUpDownTrackBarMenuItem
         '
         Me.Joy3ToggleUpDownTrackBarMenuItem.Name = "Joy3ToggleUpDownTrackBarMenuItem"
-        Me.Joy3ToggleUpDownTrackBarMenuItem.Size = New System.Drawing.Size(272, 26)
+        Me.Joy3ToggleUpDownTrackBarMenuItem.Size = New System.Drawing.Size(273, 26)
         Me.Joy3ToggleUpDownTrackBarMenuItem.Text = "Toggle Up-Down Track Bar"
         '
         'Joy3TogglePositionGraphMenuItem
         '
         Me.Joy3TogglePositionGraphMenuItem.Name = "Joy3TogglePositionGraphMenuItem"
-        Me.Joy3TogglePositionGraphMenuItem.Size = New System.Drawing.Size(272, 26)
+        Me.Joy3TogglePositionGraphMenuItem.Size = New System.Drawing.Size(273, 26)
         Me.Joy3TogglePositionGraphMenuItem.Text = "Toggle Position Graph"
         '
         'ButtonsMenuItem
@@ -729,6 +735,42 @@ Partial Class URCTestForm
         Me.SetDefaultButtonColorsMenuItem.Name = "SetDefaultButtonColorsMenuItem"
         Me.SetDefaultButtonColorsMenuItem.Size = New System.Drawing.Size(260, 26)
         Me.SetDefaultButtonColorsMenuItem.Text = "Set Default Button Colors"
+        '
+        'AboutToolStripMenuItem
+        '
+        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(64, 24)
+        Me.AboutToolStripMenuItem.Text = "About"
+        '
+        'Joy2ChangePositionDotColorMenuItem
+        '
+        Me.Joy2ChangePositionDotColorMenuItem.Name = "Joy2ChangePositionDotColorMenuItem"
+        Me.Joy2ChangePositionDotColorMenuItem.Size = New System.Drawing.Size(273, 26)
+        Me.Joy2ChangePositionDotColorMenuItem.Text = "Change Position Dot Color"
+        '
+        'Joy3ChangePositionDotColorMenuItem
+        '
+        Me.Joy3ChangePositionDotColorMenuItem.Name = "Joy3ChangePositionDotColorMenuItem"
+        Me.Joy3ChangePositionDotColorMenuItem.Size = New System.Drawing.Size(273, 26)
+        Me.Joy3ChangePositionDotColorMenuItem.Text = "Change Position Dot Color"
+        '
+        'Joy1SetDefaultJoystickDisplayMenuItem
+        '
+        Me.Joy1SetDefaultJoystickDisplayMenuItem.Name = "Joy1SetDefaultJoystickDisplayMenuItem"
+        Me.Joy1SetDefaultJoystickDisplayMenuItem.Size = New System.Drawing.Size(273, 26)
+        Me.Joy1SetDefaultJoystickDisplayMenuItem.Text = "Set Default Joystick Display"
+        '
+        'Joy2SetDefaultJoystickDisplayMenuItem
+        '
+        Me.Joy2SetDefaultJoystickDisplayMenuItem.Name = "Joy2SetDefaultJoystickDisplayMenuItem"
+        Me.Joy2SetDefaultJoystickDisplayMenuItem.Size = New System.Drawing.Size(273, 26)
+        Me.Joy2SetDefaultJoystickDisplayMenuItem.Text = "Set Default Joystick Display"
+        '
+        'Joy3SetDefaultJoystickDisplayMenuItem
+        '
+        Me.Joy3SetDefaultJoystickDisplayMenuItem.Name = "Joy3SetDefaultJoystickDisplayMenuItem"
+        Me.Joy3SetDefaultJoystickDisplayMenuItem.Size = New System.Drawing.Size(273, 26)
+        Me.Joy3SetDefaultJoystickDisplayMenuItem.Text = "Set Default Joystick Display"
         '
         'URCTestForm
         '
@@ -877,4 +919,10 @@ Partial Class URCTestForm
     Friend WithEvents ChangeButtonOnColorMenuItem As ToolStripMenuItem
     Friend WithEvents ColorDialog As ColorDialog
     Friend WithEvents SetDefaultButtonColorsMenuItem As ToolStripMenuItem
+    Friend WithEvents Joy1ChangPositionDotColorMenuItem As ToolStripMenuItem
+    Friend WithEvents Joy2ChangePositionDotColorMenuItem As ToolStripMenuItem
+    Friend WithEvents Joy3ChangePositionDotColorMenuItem As ToolStripMenuItem
+    Friend WithEvents Joy1SetDefaultJoystickDisplayMenuItem As ToolStripMenuItem
+    Friend WithEvents Joy2SetDefaultJoystickDisplayMenuItem As ToolStripMenuItem
+    Friend WithEvents Joy3SetDefaultJoystickDisplayMenuItem As ToolStripMenuItem
 End Class
