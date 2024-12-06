@@ -24,6 +24,12 @@ Public Class URCTestForm
     Dim joy1PosColor As Brush
     Dim joy2PosColor As Brush
     Dim joy3PosColor As Brush
+    Public GrowlGreyLight As Color = Color.FromArgb(230, 231, 232)
+    Public GrowlGreyMed As Color = Color.FromArgb(167, 167, 167)
+    Public GrowlGrey As Color = Color.FromArgb(130, 130, 130)
+    Public Roarange As Color = Color.FromArgb(244, 121, 32)
+    Public RoarangeL As Color = Color.FromArgb(246, 146, 64)
+    Public BengalBlack As Color = Color.FromArgb(0, 0, 0)
 
     '**********************************************Custom Methods*******************************************
     ''' <summary>
@@ -267,13 +273,16 @@ Public Class URCTestForm
         PopulateCOMSelect()
         'Disable Disconnect Button
         DisconnetToolStripButton.Enabled = False
+        'Set Menu Strip Color
+        MenuStrip.BackColor = GrowlGrey
         'Set Default Button Colors
-        buttonOnColor = Color.GreenYellow
+        buttonOnColor = Roarange
         buttonOffColor = Color.Gray
         'Set Default Joystick Dot Colors
-        joy1PosColor = Brushes.Aqua
-        joy2PosColor = Brushes.Aqua
-        joy3PosColor = Brushes.Aqua
+        Dim tempBrush As New SolidBrush(Roarange)
+        joy1PosColor = tempBrush
+        joy2PosColor = tempBrush
+        joy3PosColor = tempBrush
         'Start With Each Joystick Axis at Half
         Joystick1LRTrackBar.Value = 128
         Joystick1UDTrackBar.Value = 128
@@ -408,7 +417,8 @@ Public Class URCTestForm
         DrawJoystick1(128, 128)
     End Sub
     Private Sub Joy1SetDefaultJoystickDisplayMenuItem_Click(sender As Object, e As EventArgs) Handles Joy1SetDefaultJoystickDisplayMenuItem.Click
-        joy1PosColor = Brushes.Aqua
+        Dim tempBrush As New SolidBrush(Roarange)
+        joy1PosColor = tempBrush
         Joystick1LRLabel.Visible = True
         Joystick1LRTrackBar.Visible = True
         Joystick1UDLabel.Visible = True
@@ -460,7 +470,8 @@ Public Class URCTestForm
         DrawJoystick2(128, 128)
     End Sub
     Private Sub Joy2SetDefaultJoystickDisplayMenuItem_Click(sender As Object, e As EventArgs) Handles Joy2SetDefaultJoystickDisplayMenuItem.Click
-        joy2PosColor = Brushes.Aqua
+        Dim tempBrush As New SolidBrush(Roarange)
+        joy2PosColor = tempBrush
         Joystick2LRLabel.Visible = True
         Joystick2LRTrackBar.Visible = True
         Joystick2UDLabel.Visible = True
@@ -512,7 +523,8 @@ Public Class URCTestForm
         DrawJoystick3(128, 128)
     End Sub
     Private Sub Joy3SetDefaultJoystickDisplayMenuItem_Click(sender As Object, e As EventArgs) Handles Joy3SetDefaultJoystickDisplayMenuItem.Click
-        joy3PosColor = Brushes.Aqua
+        Dim tempBrush As New SolidBrush(Roarange)
+        joy3PosColor = tempBrush
         Joystick3LRLabel.Visible = True
         Joystick3LRTrackBar.Visible = True
         Joystick3UDLabel.Visible = True
@@ -533,7 +545,7 @@ Public Class URCTestForm
         TestButtons()
     End Sub
     Private Sub SetDefaultButtonColorsMenuItem_Click(sender As Object, e As EventArgs) Handles SetDefaultButtonColorsMenuItem.Click
-        buttonOnColor = Color.GreenYellow
+        buttonOnColor = Roarange
         buttonOffColor = Color.Gray
         TestButtons()
     End Sub

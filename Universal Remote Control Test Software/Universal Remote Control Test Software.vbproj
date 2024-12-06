@@ -134,5 +134,8 @@
   <ItemGroup>
     <None Include="Resources\icons8-disconnect-30.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\URC PCB-1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

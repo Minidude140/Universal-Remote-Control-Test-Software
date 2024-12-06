@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class URCTestForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class URCTestForm
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
@@ -122,16 +122,18 @@ Partial Class URCTestForm
         '
         'ToolStrip1
         '
+        Me.ToolStrip1.BackColor = System.Drawing.Color.Gray
         Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.COMSelectToolStripComboBox, Me.ToolStripSeparator1, Me.ConnectCOMToolStripButton, Me.ToolStripSeparator2, Me.DisconnetToolStripButton, Me.ToolStripSeparator3})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 28)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(880, 28)
+        Me.ToolStrip1.Size = New System.Drawing.Size(942, 28)
         Me.ToolStrip1.TabIndex = 0
         Me.ToolStrip1.Text = "ToolStrip1"
         '
         'COMSelectToolStripComboBox
         '
+        Me.COMSelectToolStripComboBox.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
         Me.COMSelectToolStripComboBox.Name = "COMSelectToolStripComboBox"
         Me.COMSelectToolStripComboBox.Size = New System.Drawing.Size(121, 28)
         '
@@ -157,12 +159,14 @@ Partial Class URCTestForm
         '
         'ExitButton
         '
+        Me.ExitButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(167, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.ExitButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.ExitButton.Location = New System.Drawing.Point(778, 501)
         Me.ExitButton.Name = "ExitButton"
         Me.ExitButton.Size = New System.Drawing.Size(90, 52)
         Me.ExitButton.TabIndex = 1
         Me.ExitButton.Text = "Exit"
-        Me.ExitButton.UseVisualStyleBackColor = True
+        Me.ExitButton.UseVisualStyleBackColor = False
         '
         'SerialCOMTimer
         '
@@ -227,7 +231,7 @@ Partial Class URCTestForm
         'RobotAddressLabel
         '
         Me.RobotAddressLabel.AutoSize = True
-        Me.RobotAddressLabel.Location = New System.Drawing.Point(394, 154)
+        Me.RobotAddressLabel.Location = New System.Drawing.Point(402, 154)
         Me.RobotAddressLabel.Name = "RobotAddressLabel"
         Me.RobotAddressLabel.Size = New System.Drawing.Size(102, 17)
         Me.RobotAddressLabel.TabIndex = 8
@@ -439,7 +443,7 @@ Partial Class URCTestForm
         'RightBumperLabel
         '
         Me.RightBumperLabel.AutoSize = True
-        Me.RightBumperLabel.Location = New System.Drawing.Point(777, 72)
+        Me.RightBumperLabel.Location = New System.Drawing.Point(777, 85)
         Me.RightBumperLabel.Name = "RightBumperLabel"
         Me.RightBumperLabel.Size = New System.Drawing.Size(94, 17)
         Me.RightBumperLabel.TabIndex = 30
@@ -449,7 +453,7 @@ Partial Class URCTestForm
         '
         Me.RightBumperIndicatorButton.BackColor = System.Drawing.Color.Gray
         Me.RightBumperIndicatorButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.RightBumperIndicatorButton.Location = New System.Drawing.Point(814, 50)
+        Me.RightBumperIndicatorButton.Location = New System.Drawing.Point(814, 63)
         Me.RightBumperIndicatorButton.Name = "RightBumperIndicatorButton"
         Me.RightBumperIndicatorButton.Size = New System.Drawing.Size(17, 19)
         Me.RightBumperIndicatorButton.TabIndex = 29
@@ -518,16 +522,18 @@ Partial Class URCTestForm
         '
         'MenuStrip
         '
+        Me.MenuStrip.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(130, Byte), Integer), CType(CType(130, Byte), Integer))
         Me.MenuStrip.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ConnectionToolStripMenuItem, Me.ViewToolStripMenuItem, Me.AboutToolStripMenuItem})
         Me.MenuStrip.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip.Name = "MenuStrip"
-        Me.MenuStrip.Size = New System.Drawing.Size(880, 28)
+        Me.MenuStrip.Size = New System.Drawing.Size(942, 28)
         Me.MenuStrip.TabIndex = 40
         Me.MenuStrip.Text = "MenuStrip1"
         '
         'ConnectionToolStripMenuItem
         '
+        Me.ConnectionToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
         Me.ConnectionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ConnectMenuItem, Me.DisconnectMenuItem})
         Me.ConnectionToolStripMenuItem.Name = "ConnectionToolStripMenuItem"
         Me.ConnectionToolStripMenuItem.Size = New System.Drawing.Size(98, 24)
@@ -547,6 +553,7 @@ Partial Class URCTestForm
         '
         'ViewToolStripMenuItem
         '
+        Me.ViewToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
         Me.ViewToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Joystick1MenuItem, Me.Jostick2ToolStripMenuItem, Me.Joystick3ToolStripMenuItem, Me.ButtonsMenuItem})
         Me.ViewToolStripMenuItem.Name = "ViewToolStripMenuItem"
         Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(55, 24)
@@ -696,6 +703,7 @@ Partial Class URCTestForm
         '
         'AboutToolStripMenuItem
         '
+        Me.AboutToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
         Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(64, 24)
         Me.AboutToolStripMenuItem.Text = "About"
@@ -756,6 +764,7 @@ Partial Class URCTestForm
         '
         'ConnectCOMToolStripButton
         '
+        Me.ConnectCOMToolStripButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
         Me.ConnectCOMToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.ConnectCOMToolStripButton.Image = Global.Universal_Remote_Control_Test_Software.My.Resources.Resources.icons8_usb_connector_30
         Me.ConnectCOMToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
@@ -765,6 +774,7 @@ Partial Class URCTestForm
         '
         'DisconnetToolStripButton
         '
+        Me.DisconnetToolStripButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
         Me.DisconnetToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.DisconnetToolStripButton.Image = Global.Universal_Remote_Control_Test_Software.My.Resources.Resources.icons8_disconnect_30
         Me.DisconnetToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
@@ -776,7 +786,8 @@ Partial Class URCTestForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(880, 565)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(942, 618)
         Me.Controls.Add(Me.Joystick3PictureBox)
         Me.Controls.Add(Me.Joystick2PictureBox)
         Me.Controls.Add(Me.Joystick1PictureBox)
