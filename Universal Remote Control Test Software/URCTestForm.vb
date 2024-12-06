@@ -549,5 +549,17 @@ Public Class URCTestForm
         buttonOffColor = Color.Gray
         TestButtons()
     End Sub
-
+    '************************Change Background Image*********************************************************
+    Private Sub PCBBackgroundMenuItem_Click(sender As Object, e As EventArgs) Handles PCBBackgroundMenuItem.Click
+        PCBBackgroundPictureBox.Visible = True
+        CaseBackgroundPictureBox.Visible = False
+    End Sub
+    Private Sub NoneBackroundMenuItem_Click(sender As Object, e As EventArgs) Handles NoneBackroundMenuItem.Click
+        PCBBackgroundPictureBox.Visible = False
+        CaseBackgroundPictureBox.Visible = False
+    End Sub
+    Private Sub CaseBackgroundMenuItem_Click(sender As Object, e As EventArgs) Handles CaseBackgroundMenuItem.Click
+        CaseBackgroundPictureBox.Visible = True
+        PCBBackgroundPictureBox.Visible = False
+    End Sub
 End Class

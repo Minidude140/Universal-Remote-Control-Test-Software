@@ -102,11 +102,17 @@ Partial Class URCTestForm
         Me.Joy1SetDefaultJoystickDisplayMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Joy2SetDefaultJoystickDisplayMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Joy3SetDefaultJoystickDisplayMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BackgroundImageMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PCBBackgroundMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CaseBackgroundMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NoneBackroundMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Joystick3PictureBox = New System.Windows.Forms.PictureBox()
         Me.Joystick2PictureBox = New System.Windows.Forms.PictureBox()
         Me.Joystick1PictureBox = New System.Windows.Forms.PictureBox()
         Me.ConnectCOMToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.DisconnetToolStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.PCBBackgroundPictureBox = New System.Windows.Forms.PictureBox()
+        Me.CaseBackgroundPictureBox = New System.Windows.Forms.PictureBox()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.Joystick1LRTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Joystick1UDTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -118,6 +124,8 @@ Partial Class URCTestForm
         CType(Me.Joystick3PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Joystick2PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Joystick1PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PCBBackgroundPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CaseBackgroundPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ToolStrip1
@@ -127,7 +135,7 @@ Partial Class URCTestForm
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.COMSelectToolStripComboBox, Me.ToolStripSeparator1, Me.ConnectCOMToolStripButton, Me.ToolStripSeparator2, Me.DisconnetToolStripButton, Me.ToolStripSeparator3})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 28)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(942, 28)
+        Me.ToolStrip1.Size = New System.Drawing.Size(944, 28)
         Me.ToolStrip1.TabIndex = 0
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -161,7 +169,7 @@ Partial Class URCTestForm
         '
         Me.ExitButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(167, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(167, Byte), Integer))
         Me.ExitButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.ExitButton.Location = New System.Drawing.Point(778, 501)
+        Me.ExitButton.Location = New System.Drawing.Point(840, 554)
         Me.ExitButton.Name = "ExitButton"
         Me.ExitButton.Size = New System.Drawing.Size(90, 52)
         Me.ExitButton.TabIndex = 1
@@ -174,7 +182,7 @@ Partial Class URCTestForm
         'Joystick1UDLabel
         '
         Me.Joystick1UDLabel.AutoSize = True
-        Me.Joystick1UDLabel.Location = New System.Drawing.Point(371, 446)
+        Me.Joystick1UDLabel.Location = New System.Drawing.Point(293, 511)
         Me.Joystick1UDLabel.Name = "Joystick1UDLabel"
         Me.Joystick1UDLabel.Size = New System.Drawing.Size(94, 17)
         Me.Joystick1UDLabel.TabIndex = 2
@@ -183,7 +191,7 @@ Partial Class URCTestForm
         'Joystick1LRLabel
         '
         Me.Joystick1LRLabel.AutoSize = True
-        Me.Joystick1LRLabel.Location = New System.Drawing.Point(259, 353)
+        Me.Joystick1LRLabel.Location = New System.Drawing.Point(194, 418)
         Me.Joystick1LRLabel.Name = "Joystick1LRLabel"
         Me.Joystick1LRLabel.Size = New System.Drawing.Size(92, 17)
         Me.Joystick1LRLabel.TabIndex = 3
@@ -193,7 +201,7 @@ Partial Class URCTestForm
         'Joystick2LRLabel
         '
         Me.Joystick2LRLabel.AutoSize = True
-        Me.Joystick2LRLabel.Location = New System.Drawing.Point(542, 357)
+        Me.Joystick2LRLabel.Location = New System.Drawing.Point(681, 406)
         Me.Joystick2LRLabel.Name = "Joystick2LRLabel"
         Me.Joystick2LRLabel.Size = New System.Drawing.Size(92, 17)
         Me.Joystick2LRLabel.TabIndex = 5
@@ -203,7 +211,7 @@ Partial Class URCTestForm
         'Joystick2UDLabel
         '
         Me.Joystick2UDLabel.AutoSize = True
-        Me.Joystick2UDLabel.Location = New System.Drawing.Point(649, 451)
+        Me.Joystick2UDLabel.Location = New System.Drawing.Point(785, 500)
         Me.Joystick2UDLabel.Name = "Joystick2UDLabel"
         Me.Joystick2UDLabel.Size = New System.Drawing.Size(94, 17)
         Me.Joystick2UDLabel.TabIndex = 4
@@ -212,7 +220,7 @@ Partial Class URCTestForm
         'Joystick3LRLabel
         '
         Me.Joystick3LRLabel.AutoSize = True
-        Me.Joystick3LRLabel.Location = New System.Drawing.Point(666, 123)
+        Me.Joystick3LRLabel.Location = New System.Drawing.Point(794, 207)
         Me.Joystick3LRLabel.Name = "Joystick3LRLabel"
         Me.Joystick3LRLabel.Size = New System.Drawing.Size(92, 17)
         Me.Joystick3LRLabel.TabIndex = 7
@@ -222,7 +230,7 @@ Partial Class URCTestForm
         'Joystick3UDLabel
         '
         Me.Joystick3UDLabel.AutoSize = True
-        Me.Joystick3UDLabel.Location = New System.Drawing.Point(774, 220)
+        Me.Joystick3UDLabel.Location = New System.Drawing.Point(898, 304)
         Me.Joystick3UDLabel.Name = "Joystick3UDLabel"
         Me.Joystick3UDLabel.Size = New System.Drawing.Size(94, 17)
         Me.Joystick3UDLabel.TabIndex = 6
@@ -231,7 +239,7 @@ Partial Class URCTestForm
         'RobotAddressLabel
         '
         Me.RobotAddressLabel.AutoSize = True
-        Me.RobotAddressLabel.Location = New System.Drawing.Point(402, 154)
+        Me.RobotAddressLabel.Location = New System.Drawing.Point(458, 255)
         Me.RobotAddressLabel.Name = "RobotAddressLabel"
         Me.RobotAddressLabel.Size = New System.Drawing.Size(102, 17)
         Me.RobotAddressLabel.TabIndex = 8
@@ -240,7 +248,7 @@ Partial Class URCTestForm
         '
         'Joystick1LRTrackBar
         '
-        Me.Joystick1LRTrackBar.Location = New System.Drawing.Point(225, 368)
+        Me.Joystick1LRTrackBar.Location = New System.Drawing.Point(160, 433)
         Me.Joystick1LRTrackBar.Maximum = 255
         Me.Joystick1LRTrackBar.Name = "Joystick1LRTrackBar"
         Me.Joystick1LRTrackBar.RightToLeft = System.Windows.Forms.RightToLeft.Yes
@@ -250,7 +258,7 @@ Partial Class URCTestForm
         '
         'Joystick1UDTrackBar
         '
-        Me.Joystick1UDTrackBar.Location = New System.Drawing.Point(332, 404)
+        Me.Joystick1UDTrackBar.Location = New System.Drawing.Point(255, 469)
         Me.Joystick1UDTrackBar.Maximum = 255
         Me.Joystick1UDTrackBar.Name = "Joystick1UDTrackBar"
         Me.Joystick1UDTrackBar.Orientation = System.Windows.Forms.Orientation.Vertical
@@ -262,7 +270,7 @@ Partial Class URCTestForm
         '
         'Joystick2LRTrackBar
         '
-        Me.Joystick2LRTrackBar.Location = New System.Drawing.Point(510, 373)
+        Me.Joystick2LRTrackBar.Location = New System.Drawing.Point(649, 422)
         Me.Joystick2LRTrackBar.Maximum = 255
         Me.Joystick2LRTrackBar.Name = "Joystick2LRTrackBar"
         Me.Joystick2LRTrackBar.RightToLeft = System.Windows.Forms.RightToLeft.Yes
@@ -272,7 +280,7 @@ Partial Class URCTestForm
         '
         'Joystick2UDTrackBar
         '
-        Me.Joystick2UDTrackBar.Location = New System.Drawing.Point(613, 403)
+        Me.Joystick2UDTrackBar.Location = New System.Drawing.Point(747, 452)
         Me.Joystick2UDTrackBar.Maximum = 255
         Me.Joystick2UDTrackBar.Name = "Joystick2UDTrackBar"
         Me.Joystick2UDTrackBar.Orientation = System.Windows.Forms.Orientation.Vertical
@@ -284,7 +292,7 @@ Partial Class URCTestForm
         '
         'Joystick3LRTrackBar
         '
-        Me.Joystick3LRTrackBar.Location = New System.Drawing.Point(635, 139)
+        Me.Joystick3LRTrackBar.Location = New System.Drawing.Point(763, 223)
         Me.Joystick3LRTrackBar.Maximum = 255
         Me.Joystick3LRTrackBar.Name = "Joystick3LRTrackBar"
         Me.Joystick3LRTrackBar.RightToLeft = System.Windows.Forms.RightToLeft.Yes
@@ -294,7 +302,7 @@ Partial Class URCTestForm
         '
         'Joystick3UDTrackBar
         '
-        Me.Joystick3UDTrackBar.Location = New System.Drawing.Point(737, 173)
+        Me.Joystick3UDTrackBar.Location = New System.Drawing.Point(859, 257)
         Me.Joystick3UDTrackBar.Maximum = 255
         Me.Joystick3UDTrackBar.Name = "Joystick3UDTrackBar"
         Me.Joystick3UDTrackBar.Orientation = System.Windows.Forms.Orientation.Vertical
@@ -307,8 +315,9 @@ Partial Class URCTestForm
         'AddressLabel
         '
         Me.AddressLabel.AutoSize = True
+        Me.AddressLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
         Me.AddressLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AddressLabel.Location = New System.Drawing.Point(351, 132)
+        Me.AddressLabel.Location = New System.Drawing.Point(407, 233)
         Me.AddressLabel.Name = "AddressLabel"
         Me.AddressLabel.Size = New System.Drawing.Size(120, 20)
         Me.AddressLabel.TabIndex = 15
@@ -319,7 +328,7 @@ Partial Class URCTestForm
         '
         Me.Joystick1Label.AutoSize = True
         Me.Joystick1Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Joystick1Label.Location = New System.Drawing.Point(230, 328)
+        Me.Joystick1Label.Location = New System.Drawing.Point(165, 393)
         Me.Joystick1Label.Name = "Joystick1Label"
         Me.Joystick1Label.Size = New System.Drawing.Size(84, 20)
         Me.Joystick1Label.TabIndex = 16
@@ -329,7 +338,7 @@ Partial Class URCTestForm
         '
         Me.Joystick2Label.AutoSize = True
         Me.Joystick2Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Joystick2Label.Location = New System.Drawing.Point(510, 333)
+        Me.Joystick2Label.Location = New System.Drawing.Point(649, 382)
         Me.Joystick2Label.Name = "Joystick2Label"
         Me.Joystick2Label.Size = New System.Drawing.Size(84, 20)
         Me.Joystick2Label.TabIndex = 17
@@ -339,7 +348,7 @@ Partial Class URCTestForm
         '
         Me.Joystick3Label.AutoSize = True
         Me.Joystick3Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Joystick3Label.Location = New System.Drawing.Point(634, 99)
+        Me.Joystick3Label.Location = New System.Drawing.Point(762, 183)
         Me.Joystick3Label.Name = "Joystick3Label"
         Me.Joystick3Label.Size = New System.Drawing.Size(84, 20)
         Me.Joystick3Label.TabIndex = 18
@@ -349,7 +358,7 @@ Partial Class URCTestForm
         '
         Me.Button1Indicator.BackColor = System.Drawing.Color.Gray
         Me.Button1Indicator.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button1Indicator.Location = New System.Drawing.Point(158, 230)
+        Me.Button1Indicator.Location = New System.Drawing.Point(107, 359)
         Me.Button1Indicator.Name = "Button1Indicator"
         Me.Button1Indicator.Size = New System.Drawing.Size(17, 19)
         Me.Button1Indicator.TabIndex = 19
@@ -358,7 +367,7 @@ Partial Class URCTestForm
         'Button1Label
         '
         Me.Button1Label.AutoSize = True
-        Me.Button1Label.Location = New System.Drawing.Point(137, 252)
+        Me.Button1Label.Location = New System.Drawing.Point(86, 381)
         Me.Button1Label.Name = "Button1Label"
         Me.Button1Label.Size = New System.Drawing.Size(61, 17)
         Me.Button1Label.TabIndex = 20
@@ -367,7 +376,7 @@ Partial Class URCTestForm
         'Button2Label
         '
         Me.Button2Label.AutoSize = True
-        Me.Button2Label.Location = New System.Drawing.Point(188, 208)
+        Me.Button2Label.Location = New System.Drawing.Point(148, 311)
         Me.Button2Label.Name = "Button2Label"
         Me.Button2Label.Size = New System.Drawing.Size(61, 17)
         Me.Button2Label.TabIndex = 22
@@ -377,7 +386,7 @@ Partial Class URCTestForm
         '
         Me.Button2Indicator.BackColor = System.Drawing.Color.Gray
         Me.Button2Indicator.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button2Indicator.Location = New System.Drawing.Point(209, 186)
+        Me.Button2Indicator.Location = New System.Drawing.Point(169, 289)
         Me.Button2Indicator.Name = "Button2Indicator"
         Me.Button2Indicator.Size = New System.Drawing.Size(17, 19)
         Me.Button2Indicator.TabIndex = 21
@@ -386,7 +395,7 @@ Partial Class URCTestForm
         'Button3Label
         '
         Me.Button3Label.AutoSize = True
-        Me.Button3Label.Location = New System.Drawing.Point(91, 208)
+        Me.Button3Label.Location = New System.Drawing.Point(23, 311)
         Me.Button3Label.Name = "Button3Label"
         Me.Button3Label.Size = New System.Drawing.Size(61, 17)
         Me.Button3Label.TabIndex = 24
@@ -396,7 +405,7 @@ Partial Class URCTestForm
         '
         Me.Button3Indicator.BackColor = System.Drawing.Color.Gray
         Me.Button3Indicator.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button3Indicator.Location = New System.Drawing.Point(112, 186)
+        Me.Button3Indicator.Location = New System.Drawing.Point(44, 289)
         Me.Button3Indicator.Name = "Button3Indicator"
         Me.Button3Indicator.Size = New System.Drawing.Size(17, 19)
         Me.Button3Indicator.TabIndex = 23
@@ -405,7 +414,7 @@ Partial Class URCTestForm
         'Button4Label
         '
         Me.Button4Label.AutoSize = True
-        Me.Button4Label.Location = New System.Drawing.Point(137, 161)
+        Me.Button4Label.Location = New System.Drawing.Point(86, 245)
         Me.Button4Label.Name = "Button4Label"
         Me.Button4Label.Size = New System.Drawing.Size(61, 17)
         Me.Button4Label.TabIndex = 26
@@ -415,7 +424,7 @@ Partial Class URCTestForm
         '
         Me.Button4Indicator.BackColor = System.Drawing.Color.Gray
         Me.Button4Indicator.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button4Indicator.Location = New System.Drawing.Point(158, 139)
+        Me.Button4Indicator.Location = New System.Drawing.Point(107, 223)
         Me.Button4Indicator.Name = "Button4Indicator"
         Me.Button4Indicator.Size = New System.Drawing.Size(17, 19)
         Me.Button4Indicator.TabIndex = 25
@@ -424,7 +433,7 @@ Partial Class URCTestForm
         'LeftBumperLabel
         '
         Me.LeftBumperLabel.AutoSize = True
-        Me.LeftBumperLabel.Location = New System.Drawing.Point(34, 86)
+        Me.LeftBumperLabel.Location = New System.Drawing.Point(63, 156)
         Me.LeftBumperLabel.Name = "LeftBumperLabel"
         Me.LeftBumperLabel.Size = New System.Drawing.Size(85, 17)
         Me.LeftBumperLabel.TabIndex = 28
@@ -434,7 +443,7 @@ Partial Class URCTestForm
         '
         Me.LeftBumperIndicatorButton.BackColor = System.Drawing.Color.Gray
         Me.LeftBumperIndicatorButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.LeftBumperIndicatorButton.Location = New System.Drawing.Point(65, 64)
+        Me.LeftBumperIndicatorButton.Location = New System.Drawing.Point(94, 134)
         Me.LeftBumperIndicatorButton.Name = "LeftBumperIndicatorButton"
         Me.LeftBumperIndicatorButton.Size = New System.Drawing.Size(17, 19)
         Me.LeftBumperIndicatorButton.TabIndex = 27
@@ -443,7 +452,7 @@ Partial Class URCTestForm
         'RightBumperLabel
         '
         Me.RightBumperLabel.AutoSize = True
-        Me.RightBumperLabel.Location = New System.Drawing.Point(777, 85)
+        Me.RightBumperLabel.Location = New System.Drawing.Point(797, 145)
         Me.RightBumperLabel.Name = "RightBumperLabel"
         Me.RightBumperLabel.Size = New System.Drawing.Size(94, 17)
         Me.RightBumperLabel.TabIndex = 30
@@ -453,7 +462,7 @@ Partial Class URCTestForm
         '
         Me.RightBumperIndicatorButton.BackColor = System.Drawing.Color.Gray
         Me.RightBumperIndicatorButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.RightBumperIndicatorButton.Location = New System.Drawing.Point(814, 63)
+        Me.RightBumperIndicatorButton.Location = New System.Drawing.Point(834, 123)
         Me.RightBumperIndicatorButton.Name = "RightBumperIndicatorButton"
         Me.RightBumperIndicatorButton.Size = New System.Drawing.Size(17, 19)
         Me.RightBumperIndicatorButton.TabIndex = 29
@@ -462,7 +471,7 @@ Partial Class URCTestForm
         'Joystick1ButtonLabel
         '
         Me.Joystick1ButtonLabel.AutoSize = True
-        Me.Joystick1ButtonLabel.Location = New System.Drawing.Point(236, 540)
+        Me.Joystick1ButtonLabel.Location = New System.Drawing.Point(160, 593)
         Me.Joystick1ButtonLabel.Name = "Joystick1ButtonLabel"
         Me.Joystick1ButtonLabel.Size = New System.Drawing.Size(115, 17)
         Me.Joystick1ButtonLabel.TabIndex = 32
@@ -472,7 +481,7 @@ Partial Class URCTestForm
         '
         Me.Joystick1IndicatorButton.BackColor = System.Drawing.Color.Gray
         Me.Joystick1IndicatorButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Joystick1IndicatorButton.Location = New System.Drawing.Point(273, 518)
+        Me.Joystick1IndicatorButton.Location = New System.Drawing.Point(197, 571)
         Me.Joystick1IndicatorButton.Name = "Joystick1IndicatorButton"
         Me.Joystick1IndicatorButton.Size = New System.Drawing.Size(17, 19)
         Me.Joystick1IndicatorButton.TabIndex = 31
@@ -481,7 +490,7 @@ Partial Class URCTestForm
         'Joystick2ButtonLabel
         '
         Me.Joystick2ButtonLabel.AutoSize = True
-        Me.Joystick2ButtonLabel.Location = New System.Drawing.Point(511, 540)
+        Me.Joystick2ButtonLabel.Location = New System.Drawing.Point(650, 582)
         Me.Joystick2ButtonLabel.Name = "Joystick2ButtonLabel"
         Me.Joystick2ButtonLabel.Size = New System.Drawing.Size(115, 17)
         Me.Joystick2ButtonLabel.TabIndex = 34
@@ -491,7 +500,7 @@ Partial Class URCTestForm
         '
         Me.Joystick2IndicatorButton.BackColor = System.Drawing.Color.Gray
         Me.Joystick2IndicatorButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Joystick2IndicatorButton.Location = New System.Drawing.Point(555, 518)
+        Me.Joystick2IndicatorButton.Location = New System.Drawing.Point(694, 560)
         Me.Joystick2IndicatorButton.Name = "Joystick2IndicatorButton"
         Me.Joystick2IndicatorButton.Size = New System.Drawing.Size(17, 19)
         Me.Joystick2IndicatorButton.TabIndex = 33
@@ -500,7 +509,7 @@ Partial Class URCTestForm
         'Joystick3ButtonLabel
         '
         Me.Joystick3ButtonLabel.AutoSize = True
-        Me.Joystick3ButtonLabel.Location = New System.Drawing.Point(635, 297)
+        Me.Joystick3ButtonLabel.Location = New System.Drawing.Point(770, 381)
         Me.Joystick3ButtonLabel.Name = "Joystick3ButtonLabel"
         Me.Joystick3ButtonLabel.Size = New System.Drawing.Size(115, 17)
         Me.Joystick3ButtonLabel.TabIndex = 36
@@ -510,7 +519,7 @@ Partial Class URCTestForm
         '
         Me.Joystick3IndicatorButton.BackColor = System.Drawing.Color.Gray
         Me.Joystick3IndicatorButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Joystick3IndicatorButton.Location = New System.Drawing.Point(678, 275)
+        Me.Joystick3IndicatorButton.Location = New System.Drawing.Point(813, 359)
         Me.Joystick3IndicatorButton.Name = "Joystick3IndicatorButton"
         Me.Joystick3IndicatorButton.Size = New System.Drawing.Size(17, 19)
         Me.Joystick3IndicatorButton.TabIndex = 35
@@ -527,7 +536,7 @@ Partial Class URCTestForm
         Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ConnectionToolStripMenuItem, Me.ViewToolStripMenuItem, Me.AboutToolStripMenuItem})
         Me.MenuStrip.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip.Name = "MenuStrip"
-        Me.MenuStrip.Size = New System.Drawing.Size(942, 28)
+        Me.MenuStrip.Size = New System.Drawing.Size(944, 28)
         Me.MenuStrip.TabIndex = 40
         Me.MenuStrip.Text = "MenuStrip1"
         '
@@ -554,7 +563,7 @@ Partial Class URCTestForm
         'ViewToolStripMenuItem
         '
         Me.ViewToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
-        Me.ViewToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Joystick1MenuItem, Me.Jostick2ToolStripMenuItem, Me.Joystick3ToolStripMenuItem, Me.ButtonsMenuItem})
+        Me.ViewToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Joystick1MenuItem, Me.Jostick2ToolStripMenuItem, Me.Joystick3ToolStripMenuItem, Me.ButtonsMenuItem, Me.BackgroundImageMenuItem})
         Me.ViewToolStripMenuItem.Name = "ViewToolStripMenuItem"
         Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(55, 24)
         Me.ViewToolStripMenuItem.Text = "View"
@@ -563,7 +572,7 @@ Partial Class URCTestForm
         '
         Me.Joystick1MenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Joy1ToggleLeftRightDataMenuItem, Me.Joy1ToggleLeftRightTrackBarMenuItem, Me.Joy1ToggleUpDownDataMenuItem, Me.Joy1ToggleUpDownTrackBarMenuItem, Me.Joy1TogglePositionGraphMenuItem, Me.Joy1ChangPositionDotColorMenuItem, Me.Joy1SetDefaultJoystickDisplayMenuItem})
         Me.Joystick1MenuItem.Name = "Joystick1MenuItem"
-        Me.Joystick1MenuItem.Size = New System.Drawing.Size(154, 26)
+        Me.Joystick1MenuItem.Size = New System.Drawing.Size(224, 26)
         Me.Joystick1MenuItem.Text = "Joystick 1"
         '
         'Joy1ToggleLeftRightDataMenuItem
@@ -606,7 +615,7 @@ Partial Class URCTestForm
         '
         Me.Jostick2ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Joy2ToggleLeftRightDataMenuItem, Me.Joy2ToggleLeftRightTrackBarMenuItem, Me.Joy2ToggleUpDownDataMenuItem, Me.Joy2ToggleUpDownTrackBarMenuItem, Me.Joy2TogglePositionGraphMenuItem, Me.Joy2ChangePositionDotColorMenuItem, Me.Joy2SetDefaultJoystickDisplayMenuItem})
         Me.Jostick2ToolStripMenuItem.Name = "Jostick2ToolStripMenuItem"
-        Me.Jostick2ToolStripMenuItem.Size = New System.Drawing.Size(154, 26)
+        Me.Jostick2ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.Jostick2ToolStripMenuItem.Text = "Joystick 2"
         '
         'Joy2ToggleLeftRightDataMenuItem
@@ -643,7 +652,7 @@ Partial Class URCTestForm
         '
         Me.Joystick3ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Joy3ToggleLeftRightDataMenuItem, Me.Joy3ToggleLeftRightTrackBarMenuItem, Me.Joy3ToggleUpDownDataMenuItem, Me.Joy3ToggleUpDownTrackBarMenuItem, Me.Joy3TogglePositionGraphMenuItem, Me.Joy3ChangePositionDotColorMenuItem, Me.Joy3SetDefaultJoystickDisplayMenuItem})
         Me.Joystick3ToolStripMenuItem.Name = "Joystick3ToolStripMenuItem"
-        Me.Joystick3ToolStripMenuItem.Size = New System.Drawing.Size(154, 26)
+        Me.Joystick3ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.Joystick3ToolStripMenuItem.Text = "Joystick 3"
         '
         'Joy3ToggleLeftRightDataMenuItem
@@ -680,7 +689,7 @@ Partial Class URCTestForm
         '
         Me.ButtonsMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ChangeButtonOffColorMenuItem, Me.ChangeButtonOnColorMenuItem, Me.SetDefaultButtonColorsMenuItem})
         Me.ButtonsMenuItem.Name = "ButtonsMenuItem"
-        Me.ButtonsMenuItem.Size = New System.Drawing.Size(154, 26)
+        Me.ButtonsMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.ButtonsMenuItem.Text = "Buttons"
         '
         'ChangeButtonOffColorMenuItem
@@ -738,9 +747,34 @@ Partial Class URCTestForm
         Me.Joy3SetDefaultJoystickDisplayMenuItem.Size = New System.Drawing.Size(273, 26)
         Me.Joy3SetDefaultJoystickDisplayMenuItem.Text = "Set Default Joystick Display"
         '
+        'BackgroundImageMenuItem
+        '
+        Me.BackgroundImageMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PCBBackgroundMenuItem, Me.CaseBackgroundMenuItem, Me.NoneBackroundMenuItem})
+        Me.BackgroundImageMenuItem.Name = "BackgroundImageMenuItem"
+        Me.BackgroundImageMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.BackgroundImageMenuItem.Text = "Background Image"
+        '
+        'PCBBackgroundMenuItem
+        '
+        Me.PCBBackgroundMenuItem.Name = "PCBBackgroundMenuItem"
+        Me.PCBBackgroundMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.PCBBackgroundMenuItem.Text = "PCB"
+        '
+        'CaseBackgroundMenuItem
+        '
+        Me.CaseBackgroundMenuItem.Name = "CaseBackgroundMenuItem"
+        Me.CaseBackgroundMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.CaseBackgroundMenuItem.Text = "Case"
+        '
+        'NoneBackroundMenuItem
+        '
+        Me.NoneBackroundMenuItem.Name = "NoneBackroundMenuItem"
+        Me.NoneBackroundMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.NoneBackroundMenuItem.Text = "None"
+        '
         'Joystick3PictureBox
         '
-        Me.Joystick3PictureBox.Location = New System.Drawing.Point(646, 184)
+        Me.Joystick3PictureBox.Location = New System.Drawing.Point(774, 268)
         Me.Joystick3PictureBox.Name = "Joystick3PictureBox"
         Me.Joystick3PictureBox.Size = New System.Drawing.Size(85, 85)
         Me.Joystick3PictureBox.TabIndex = 39
@@ -748,7 +782,7 @@ Partial Class URCTestForm
         '
         'Joystick2PictureBox
         '
-        Me.Joystick2PictureBox.Location = New System.Drawing.Point(522, 412)
+        Me.Joystick2PictureBox.Location = New System.Drawing.Point(661, 461)
         Me.Joystick2PictureBox.Name = "Joystick2PictureBox"
         Me.Joystick2PictureBox.Size = New System.Drawing.Size(85, 85)
         Me.Joystick2PictureBox.TabIndex = 38
@@ -756,7 +790,7 @@ Partial Class URCTestForm
         '
         'Joystick1PictureBox
         '
-        Me.Joystick1PictureBox.Location = New System.Drawing.Point(234, 412)
+        Me.Joystick1PictureBox.Location = New System.Drawing.Point(169, 477)
         Me.Joystick1PictureBox.Name = "Joystick1PictureBox"
         Me.Joystick1PictureBox.Size = New System.Drawing.Size(85, 85)
         Me.Joystick1PictureBox.TabIndex = 37
@@ -782,12 +816,34 @@ Partial Class URCTestForm
         Me.DisconnetToolStripButton.Size = New System.Drawing.Size(29, 25)
         Me.DisconnetToolStripButton.Text = "ToolStripButton1"
         '
+        'PCBBackgroundPictureBox
+        '
+        Me.PCBBackgroundPictureBox.BackgroundImage = Global.Universal_Remote_Control_Test_Software.My.Resources.Resources.URC_PCB_1
+        Me.PCBBackgroundPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PCBBackgroundPictureBox.Location = New System.Drawing.Point(6, 64)
+        Me.PCBBackgroundPictureBox.Name = "PCBBackgroundPictureBox"
+        Me.PCBBackgroundPictureBox.Size = New System.Drawing.Size(935, 550)
+        Me.PCBBackgroundPictureBox.TabIndex = 41
+        Me.PCBBackgroundPictureBox.TabStop = False
+        Me.PCBBackgroundPictureBox.Visible = False
+        '
+        'CaseBackgroundPictureBox
+        '
+        Me.CaseBackgroundPictureBox.BackgroundImage = Global.Universal_Remote_Control_Test_Software.My.Resources.Resources.URC_Case_1
+        Me.CaseBackgroundPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.CaseBackgroundPictureBox.Location = New System.Drawing.Point(6, 64)
+        Me.CaseBackgroundPictureBox.Name = "CaseBackgroundPictureBox"
+        Me.CaseBackgroundPictureBox.Size = New System.Drawing.Size(935, 550)
+        Me.CaseBackgroundPictureBox.TabIndex = 42
+        Me.CaseBackgroundPictureBox.TabStop = False
+        Me.CaseBackgroundPictureBox.Visible = False
+        '
         'URCTestForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(942, 618)
+        Me.ClientSize = New System.Drawing.Size(944, 618)
         Me.Controls.Add(Me.Joystick3PictureBox)
         Me.Controls.Add(Me.Joystick2PictureBox)
         Me.Controls.Add(Me.Joystick1PictureBox)
@@ -829,6 +885,8 @@ Partial Class URCTestForm
         Me.Controls.Add(Me.ExitButton)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.MenuStrip)
+        Me.Controls.Add(Me.CaseBackgroundPictureBox)
+        Me.Controls.Add(Me.PCBBackgroundPictureBox)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.MainMenuStrip = Me.MenuStrip
         Me.Name = "URCTestForm"
@@ -847,6 +905,8 @@ Partial Class URCTestForm
         CType(Me.Joystick3PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Joystick2PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Joystick1PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PCBBackgroundPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CaseBackgroundPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -936,4 +996,10 @@ Partial Class URCTestForm
     Friend WithEvents Joy1SetDefaultJoystickDisplayMenuItem As ToolStripMenuItem
     Friend WithEvents Joy2SetDefaultJoystickDisplayMenuItem As ToolStripMenuItem
     Friend WithEvents Joy3SetDefaultJoystickDisplayMenuItem As ToolStripMenuItem
+    Friend WithEvents PCBBackgroundPictureBox As PictureBox
+    Friend WithEvents BackgroundImageMenuItem As ToolStripMenuItem
+    Friend WithEvents PCBBackgroundMenuItem As ToolStripMenuItem
+    Friend WithEvents CaseBackgroundMenuItem As ToolStripMenuItem
+    Friend WithEvents NoneBackroundMenuItem As ToolStripMenuItem
+    Friend WithEvents CaseBackgroundPictureBox As PictureBox
 End Class

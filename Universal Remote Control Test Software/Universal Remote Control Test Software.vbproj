@@ -137,5 +137,8 @@
   <ItemGroup>
     <None Include="Resources\URC PCB-1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\URC Case-1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
