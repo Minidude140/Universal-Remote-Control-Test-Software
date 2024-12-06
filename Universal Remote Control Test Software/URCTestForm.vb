@@ -535,4 +535,7 @@ Public Class URCTestForm
         TestButtons()
     End Sub
 
+    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
+        URCAboutForm.Show()
+    End Sub
 End Class

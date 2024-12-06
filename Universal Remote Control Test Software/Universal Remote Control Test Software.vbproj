@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="URCAboutForm.Designer.vb">
+      <DependentUpon>URCAboutForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="URCAboutForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="URCTestForm.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="URCAboutForm.resx">
+      <DependentUpon>URCAboutForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="URCTestForm.resx">
       <DependentUpon>URCTestForm.vb</DependentUpon>
