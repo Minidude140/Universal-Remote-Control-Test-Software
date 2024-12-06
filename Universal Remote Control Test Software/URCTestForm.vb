@@ -19,6 +19,8 @@ Public Class URCTestForm
     Dim Joystick3LR As Integer
     Dim buttonByte1 As Byte
     Dim buttonByte2 As Byte
+    Dim buttonOnColor As Color
+    Dim buttonOffColor As Color
 
     '**********************************************Custom Methods*******************************************
     ''' <summary>
@@ -119,74 +121,74 @@ Public Class URCTestForm
         'Test Button 1
         If TestBit(buttonByte1, 0) = True Then
             'Button is Pressed
-            Button1Indicator.BackColor = Color.GreenYellow
+            Button1Indicator.BackColor = buttonOnColor
         Else
             'Button is Not Pressed
-            Button1Indicator.BackColor = Color.Gray
+            Button1Indicator.BackColor = buttonOffColor
         End If
         'Test Button 2
         If TestBit(buttonByte1, 1) = True Then
             'Button is Pressed
-            Button2Indicator.BackColor = Color.GreenYellow
+            Button2Indicator.BackColor = buttonOnColor
         Else
             'Button is Not Pressed
-            Button2Indicator.BackColor = Color.Gray
+            Button2Indicator.BackColor = buttonOffColor
         End If
         'Test Button 3
         If TestBit(buttonByte1, 2) = True Then
             'Button is Pressed
-            Button3Indicator.BackColor = Color.GreenYellow
+            Button3Indicator.BackColor = buttonOnColor
         Else
             'Button is Not Pressed
-            Button3Indicator.BackColor = Color.Gray
+            Button3Indicator.BackColor = buttonOffColor
         End If
         'Test Button 4
         If TestBit(buttonByte1, 3) = True Then
             'Button is Pressed
-            Button4Indicator.BackColor = Color.GreenYellow
+            Button4Indicator.BackColor = buttonOnColor
         Else
             'Button is Not Pressed
-            Button4Indicator.BackColor = Color.Gray
+            Button4Indicator.BackColor = buttonOffColor
         End If
         'Test Left Bumper
         If TestBit(buttonByte1, 4) = True Then
             'Button is Pressed
-            LeftBumperIndicatorButton.BackColor = Color.GreenYellow
+            LeftBumperIndicatorButton.BackColor = buttonOnColor
         Else
             'Button is Not Pressed
-            LeftBumperIndicatorButton.BackColor = Color.Gray
+            LeftBumperIndicatorButton.BackColor = buttonOffColor
         End If
         'Test Right Bumper
         If TestBit(buttonByte1, 5) = True Then
             'Button is Pressed
-            RightBumperIndicatorButton.BackColor = Color.GreenYellow
+            RightBumperIndicatorButton.BackColor = buttonOnColor
         Else
             'Button is Not Pressed
-            RightBumperIndicatorButton.BackColor = Color.Gray
+            RightBumperIndicatorButton.BackColor = buttonOffColor
         End If
         'Test Joystick 1 Button
         If TestBit(buttonByte1, 6) = True Then
             'Button is Pressed
-            Joystick1IndicatorButton.BackColor = Color.GreenYellow
+            Joystick1IndicatorButton.BackColor = buttonOnColor
         Else
             'Button is Not Pressed
-            Joystick1IndicatorButton.BackColor = Color.Gray
+            Joystick1IndicatorButton.BackColor = buttonOffColor
         End If
         'Test Joystick 2 Button
         If TestBit(buttonByte1, 7) = True Then
             'Button is Pressed
-            Joystick2IndicatorButton.BackColor = Color.GreenYellow
+            Joystick2IndicatorButton.BackColor = buttonOnColor
         Else
             'Button is Not Pressed
-            Joystick2IndicatorButton.BackColor = Color.Gray
+            Joystick2IndicatorButton.BackColor = buttonOffColor
         End If
         'Test Joystick 3 Button
         If TestBit(buttonByte2, 0) = True Then
             'Button is Pressed
-            Joystick3IndicatorButton.BackColor = Color.GreenYellow
+            Joystick3IndicatorButton.BackColor = buttonOnColor
         Else
             'Button is Not Pressed
-            Joystick3IndicatorButton.BackColor = Color.Gray
+            Joystick3IndicatorButton.BackColor = buttonOffColor
         End If
     End Sub
 
@@ -262,6 +264,9 @@ Public Class URCTestForm
         PopulateCOMSelect()
         'Disable Disconnect Button
         DisconnetToolStripButton.Enabled = False
+        'Set Default Button Colors
+        buttonOnColor = Color.GreenYellow
+        buttonOffColor = Color.Gray
         'Start With Each Joystick Axis at Half
         Joystick1LRTrackBar.Value = 128
         Joystick1UDTrackBar.Value = 128
@@ -459,5 +464,21 @@ Public Class URCTestForm
             Joystick3PictureBox.Visible = True
             DrawJoystick3(128, 128)
         End If
+    End Sub
+    '************************Change GUI Button Color*********************************************************
+    Private Sub ChangeButtonOffColorMenuItem_Click(sender As Object, e As EventArgs) Handles ChangeButtonOffColorMenuItem.Click
+        ColorDialog.ShowDialog()
+        buttonOffColor = ColorDialog.Color
+        TestButtons()
+    End Sub
+    Private Sub ChangeButtonOnColorMenuItem_Click(sender As Object, e As EventArgs) Handles ChangeButtonOnColorMenuItem.Click
+        ColorDialog.ShowDialog()
+        buttonOnColor = ColorDialog.Color
+        TestButtons()
+    End Sub
+    Private Sub SetDefaultButtonColorsMenuItem_Click(sender As Object, e As EventArgs) Handles SetDefaultButtonColorsMenuItem.Click
+        buttonOnColor = Color.GreenYellow
+        buttonOffColor = Color.Gray
+        TestButtons()
     End Sub
 End Class

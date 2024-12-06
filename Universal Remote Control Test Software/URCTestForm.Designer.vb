@@ -96,6 +96,11 @@ Partial Class URCTestForm
         Me.Joy3ToggleUpDownDataMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Joy3ToggleUpDownTrackBarMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Joy3TogglePositionGraphMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ButtonsMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ChangeButtonOffColorMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ChangeButtonOnColorMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ColorDialog = New System.Windows.Forms.ColorDialog()
+        Me.SetDefaultButtonColorsMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.Joystick1LRTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Joystick1UDTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -578,7 +583,7 @@ Partial Class URCTestForm
         '
         'ViewToolStripMenuItem
         '
-        Me.ViewToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Joystick1MenuItem, Me.Jostick2ToolStripMenuItem, Me.Joystick3ToolStripMenuItem})
+        Me.ViewToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Joystick1MenuItem, Me.Jostick2ToolStripMenuItem, Me.Joystick3ToolStripMenuItem, Me.ButtonsMenuItem})
         Me.ViewToolStripMenuItem.Name = "ViewToolStripMenuItem"
         Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(55, 24)
         Me.ViewToolStripMenuItem.Text = "View"
@@ -699,6 +704,31 @@ Partial Class URCTestForm
         Me.Joy3TogglePositionGraphMenuItem.Name = "Joy3TogglePositionGraphMenuItem"
         Me.Joy3TogglePositionGraphMenuItem.Size = New System.Drawing.Size(272, 26)
         Me.Joy3TogglePositionGraphMenuItem.Text = "Toggle Position Graph"
+        '
+        'ButtonsMenuItem
+        '
+        Me.ButtonsMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ChangeButtonOffColorMenuItem, Me.ChangeButtonOnColorMenuItem, Me.SetDefaultButtonColorsMenuItem})
+        Me.ButtonsMenuItem.Name = "ButtonsMenuItem"
+        Me.ButtonsMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.ButtonsMenuItem.Text = "Buttons"
+        '
+        'ChangeButtonOffColorMenuItem
+        '
+        Me.ChangeButtonOffColorMenuItem.Name = "ChangeButtonOffColorMenuItem"
+        Me.ChangeButtonOffColorMenuItem.Size = New System.Drawing.Size(260, 26)
+        Me.ChangeButtonOffColorMenuItem.Text = "Change Button Off Color"
+        '
+        'ChangeButtonOnColorMenuItem
+        '
+        Me.ChangeButtonOnColorMenuItem.Name = "ChangeButtonOnColorMenuItem"
+        Me.ChangeButtonOnColorMenuItem.Size = New System.Drawing.Size(260, 26)
+        Me.ChangeButtonOnColorMenuItem.Text = "Change Button On Color"
+        '
+        'SetDefaultButtonColorsMenuItem
+        '
+        Me.SetDefaultButtonColorsMenuItem.Name = "SetDefaultButtonColorsMenuItem"
+        Me.SetDefaultButtonColorsMenuItem.Size = New System.Drawing.Size(260, 26)
+        Me.SetDefaultButtonColorsMenuItem.Text = "Set Default Button Colors"
         '
         'URCTestForm
         '
@@ -842,4 +872,9 @@ Partial Class URCTestForm
     Friend WithEvents Joy3ToggleUpDownDataMenuItem As ToolStripMenuItem
     Friend WithEvents Joy3ToggleUpDownTrackBarMenuItem As ToolStripMenuItem
     Friend WithEvents Joy3TogglePositionGraphMenuItem As ToolStripMenuItem
+    Friend WithEvents ButtonsMenuItem As ToolStripMenuItem
+    Friend WithEvents ChangeButtonOffColorMenuItem As ToolStripMenuItem
+    Friend WithEvents ChangeButtonOnColorMenuItem As ToolStripMenuItem
+    Friend WithEvents ColorDialog As ColorDialog
+    Friend WithEvents SetDefaultButtonColorsMenuItem As ToolStripMenuItem
 End Class
