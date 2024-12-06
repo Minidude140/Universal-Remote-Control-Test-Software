@@ -360,7 +360,7 @@ Public Class URCTestForm
         DrawJoystick3(128, 128)
     End Sub
 
-    '************************Toggle GUI Controls Visible or Not*********************************************************
+    '************************Joystick GUI Controls*********************************************************
     'Joystick 1
     Private Sub ToggleLeftRightDataToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Joy1ToggleLeftRightDataMenuItem.Click
         If Joystick1LRLabel.Visible = True Then
@@ -397,6 +397,21 @@ Public Class URCTestForm
             Joystick1PictureBox.Visible = True
             DrawJoystick1(128, 128)
         End If
+    End Sub
+    Private Sub Joy1ChangPositionDotColorMenuItem_Click(sender As Object, e As EventArgs) Handles Joy1ChangPositionDotColorMenuItem.Click
+        ColorDialog.ShowDialog()
+        Dim tempBrush As New SolidBrush(ColorDialog.Color)
+        joy1PosColor = tempBrush
+        DrawJoystick1(128, 128)
+    End Sub
+    Private Sub Joy1SetDefaultJoystickDisplayMenuItem_Click(sender As Object, e As EventArgs) Handles Joy1SetDefaultJoystickDisplayMenuItem.Click
+        joy1PosColor = Brushes.Aqua
+        Joystick1LRLabel.Visible = True
+        Joystick1LRTrackBar.Visible = True
+        Joystick1UDLabel.Visible = True
+        Joystick1UDTrackBar.Visible = True
+        Joystick1PictureBox.Visible = True
+        DrawJoystick1(128, 128)
     End Sub
     'Joystick 2
     Private Sub Joy2ToggleLeftRightDataMenuItem_Click(sender As Object, e As EventArgs) Handles Joy2ToggleLeftRightDataMenuItem.Click
@@ -435,6 +450,21 @@ Public Class URCTestForm
             DrawJoystick2(128, 128)
         End If
     End Sub
+    Private Sub Joy2ChangePositionDotColorMenuItem_Click(sender As Object, e As EventArgs) Handles Joy2ChangePositionDotColorMenuItem.Click
+        ColorDialog.ShowDialog()
+        Dim tempBrush As New SolidBrush(ColorDialog.Color)
+        joy2PosColor = tempBrush
+        DrawJoystick2(128, 128)
+    End Sub
+    Private Sub Joy2SetDefaultJoystickDisplayMenuItem_Click(sender As Object, e As EventArgs) Handles Joy2SetDefaultJoystickDisplayMenuItem.Click
+        joy2PosColor = Brushes.Aqua
+        Joystick2LRLabel.Visible = True
+        Joystick2LRTrackBar.Visible = True
+        Joystick2UDLabel.Visible = True
+        Joystick2UDTrackBar.Visible = True
+        Joystick2PictureBox.Visible = True
+        DrawJoystick2(128, 128)
+    End Sub
     'Joystick 3
     Private Sub Joy3ToggleLeftRightDataMenuItem_Click(sender As Object, e As EventArgs) Handles Joy3ToggleLeftRightDataMenuItem.Click
         If Joystick3LRLabel.Visible = True Then
@@ -472,7 +502,23 @@ Public Class URCTestForm
             DrawJoystick3(128, 128)
         End If
     End Sub
-    '************************Change GUI Colors*********************************************************
+    Private Sub Joy3ChangePositionDotColorMenuItem_Click(sender As Object, e As EventArgs) Handles Joy3ChangePositionDotColorMenuItem.Click
+        ColorDialog.ShowDialog()
+        Dim tempBrush As New SolidBrush(ColorDialog.Color)
+        joy3PosColor = tempBrush
+        DrawJoystick3(128, 128)
+    End Sub
+    Private Sub Joy3SetDefaultJoystickDisplayMenuItem_Click(sender As Object, e As EventArgs) Handles Joy3SetDefaultJoystickDisplayMenuItem.Click
+        joy3PosColor = Brushes.Aqua
+        Joystick3LRLabel.Visible = True
+        Joystick3LRTrackBar.Visible = True
+        Joystick3UDLabel.Visible = True
+        Joystick3UDTrackBar.Visible = True
+        Joystick3PictureBox.Visible = True
+        DrawJoystick3(128, 128)
+    End Sub
+
+    '************************Change Button Colors*********************************************************
     Private Sub ChangeButtonOffColorMenuItem_Click(sender As Object, e As EventArgs) Handles ChangeButtonOffColorMenuItem.Click
         ColorDialog.ShowDialog()
         buttonOffColor = ColorDialog.Color
@@ -488,22 +534,5 @@ Public Class URCTestForm
         buttonOffColor = Color.Gray
         TestButtons()
     End Sub
-    Private Sub Joy1ChangPositionDotColorMenuItem_Click(sender As Object, e As EventArgs) Handles Joy1ChangPositionDotColorMenuItem.Click
-        ColorDialog.ShowDialog()
-        Dim tempBrush As New SolidBrush(ColorDialog.Color)
-        joy1PosColor = tempBrush
-        DrawJoystick1(128, 128)
-    End Sub
-    Private Sub Joy2ChangePositionDotColorMenuItem_Click(sender As Object, e As EventArgs) Handles Joy2ChangePositionDotColorMenuItem.Click
-        ColorDialog.ShowDialog()
-        Dim tempBrush As New SolidBrush(ColorDialog.Color)
-        joy2PosColor = tempBrush
-        DrawJoystick2(128, 128)
-    End Sub
-    Private Sub Joy3ChangePositionDotColorMenuItem_Click(sender As Object, e As EventArgs) Handles Joy3ChangePositionDotColorMenuItem.Click
-        ColorDialog.ShowDialog()
-        Dim tempBrush As New SolidBrush(ColorDialog.Color)
-        joy3PosColor = tempBrush
-        DrawJoystick3(128, 128)
-    End Sub
+
 End Class
