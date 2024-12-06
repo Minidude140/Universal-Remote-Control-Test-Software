@@ -72,6 +72,30 @@ Partial Class URCTestForm
         Me.StartUpTimer = New System.Windows.Forms.Timer(Me.components)
         Me.Joystick2PictureBox = New System.Windows.Forms.PictureBox()
         Me.Joystick3PictureBox = New System.Windows.Forms.PictureBox()
+        Me.MenuStrip = New System.Windows.Forms.MenuStrip()
+        Me.ConnectionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ConnectMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DisconnectMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ViewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Joystick1ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToggleLeftRightDataToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToggleLeftRightTrackBarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Jostick2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Joystick3ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToggleUpDownDataToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToggleUpDownTrackBarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TogglePositionGraphToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToggleLeftRightDataToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToggleLeftRightTrackBarToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToggleUpDownDataToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToggleUpDownTrackBarToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TogglePositionGraphToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToggleLeftRightDataToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToggleLeftRightTrackBarToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToggleUpDownDataToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToggleUpDownTrackBarToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TogglePositionGraphToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.Joystick1LRTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Joystick1UDTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -82,15 +106,16 @@ Partial Class URCTestForm
         CType(Me.Joystick1PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Joystick2PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Joystick3PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip.SuspendLayout()
         Me.SuspendLayout()
         '
         'ToolStrip1
         '
         Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.COMSelectToolStripComboBox, Me.ToolStripSeparator1, Me.ConnectCOMToolStripButton, Me.ToolStripSeparator2, Me.DisconnetToolStripButton, Me.ToolStripSeparator3})
-        Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.ToolStrip1.Location = New System.Drawing.Point(0, 28)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(880, 31)
+        Me.ToolStrip1.Size = New System.Drawing.Size(880, 28)
         Me.ToolStrip1.TabIndex = 0
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -209,7 +234,7 @@ Partial Class URCTestForm
         'RobotAddressLabel
         '
         Me.RobotAddressLabel.AutoSize = True
-        Me.RobotAddressLabel.Location = New System.Drawing.Point(394, 52)
+        Me.RobotAddressLabel.Location = New System.Drawing.Point(394, 154)
         Me.RobotAddressLabel.Name = "RobotAddressLabel"
         Me.RobotAddressLabel.Size = New System.Drawing.Size(102, 17)
         Me.RobotAddressLabel.TabIndex = 8
@@ -286,7 +311,7 @@ Partial Class URCTestForm
         '
         Me.AddressLabel.AutoSize = True
         Me.AddressLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AddressLabel.Location = New System.Drawing.Point(351, 30)
+        Me.AddressLabel.Location = New System.Drawing.Point(351, 132)
         Me.AddressLabel.Name = "AddressLabel"
         Me.AddressLabel.Size = New System.Drawing.Size(120, 20)
         Me.AddressLabel.TabIndex = 15
@@ -522,6 +547,159 @@ Partial Class URCTestForm
         Me.Joystick3PictureBox.TabIndex = 39
         Me.Joystick3PictureBox.TabStop = False
         '
+        'MenuStrip
+        '
+        Me.MenuStrip.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ConnectionToolStripMenuItem, Me.ViewToolStripMenuItem, Me.AboutToolStripMenuItem})
+        Me.MenuStrip.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip.Name = "MenuStrip"
+        Me.MenuStrip.Size = New System.Drawing.Size(880, 28)
+        Me.MenuStrip.TabIndex = 40
+        Me.MenuStrip.Text = "MenuStrip1"
+        '
+        'ConnectionToolStripMenuItem
+        '
+        Me.ConnectionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ConnectMenuItem, Me.DisconnectMenuItem})
+        Me.ConnectionToolStripMenuItem.Name = "ConnectionToolStripMenuItem"
+        Me.ConnectionToolStripMenuItem.Size = New System.Drawing.Size(98, 24)
+        Me.ConnectionToolStripMenuItem.Text = "Connection"
+        '
+        'ConnectMenuItem
+        '
+        Me.ConnectMenuItem.Name = "ConnectMenuItem"
+        Me.ConnectMenuItem.Size = New System.Drawing.Size(165, 26)
+        Me.ConnectMenuItem.Text = "Connect"
+        '
+        'DisconnectMenuItem
+        '
+        Me.DisconnectMenuItem.Name = "DisconnectMenuItem"
+        Me.DisconnectMenuItem.Size = New System.Drawing.Size(165, 26)
+        Me.DisconnectMenuItem.Text = "Disconnect"
+        '
+        'ViewToolStripMenuItem
+        '
+        Me.ViewToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Joystick1ToolStripMenuItem, Me.Jostick2ToolStripMenuItem, Me.Joystick3ToolStripMenuItem})
+        Me.ViewToolStripMenuItem.Name = "ViewToolStripMenuItem"
+        Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(55, 24)
+        Me.ViewToolStripMenuItem.Text = "View"
+        '
+        'Joystick1ToolStripMenuItem
+        '
+        Me.Joystick1ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToggleLeftRightDataToolStripMenuItem, Me.ToggleLeftRightTrackBarToolStripMenuItem, Me.ToggleUpDownDataToolStripMenuItem, Me.ToggleUpDownTrackBarToolStripMenuItem, Me.TogglePositionGraphToolStripMenuItem})
+        Me.Joystick1ToolStripMenuItem.Name = "Joystick1ToolStripMenuItem"
+        Me.Joystick1ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Joystick1ToolStripMenuItem.Text = "Joystick 1"
+        '
+        'ToggleLeftRightDataToolStripMenuItem
+        '
+        Me.ToggleLeftRightDataToolStripMenuItem.Name = "ToggleLeftRightDataToolStripMenuItem"
+        Me.ToggleLeftRightDataToolStripMenuItem.Size = New System.Drawing.Size(272, 26)
+        Me.ToggleLeftRightDataToolStripMenuItem.Text = "Toggle Left-Right Data"
+        '
+        'ToggleLeftRightTrackBarToolStripMenuItem
+        '
+        Me.ToggleLeftRightTrackBarToolStripMenuItem.Name = "ToggleLeftRightTrackBarToolStripMenuItem"
+        Me.ToggleLeftRightTrackBarToolStripMenuItem.Size = New System.Drawing.Size(272, 26)
+        Me.ToggleLeftRightTrackBarToolStripMenuItem.Text = "Toggle Left-Right Track Bar"
+        '
+        'Jostick2ToolStripMenuItem
+        '
+        Me.Jostick2ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToggleLeftRightDataToolStripMenuItem1, Me.ToggleLeftRightTrackBarToolStripMenuItem1, Me.ToggleUpDownDataToolStripMenuItem1, Me.ToggleUpDownTrackBarToolStripMenuItem1, Me.TogglePositionGraphToolStripMenuItem1})
+        Me.Jostick2ToolStripMenuItem.Name = "Jostick2ToolStripMenuItem"
+        Me.Jostick2ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Jostick2ToolStripMenuItem.Text = "Joystick 2"
+        '
+        'Joystick3ToolStripMenuItem
+        '
+        Me.Joystick3ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToggleLeftRightDataToolStripMenuItem2, Me.ToggleLeftRightTrackBarToolStripMenuItem2, Me.ToggleUpDownDataToolStripMenuItem2, Me.ToggleUpDownTrackBarToolStripMenuItem2, Me.TogglePositionGraphToolStripMenuItem2})
+        Me.Joystick3ToolStripMenuItem.Name = "Joystick3ToolStripMenuItem"
+        Me.Joystick3ToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.Joystick3ToolStripMenuItem.Text = "Joystick 3"
+        '
+        'AboutToolStripMenuItem
+        '
+        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(64, 24)
+        Me.AboutToolStripMenuItem.Text = "About"
+        '
+        'ToggleUpDownDataToolStripMenuItem
+        '
+        Me.ToggleUpDownDataToolStripMenuItem.Name = "ToggleUpDownDataToolStripMenuItem"
+        Me.ToggleUpDownDataToolStripMenuItem.Size = New System.Drawing.Size(272, 26)
+        Me.ToggleUpDownDataToolStripMenuItem.Text = "Toggle Up-Down Data"
+        '
+        'ToggleUpDownTrackBarToolStripMenuItem
+        '
+        Me.ToggleUpDownTrackBarToolStripMenuItem.Name = "ToggleUpDownTrackBarToolStripMenuItem"
+        Me.ToggleUpDownTrackBarToolStripMenuItem.Size = New System.Drawing.Size(272, 26)
+        Me.ToggleUpDownTrackBarToolStripMenuItem.Text = "Toggle Up-Down Track Bar"
+        '
+        'TogglePositionGraphToolStripMenuItem
+        '
+        Me.TogglePositionGraphToolStripMenuItem.Name = "TogglePositionGraphToolStripMenuItem"
+        Me.TogglePositionGraphToolStripMenuItem.Size = New System.Drawing.Size(272, 26)
+        Me.TogglePositionGraphToolStripMenuItem.Text = "Toggle Position Graph"
+        '
+        'ToggleLeftRightDataToolStripMenuItem1
+        '
+        Me.ToggleLeftRightDataToolStripMenuItem1.Name = "ToggleLeftRightDataToolStripMenuItem1"
+        Me.ToggleLeftRightDataToolStripMenuItem1.Size = New System.Drawing.Size(272, 26)
+        Me.ToggleLeftRightDataToolStripMenuItem1.Text = "Toggle Left-Right Data"
+        '
+        'ToggleLeftRightTrackBarToolStripMenuItem1
+        '
+        Me.ToggleLeftRightTrackBarToolStripMenuItem1.Name = "ToggleLeftRightTrackBarToolStripMenuItem1"
+        Me.ToggleLeftRightTrackBarToolStripMenuItem1.Size = New System.Drawing.Size(272, 26)
+        Me.ToggleLeftRightTrackBarToolStripMenuItem1.Text = "Toggle Left-Right Track Bar"
+        '
+        'ToggleUpDownDataToolStripMenuItem1
+        '
+        Me.ToggleUpDownDataToolStripMenuItem1.Name = "ToggleUpDownDataToolStripMenuItem1"
+        Me.ToggleUpDownDataToolStripMenuItem1.Size = New System.Drawing.Size(272, 26)
+        Me.ToggleUpDownDataToolStripMenuItem1.Text = "Toggle Up-Down Data"
+        '
+        'ToggleUpDownTrackBarToolStripMenuItem1
+        '
+        Me.ToggleUpDownTrackBarToolStripMenuItem1.Name = "ToggleUpDownTrackBarToolStripMenuItem1"
+        Me.ToggleUpDownTrackBarToolStripMenuItem1.Size = New System.Drawing.Size(272, 26)
+        Me.ToggleUpDownTrackBarToolStripMenuItem1.Text = "Toggle Up-Down Track Bar"
+        '
+        'TogglePositionGraphToolStripMenuItem1
+        '
+        Me.TogglePositionGraphToolStripMenuItem1.Name = "TogglePositionGraphToolStripMenuItem1"
+        Me.TogglePositionGraphToolStripMenuItem1.Size = New System.Drawing.Size(272, 26)
+        Me.TogglePositionGraphToolStripMenuItem1.Text = "Toggle Position Graph"
+        '
+        'ToggleLeftRightDataToolStripMenuItem2
+        '
+        Me.ToggleLeftRightDataToolStripMenuItem2.Name = "ToggleLeftRightDataToolStripMenuItem2"
+        Me.ToggleLeftRightDataToolStripMenuItem2.Size = New System.Drawing.Size(272, 26)
+        Me.ToggleLeftRightDataToolStripMenuItem2.Text = "Toggle Left-Right Data"
+        '
+        'ToggleLeftRightTrackBarToolStripMenuItem2
+        '
+        Me.ToggleLeftRightTrackBarToolStripMenuItem2.Name = "ToggleLeftRightTrackBarToolStripMenuItem2"
+        Me.ToggleLeftRightTrackBarToolStripMenuItem2.Size = New System.Drawing.Size(272, 26)
+        Me.ToggleLeftRightTrackBarToolStripMenuItem2.Text = "Toggle Left-Right Track Bar"
+        '
+        'ToggleUpDownDataToolStripMenuItem2
+        '
+        Me.ToggleUpDownDataToolStripMenuItem2.Name = "ToggleUpDownDataToolStripMenuItem2"
+        Me.ToggleUpDownDataToolStripMenuItem2.Size = New System.Drawing.Size(272, 26)
+        Me.ToggleUpDownDataToolStripMenuItem2.Text = "Toggle Up-Down Data"
+        '
+        'ToggleUpDownTrackBarToolStripMenuItem2
+        '
+        Me.ToggleUpDownTrackBarToolStripMenuItem2.Name = "ToggleUpDownTrackBarToolStripMenuItem2"
+        Me.ToggleUpDownTrackBarToolStripMenuItem2.Size = New System.Drawing.Size(272, 26)
+        Me.ToggleUpDownTrackBarToolStripMenuItem2.Text = "Toggle Up-Down Track Bar"
+        '
+        'TogglePositionGraphToolStripMenuItem2
+        '
+        Me.TogglePositionGraphToolStripMenuItem2.Name = "TogglePositionGraphToolStripMenuItem2"
+        Me.TogglePositionGraphToolStripMenuItem2.Size = New System.Drawing.Size(272, 26)
+        Me.TogglePositionGraphToolStripMenuItem2.Text = "Toggle Position Graph"
+        '
         'URCTestForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -567,7 +745,9 @@ Partial Class URCTestForm
         Me.Controls.Add(Me.Joystick1LRLabel)
         Me.Controls.Add(Me.ExitButton)
         Me.Controls.Add(Me.ToolStrip1)
+        Me.Controls.Add(Me.MenuStrip)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.MainMenuStrip = Me.MenuStrip
         Me.Name = "URCTestForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Universal Remote Controller Testing"
@@ -582,6 +762,8 @@ Partial Class URCTestForm
         CType(Me.Joystick1PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Joystick2PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Joystick3PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuStrip.ResumeLayout(False)
+        Me.MenuStrip.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -636,4 +818,28 @@ Partial Class URCTestForm
     Friend WithEvents StartUpTimer As Timer
     Friend WithEvents Joystick2PictureBox As PictureBox
     Friend WithEvents Joystick3PictureBox As PictureBox
+    Friend WithEvents MenuStrip As MenuStrip
+    Friend WithEvents ConnectionToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ConnectMenuItem As ToolStripMenuItem
+    Friend WithEvents DisconnectMenuItem As ToolStripMenuItem
+    Friend WithEvents ViewToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Joystick1ToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToggleLeftRightDataToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToggleLeftRightTrackBarToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Jostick2ToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Joystick3ToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToggleUpDownDataToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToggleUpDownTrackBarToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TogglePositionGraphToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToggleLeftRightDataToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents ToggleLeftRightTrackBarToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents ToggleUpDownDataToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents ToggleUpDownTrackBarToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents TogglePositionGraphToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents ToggleLeftRightDataToolStripMenuItem2 As ToolStripMenuItem
+    Friend WithEvents ToggleLeftRightTrackBarToolStripMenuItem2 As ToolStripMenuItem
+    Friend WithEvents ToggleUpDownDataToolStripMenuItem2 As ToolStripMenuItem
+    Friend WithEvents ToggleUpDownTrackBarToolStripMenuItem2 As ToolStripMenuItem
+    Friend WithEvents TogglePositionGraphToolStripMenuItem2 As ToolStripMenuItem
 End Class

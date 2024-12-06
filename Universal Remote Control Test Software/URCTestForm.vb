@@ -276,11 +276,13 @@ Public Class URCTestForm
         Me.Close()
     End Sub
 
-    Private Sub ConnectCOMToolStripButton_Click(sender As Object, e As EventArgs) Handles ConnectCOMToolStripButton.Click
+    Private Sub ConnectCOMToolStripButton_Click(sender As Object, e As EventArgs) Handles ConnectCOMToolStripButton.Click,
+                                                                                          ConnectMenuItem.Click
         'Open COM port and Enable COM Timer
         OpenCOM()
     End Sub
-    Private Sub DisconnetToolStripButton_Click(sender As Object, e As EventArgs) Handles DisconnetToolStripButton.Click
+    Private Sub DisconnetToolStripButton_Click(sender As Object, e As EventArgs) Handles DisconnetToolStripButton.Click,
+                                                                                         DisconnectMenuItem.Click
         'Close COM Channel and Disable Timer
         CloseCOM()
     End Sub
@@ -344,5 +346,13 @@ Public Class URCTestForm
         DrawJoystick1(128, 128)
         DrawJoystick2(128, 128)
         DrawJoystick3(128, 128)
+    End Sub
+
+    Private Sub ToggleLeftRightDataToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ToggleLeftRightDataToolStripMenuItem.Click
+        If Joystick1LRLabel.Visible = True Then
+            Joystick1LRLabel.Visible = False
+        Else
+            Joystick1LRLabel.Visible = True
+        End If
     End Sub
 End Class
