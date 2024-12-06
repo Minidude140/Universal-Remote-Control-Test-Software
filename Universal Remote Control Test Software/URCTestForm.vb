@@ -360,6 +360,9 @@ Public Class URCTestForm
         DrawJoystick3(128, 128)
     End Sub
 
+    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
+        URCAboutForm.Show()
+    End Sub
     '************************Joystick GUI Controls*********************************************************
     'Joystick 1
     Private Sub ToggleLeftRightDataToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Joy1ToggleLeftRightDataMenuItem.Click
@@ -535,7 +538,4 @@ Public Class URCTestForm
         TestButtons()
     End Sub
 
-    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
-        URCAboutForm.Show()
-    End Sub
 End Class
