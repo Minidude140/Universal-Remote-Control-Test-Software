@@ -179,6 +179,8 @@ Partial Class URCTestForm
         'ExitButton
         '
         Me.ExitButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(167, Byte), Integer), CType(CType(167, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.ExitButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.ExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ExitButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.ExitButton.Location = New System.Drawing.Point(840, 554)
         Me.ExitButton.Name = "ExitButton"
@@ -375,7 +377,8 @@ Partial Class URCTestForm
         'Button1Indicator
         '
         Me.Button1Indicator.BackColor = System.Drawing.Color.Gray
-        Me.Button1Indicator.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button1Indicator.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Button1Indicator.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1Indicator.Location = New System.Drawing.Point(107, 359)
         Me.Button1Indicator.Name = "Button1Indicator"
         Me.Button1Indicator.Size = New System.Drawing.Size(17, 19)
@@ -405,7 +408,8 @@ Partial Class URCTestForm
         'Button2Indicator
         '
         Me.Button2Indicator.BackColor = System.Drawing.Color.Gray
-        Me.Button2Indicator.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button2Indicator.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Button2Indicator.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2Indicator.Location = New System.Drawing.Point(169, 289)
         Me.Button2Indicator.Name = "Button2Indicator"
         Me.Button2Indicator.Size = New System.Drawing.Size(17, 19)
@@ -425,7 +429,8 @@ Partial Class URCTestForm
         'Button3Indicator
         '
         Me.Button3Indicator.BackColor = System.Drawing.Color.Gray
-        Me.Button3Indicator.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button3Indicator.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Button3Indicator.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3Indicator.Location = New System.Drawing.Point(44, 289)
         Me.Button3Indicator.Name = "Button3Indicator"
         Me.Button3Indicator.Size = New System.Drawing.Size(17, 19)
@@ -445,7 +450,8 @@ Partial Class URCTestForm
         'Button4Indicator
         '
         Me.Button4Indicator.BackColor = System.Drawing.Color.Gray
-        Me.Button4Indicator.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button4Indicator.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Button4Indicator.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4Indicator.Location = New System.Drawing.Point(107, 223)
         Me.Button4Indicator.Name = "Button4Indicator"
         Me.Button4Indicator.Size = New System.Drawing.Size(17, 19)
@@ -465,7 +471,8 @@ Partial Class URCTestForm
         'LeftBumperIndicatorButton
         '
         Me.LeftBumperIndicatorButton.BackColor = System.Drawing.Color.Gray
-        Me.LeftBumperIndicatorButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.LeftBumperIndicatorButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.LeftBumperIndicatorButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LeftBumperIndicatorButton.Location = New System.Drawing.Point(94, 134)
         Me.LeftBumperIndicatorButton.Name = "LeftBumperIndicatorButton"
         Me.LeftBumperIndicatorButton.Size = New System.Drawing.Size(17, 19)
@@ -485,7 +492,8 @@ Partial Class URCTestForm
         'RightBumperIndicatorButton
         '
         Me.RightBumperIndicatorButton.BackColor = System.Drawing.Color.Gray
-        Me.RightBumperIndicatorButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.RightBumperIndicatorButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.RightBumperIndicatorButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.RightBumperIndicatorButton.Location = New System.Drawing.Point(834, 123)
         Me.RightBumperIndicatorButton.Name = "RightBumperIndicatorButton"
         Me.RightBumperIndicatorButton.Size = New System.Drawing.Size(17, 19)
@@ -505,7 +513,8 @@ Partial Class URCTestForm
         'Joystick1IndicatorButton
         '
         Me.Joystick1IndicatorButton.BackColor = System.Drawing.Color.Gray
-        Me.Joystick1IndicatorButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Joystick1IndicatorButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Joystick1IndicatorButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Joystick1IndicatorButton.Location = New System.Drawing.Point(197, 568)
         Me.Joystick1IndicatorButton.Name = "Joystick1IndicatorButton"
         Me.Joystick1IndicatorButton.Size = New System.Drawing.Size(17, 19)
@@ -525,7 +534,8 @@ Partial Class URCTestForm
         'Joystick2IndicatorButton
         '
         Me.Joystick2IndicatorButton.BackColor = System.Drawing.Color.Gray
-        Me.Joystick2IndicatorButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Joystick2IndicatorButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Joystick2IndicatorButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Joystick2IndicatorButton.Location = New System.Drawing.Point(694, 560)
         Me.Joystick2IndicatorButton.Name = "Joystick2IndicatorButton"
         Me.Joystick2IndicatorButton.Size = New System.Drawing.Size(17, 19)
@@ -545,7 +555,8 @@ Partial Class URCTestForm
         'Joystick3IndicatorButton
         '
         Me.Joystick3IndicatorButton.BackColor = System.Drawing.Color.Gray
-        Me.Joystick3IndicatorButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Joystick3IndicatorButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(246, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Joystick3IndicatorButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Joystick3IndicatorButton.Location = New System.Drawing.Point(813, 359)
         Me.Joystick3IndicatorButton.Name = "Joystick3IndicatorButton"
         Me.Joystick3IndicatorButton.Size = New System.Drawing.Size(17, 19)
