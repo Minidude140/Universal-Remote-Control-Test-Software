@@ -151,6 +151,7 @@ Partial Class URCTestForm
         'COMSelectToolStripComboBox
         '
         Me.COMSelectToolStripComboBox.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.COMSelectToolStripComboBox.Font = New System.Drawing.Font("Museo Slab 500", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.COMSelectToolStripComboBox.Name = "COMSelectToolStripComboBox"
         Me.COMSelectToolStripComboBox.Size = New System.Drawing.Size(121, 28)
         '
@@ -163,6 +164,7 @@ Partial Class URCTestForm
         '
         Me.ConnectCOMToolStripButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
         Me.ConnectCOMToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ConnectCOMToolStripButton.Font = New System.Drawing.Font("Museo Slab 500", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ConnectCOMToolStripButton.Image = Global.Universal_Remote_Control_Test_Software.My.Resources.Resources.icons8_usb_connector_30
         Me.ConnectCOMToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ConnectCOMToolStripButton.Name = "ConnectCOMToolStripButton"
@@ -178,6 +180,7 @@ Partial Class URCTestForm
         '
         Me.DisconnetToolStripButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
         Me.DisconnetToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.DisconnetToolStripButton.Font = New System.Drawing.Font("Museo Slab 500", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DisconnetToolStripButton.Image = Global.Universal_Remote_Control_Test_Software.My.Resources.Resources.icons8_disconnect_30
         Me.DisconnetToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.DisconnetToolStripButton.Name = "DisconnetToolStripButton"
@@ -211,18 +214,20 @@ Partial Class URCTestForm
         'Joystick1UDLabel
         '
         Me.Joystick1UDLabel.AutoSize = True
+        Me.Joystick1UDLabel.Font = New System.Drawing.Font("Museo Slab 500", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Joystick1UDLabel.Location = New System.Drawing.Point(293, 511)
         Me.Joystick1UDLabel.Name = "Joystick1UDLabel"
-        Me.Joystick1UDLabel.Size = New System.Drawing.Size(32, 17)
+        Me.Joystick1UDLabel.Size = New System.Drawing.Size(33, 18)
         Me.Joystick1UDLabel.TabIndex = 2
         Me.Joystick1UDLabel.Text = "128"
         '
         'Joystick1LRLabel
         '
         Me.Joystick1LRLabel.AutoSize = True
+        Me.Joystick1LRLabel.Font = New System.Drawing.Font("Museo Slab 500", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Joystick1LRLabel.Location = New System.Drawing.Point(194, 418)
         Me.Joystick1LRLabel.Name = "Joystick1LRLabel"
-        Me.Joystick1LRLabel.Size = New System.Drawing.Size(32, 17)
+        Me.Joystick1LRLabel.Size = New System.Drawing.Size(33, 18)
         Me.Joystick1LRLabel.TabIndex = 3
         Me.Joystick1LRLabel.Text = "128"
         Me.Joystick1LRLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -230,9 +235,10 @@ Partial Class URCTestForm
         'Joystick2LRLabel
         '
         Me.Joystick2LRLabel.AutoSize = True
+        Me.Joystick2LRLabel.Font = New System.Drawing.Font("Museo Slab 500", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Joystick2LRLabel.Location = New System.Drawing.Point(681, 406)
         Me.Joystick2LRLabel.Name = "Joystick2LRLabel"
-        Me.Joystick2LRLabel.Size = New System.Drawing.Size(32, 17)
+        Me.Joystick2LRLabel.Size = New System.Drawing.Size(33, 18)
         Me.Joystick2LRLabel.TabIndex = 5
         Me.Joystick2LRLabel.Text = "128"
         Me.Joystick2LRLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -240,18 +246,20 @@ Partial Class URCTestForm
         'Joystick2UDLabel
         '
         Me.Joystick2UDLabel.AutoSize = True
+        Me.Joystick2UDLabel.Font = New System.Drawing.Font("Museo Slab 500", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Joystick2UDLabel.Location = New System.Drawing.Point(785, 500)
         Me.Joystick2UDLabel.Name = "Joystick2UDLabel"
-        Me.Joystick2UDLabel.Size = New System.Drawing.Size(32, 17)
+        Me.Joystick2UDLabel.Size = New System.Drawing.Size(33, 18)
         Me.Joystick2UDLabel.TabIndex = 4
         Me.Joystick2UDLabel.Text = "128"
         '
         'Joystick3LRLabel
         '
         Me.Joystick3LRLabel.AutoSize = True
+        Me.Joystick3LRLabel.Font = New System.Drawing.Font("Museo Slab 500", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Joystick3LRLabel.Location = New System.Drawing.Point(794, 207)
         Me.Joystick3LRLabel.Name = "Joystick3LRLabel"
-        Me.Joystick3LRLabel.Size = New System.Drawing.Size(32, 17)
+        Me.Joystick3LRLabel.Size = New System.Drawing.Size(33, 18)
         Me.Joystick3LRLabel.TabIndex = 7
         Me.Joystick3LRLabel.Text = "128"
         Me.Joystick3LRLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -259,18 +267,20 @@ Partial Class URCTestForm
         'Joystick3UDLabel
         '
         Me.Joystick3UDLabel.AutoSize = True
+        Me.Joystick3UDLabel.Font = New System.Drawing.Font("Museo Slab 500", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Joystick3UDLabel.Location = New System.Drawing.Point(898, 304)
         Me.Joystick3UDLabel.Name = "Joystick3UDLabel"
-        Me.Joystick3UDLabel.Size = New System.Drawing.Size(32, 17)
+        Me.Joystick3UDLabel.Size = New System.Drawing.Size(33, 18)
         Me.Joystick3UDLabel.TabIndex = 6
         Me.Joystick3UDLabel.Text = "128"
         '
         'RobotAddressDecLabel
         '
         Me.RobotAddressDecLabel.AutoSize = True
+        Me.RobotAddressDecLabel.Font = New System.Drawing.Font("Museo Slab 500", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RobotAddressDecLabel.Location = New System.Drawing.Point(492, 255)
         Me.RobotAddressDecLabel.Name = "RobotAddressDecLabel"
-        Me.RobotAddressDecLabel.Size = New System.Drawing.Size(102, 17)
+        Me.RobotAddressDecLabel.Size = New System.Drawing.Size(112, 18)
         Me.RobotAddressDecLabel.TabIndex = 8
         Me.RobotAddressDecLabel.Text = "Robot Address"
         Me.RobotAddressDecLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -345,10 +355,10 @@ Partial Class URCTestForm
         '
         Me.AddressLabel.AutoSize = True
         Me.AddressLabel.BackColor = System.Drawing.Color.Transparent
-        Me.AddressLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AddressLabel.Font = New System.Drawing.Font("Museo Slab 500", 10.2!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AddressLabel.Location = New System.Drawing.Point(407, 233)
         Me.AddressLabel.Name = "AddressLabel"
-        Me.AddressLabel.Size = New System.Drawing.Size(120, 20)
+        Me.AddressLabel.Size = New System.Drawing.Size(129, 20)
         Me.AddressLabel.TabIndex = 15
         Me.AddressLabel.Text = "Robot Address"
         Me.AddressLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -356,30 +366,30 @@ Partial Class URCTestForm
         'Joystick1Label
         '
         Me.Joystick1Label.AutoSize = True
-        Me.Joystick1Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Joystick1Label.Font = New System.Drawing.Font("Museo Slab 500", 10.2!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Joystick1Label.Location = New System.Drawing.Point(165, 393)
         Me.Joystick1Label.Name = "Joystick1Label"
-        Me.Joystick1Label.Size = New System.Drawing.Size(84, 20)
+        Me.Joystick1Label.Size = New System.Drawing.Size(90, 20)
         Me.Joystick1Label.TabIndex = 16
         Me.Joystick1Label.Text = "Joystick 1"
         '
         'Joystick2Label
         '
         Me.Joystick2Label.AutoSize = True
-        Me.Joystick2Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Joystick2Label.Font = New System.Drawing.Font("Museo Slab 500", 10.2!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Joystick2Label.Location = New System.Drawing.Point(649, 382)
         Me.Joystick2Label.Name = "Joystick2Label"
-        Me.Joystick2Label.Size = New System.Drawing.Size(84, 20)
+        Me.Joystick2Label.Size = New System.Drawing.Size(92, 20)
         Me.Joystick2Label.TabIndex = 17
         Me.Joystick2Label.Text = "Joystick 2"
         '
         'Joystick3Label
         '
         Me.Joystick3Label.AutoSize = True
-        Me.Joystick3Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Joystick3Label.Font = New System.Drawing.Font("Museo Slab 500", 10.2!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Joystick3Label.Location = New System.Drawing.Point(762, 183)
         Me.Joystick3Label.Name = "Joystick3Label"
-        Me.Joystick3Label.Size = New System.Drawing.Size(84, 20)
+        Me.Joystick3Label.Size = New System.Drawing.Size(92, 20)
         Me.Joystick3Label.TabIndex = 18
         Me.Joystick3Label.Text = "Joystick 3"
         '
@@ -396,18 +406,20 @@ Partial Class URCTestForm
         'Button1Label
         '
         Me.Button1Label.AutoSize = True
+        Me.Button1Label.Font = New System.Drawing.Font("Museo Slab 500", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1Label.Location = New System.Drawing.Point(86, 381)
         Me.Button1Label.Name = "Button1Label"
-        Me.Button1Label.Size = New System.Drawing.Size(61, 17)
+        Me.Button1Label.Size = New System.Drawing.Size(68, 18)
         Me.Button1Label.TabIndex = 20
         Me.Button1Label.Text = "Button 1"
         '
         'Button2Label
         '
         Me.Button2Label.AutoSize = True
+        Me.Button2Label.Font = New System.Drawing.Font("Museo Slab 500", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2Label.Location = New System.Drawing.Point(148, 311)
         Me.Button2Label.Name = "Button2Label"
-        Me.Button2Label.Size = New System.Drawing.Size(61, 17)
+        Me.Button2Label.Size = New System.Drawing.Size(70, 18)
         Me.Button2Label.TabIndex = 22
         Me.Button2Label.Text = "Button 2"
         '
@@ -424,9 +436,10 @@ Partial Class URCTestForm
         'Button3Label
         '
         Me.Button3Label.AutoSize = True
+        Me.Button3Label.Font = New System.Drawing.Font("Museo Slab 500", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3Label.Location = New System.Drawing.Point(23, 311)
         Me.Button3Label.Name = "Button3Label"
-        Me.Button3Label.Size = New System.Drawing.Size(61, 17)
+        Me.Button3Label.Size = New System.Drawing.Size(70, 18)
         Me.Button3Label.TabIndex = 24
         Me.Button3Label.Text = "Button 3"
         '
@@ -443,9 +456,10 @@ Partial Class URCTestForm
         'Button4Label
         '
         Me.Button4Label.AutoSize = True
+        Me.Button4Label.Font = New System.Drawing.Font("Museo Slab 500", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4Label.Location = New System.Drawing.Point(86, 245)
         Me.Button4Label.Name = "Button4Label"
-        Me.Button4Label.Size = New System.Drawing.Size(61, 17)
+        Me.Button4Label.Size = New System.Drawing.Size(70, 18)
         Me.Button4Label.TabIndex = 26
         Me.Button4Label.Text = "Button 4"
         '
@@ -462,9 +476,10 @@ Partial Class URCTestForm
         'LeftBumperLabel
         '
         Me.LeftBumperLabel.AutoSize = True
+        Me.LeftBumperLabel.Font = New System.Drawing.Font("Museo Slab 500", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LeftBumperLabel.Location = New System.Drawing.Point(63, 156)
         Me.LeftBumperLabel.Name = "LeftBumperLabel"
-        Me.LeftBumperLabel.Size = New System.Drawing.Size(85, 17)
+        Me.LeftBumperLabel.Size = New System.Drawing.Size(99, 18)
         Me.LeftBumperLabel.TabIndex = 28
         Me.LeftBumperLabel.Text = "Left Bumper"
         '
@@ -481,9 +496,10 @@ Partial Class URCTestForm
         'RightBumperLabel
         '
         Me.RightBumperLabel.AutoSize = True
+        Me.RightBumperLabel.Font = New System.Drawing.Font("Museo Slab 500", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RightBumperLabel.Location = New System.Drawing.Point(797, 145)
         Me.RightBumperLabel.Name = "RightBumperLabel"
-        Me.RightBumperLabel.Size = New System.Drawing.Size(94, 17)
+        Me.RightBumperLabel.Size = New System.Drawing.Size(111, 18)
         Me.RightBumperLabel.TabIndex = 30
         Me.RightBumperLabel.Text = "Right Bumper"
         '
@@ -500,9 +516,10 @@ Partial Class URCTestForm
         'Joystick1ButtonLabel
         '
         Me.Joystick1ButtonLabel.AutoSize = True
-        Me.Joystick1ButtonLabel.Location = New System.Drawing.Point(160, 593)
+        Me.Joystick1ButtonLabel.Font = New System.Drawing.Font("Museo Slab 500", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Joystick1ButtonLabel.Location = New System.Drawing.Point(148, 590)
         Me.Joystick1ButtonLabel.Name = "Joystick1ButtonLabel"
-        Me.Joystick1ButtonLabel.Size = New System.Drawing.Size(115, 17)
+        Me.Joystick1ButtonLabel.Size = New System.Drawing.Size(132, 18)
         Me.Joystick1ButtonLabel.TabIndex = 32
         Me.Joystick1ButtonLabel.Text = "Joystick 1 Button"
         '
@@ -510,7 +527,7 @@ Partial Class URCTestForm
         '
         Me.Joystick1IndicatorButton.BackColor = System.Drawing.Color.Gray
         Me.Joystick1IndicatorButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Joystick1IndicatorButton.Location = New System.Drawing.Point(197, 571)
+        Me.Joystick1IndicatorButton.Location = New System.Drawing.Point(197, 568)
         Me.Joystick1IndicatorButton.Name = "Joystick1IndicatorButton"
         Me.Joystick1IndicatorButton.Size = New System.Drawing.Size(17, 19)
         Me.Joystick1IndicatorButton.TabIndex = 31
@@ -519,9 +536,10 @@ Partial Class URCTestForm
         'Joystick2ButtonLabel
         '
         Me.Joystick2ButtonLabel.AutoSize = True
-        Me.Joystick2ButtonLabel.Location = New System.Drawing.Point(650, 582)
+        Me.Joystick2ButtonLabel.Font = New System.Drawing.Font("Museo Slab 500", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Joystick2ButtonLabel.Location = New System.Drawing.Point(620, 582)
         Me.Joystick2ButtonLabel.Name = "Joystick2ButtonLabel"
-        Me.Joystick2ButtonLabel.Size = New System.Drawing.Size(115, 17)
+        Me.Joystick2ButtonLabel.Size = New System.Drawing.Size(134, 18)
         Me.Joystick2ButtonLabel.TabIndex = 34
         Me.Joystick2ButtonLabel.Text = "Joystick 2 Button"
         '
@@ -538,9 +556,10 @@ Partial Class URCTestForm
         'Joystick3ButtonLabel
         '
         Me.Joystick3ButtonLabel.AutoSize = True
-        Me.Joystick3ButtonLabel.Location = New System.Drawing.Point(770, 381)
+        Me.Joystick3ButtonLabel.Font = New System.Drawing.Font("Museo Slab 500", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Joystick3ButtonLabel.Location = New System.Drawing.Point(760, 381)
         Me.Joystick3ButtonLabel.Name = "Joystick3ButtonLabel"
-        Me.Joystick3ButtonLabel.Size = New System.Drawing.Size(115, 17)
+        Me.Joystick3ButtonLabel.Size = New System.Drawing.Size(134, 18)
         Me.Joystick3ButtonLabel.TabIndex = 36
         Me.Joystick3ButtonLabel.Text = "Joystick 3 Button"
         '
@@ -573,8 +592,9 @@ Partial Class URCTestForm
         '
         Me.ConnectionToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
         Me.ConnectionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ConnectMenuItem, Me.DisconnectMenuItem})
+        Me.ConnectionToolStripMenuItem.Font = New System.Drawing.Font("Museo Slab 500", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ConnectionToolStripMenuItem.Name = "ConnectionToolStripMenuItem"
-        Me.ConnectionToolStripMenuItem.Size = New System.Drawing.Size(98, 24)
+        Me.ConnectionToolStripMenuItem.Size = New System.Drawing.Size(124, 24)
         Me.ConnectionToolStripMenuItem.Text = "Connection"
         '
         'ConnectMenuItem
@@ -593,8 +613,9 @@ Partial Class URCTestForm
         '
         Me.ViewToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
         Me.ViewToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Joystick1MenuItem, Me.Jostick2ToolStripMenuItem, Me.Joystick3ToolStripMenuItem, Me.ButtonsMenuItem, Me.BackgroundImageMenuItem})
+        Me.ViewToolStripMenuItem.Font = New System.Drawing.Font("Museo Slab 500", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ViewToolStripMenuItem.Name = "ViewToolStripMenuItem"
-        Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(55, 24)
+        Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(65, 24)
         Me.ViewToolStripMenuItem.Text = "View"
         '
         'Joystick1MenuItem
@@ -797,8 +818,9 @@ Partial Class URCTestForm
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.AboutToolStripMenuItem.Font = New System.Drawing.Font("Museo Slab 500", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(64, 24)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(73, 24)
         Me.AboutToolStripMenuItem.Text = "About"
         '
         'Joystick3PictureBox
@@ -850,9 +872,10 @@ Partial Class URCTestForm
         'RobotAddressHexLabel
         '
         Me.RobotAddressHexLabel.AutoSize = True
+        Me.RobotAddressHexLabel.Font = New System.Drawing.Font("Museo Slab 500", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RobotAddressHexLabel.Location = New System.Drawing.Point(492, 280)
         Me.RobotAddressHexLabel.Name = "RobotAddressHexLabel"
-        Me.RobotAddressHexLabel.Size = New System.Drawing.Size(102, 17)
+        Me.RobotAddressHexLabel.Size = New System.Drawing.Size(112, 18)
         Me.RobotAddressHexLabel.TabIndex = 43
         Me.RobotAddressHexLabel.Text = "Robot Address"
         Me.RobotAddressHexLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -860,9 +883,10 @@ Partial Class URCTestForm
         'DecmalLabel
         '
         Me.DecmalLabel.AutoSize = True
-        Me.DecmalLabel.Location = New System.Drawing.Point(424, 255)
+        Me.DecmalLabel.Font = New System.Drawing.Font("Museo Slab 500", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DecmalLabel.Location = New System.Drawing.Point(416, 255)
         Me.DecmalLabel.Name = "DecmalLabel"
-        Me.DecmalLabel.Size = New System.Drawing.Size(62, 17)
+        Me.DecmalLabel.Size = New System.Drawing.Size(72, 18)
         Me.DecmalLabel.TabIndex = 44
         Me.DecmalLabel.Text = "Decimal:"
         Me.DecmalLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -870,9 +894,10 @@ Partial Class URCTestForm
         'HexLabel
         '
         Me.HexLabel.AutoSize = True
-        Me.HexLabel.Location = New System.Drawing.Point(442, 280)
+        Me.HexLabel.Font = New System.Drawing.Font("Museo Slab 500", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HexLabel.Location = New System.Drawing.Point(438, 280)
         Me.HexLabel.Name = "HexLabel"
-        Me.HexLabel.Size = New System.Drawing.Size(36, 17)
+        Me.HexLabel.Size = New System.Drawing.Size(42, 18)
         Me.HexLabel.TabIndex = 45
         Me.HexLabel.Text = "Hex:"
         Me.HexLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -882,7 +907,7 @@ Partial Class URCTestForm
         Me.StatusStrip.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(130, Byte), Integer), CType(CType(130, Byte), Integer))
         Me.StatusStrip.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.StatusStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClockStatusStripLabel, Me.BlankStatusStripLabel, Me.COMStatusStripLabel})
-        Me.StatusStrip.Location = New System.Drawing.Point(0, 610)
+        Me.StatusStrip.Location = New System.Drawing.Point(0, 614)
         Me.StatusStrip.Name = "StatusStrip"
         Me.StatusStrip.Size = New System.Drawing.Size(944, 26)
         Me.StatusStrip.TabIndex = 46
@@ -891,8 +916,9 @@ Partial Class URCTestForm
         'ClockStatusStripLabel
         '
         Me.ClockStatusStripLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.ClockStatusStripLabel.Font = New System.Drawing.Font("Museo Slab 500", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ClockStatusStripLabel.Name = "ClockStatusStripLabel"
-        Me.ClockStatusStripLabel.Size = New System.Drawing.Size(90, 20)
+        Me.ClockStatusStripLabel.Size = New System.Drawing.Size(109, 20)
         Me.ClockStatusStripLabel.Text = "Time of Day"
         '
         'BlankStatusStripLabel
@@ -904,8 +930,9 @@ Partial Class URCTestForm
         'COMStatusStripLabel
         '
         Me.COMStatusStripLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.COMStatusStripLabel.Font = New System.Drawing.Font("Museo Slab 500", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.COMStatusStripLabel.Name = "COMStatusStripLabel"
-        Me.COMStatusStripLabel.Size = New System.Drawing.Size(109, 20)
+        Me.COMStatusStripLabel.Size = New System.Drawing.Size(136, 20)
         Me.COMStatusStripLabel.Text = "Not Connected"
         '
         'ClockTimer
@@ -918,7 +945,7 @@ Partial Class URCTestForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(944, 636)
+        Me.ClientSize = New System.Drawing.Size(944, 640)
         Me.Controls.Add(Me.StatusStrip)
         Me.Controls.Add(Me.HexLabel)
         Me.Controls.Add(Me.DecmalLabel)

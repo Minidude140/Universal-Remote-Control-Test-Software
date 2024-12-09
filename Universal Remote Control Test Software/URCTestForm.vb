@@ -569,4 +569,5 @@ Public Class URCTestForm
         currentTime = FormatDateTime(TimeOfDay)
         ClockStatusStripLabel.Text = currentTime
     End Sub
+
 End Class
