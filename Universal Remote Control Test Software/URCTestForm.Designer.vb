@@ -26,9 +26,7 @@ Partial Class URCTestForm
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.COMSelectToolStripComboBox = New System.Windows.Forms.ToolStripComboBox()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ConnectCOMToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.DisconnetToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.COMSerialPort = New System.IO.Ports.SerialPort(Me.components)
         Me.ExitButton = New System.Windows.Forms.Button()
@@ -108,11 +106,6 @@ Partial Class URCTestForm
         Me.NoneBackroundMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ColorDialog = New System.Windows.Forms.ColorDialog()
-        Me.Joystick3PictureBox = New System.Windows.Forms.PictureBox()
-        Me.Joystick2PictureBox = New System.Windows.Forms.PictureBox()
-        Me.Joystick1PictureBox = New System.Windows.Forms.PictureBox()
-        Me.PCBBackgroundPictureBox = New System.Windows.Forms.PictureBox()
-        Me.CaseBackgroundPictureBox = New System.Windows.Forms.PictureBox()
         Me.RobotAddressHexLabel = New System.Windows.Forms.Label()
         Me.DecmalLabel = New System.Windows.Forms.Label()
         Me.HexLabel = New System.Windows.Forms.Label()
@@ -121,6 +114,14 @@ Partial Class URCTestForm
         Me.BlankStatusStripLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.COMStatusStripLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ClockTimer = New System.Windows.Forms.Timer(Me.components)
+        Me.Joystick3PictureBox = New System.Windows.Forms.PictureBox()
+        Me.Joystick2PictureBox = New System.Windows.Forms.PictureBox()
+        Me.Joystick1PictureBox = New System.Windows.Forms.PictureBox()
+        Me.ConnectCOMToolStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.DisconnetToolStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.RefreshToolStripButton = New System.Windows.Forms.ToolStripButton()
+        Me.CaseBackgroundPictureBox = New System.Windows.Forms.PictureBox()
+        Me.PCBBackgroundPictureBox = New System.Windows.Forms.PictureBox()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.Joystick1LRTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Joystick1UDTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -129,22 +130,22 @@ Partial Class URCTestForm
         CType(Me.Joystick3LRTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Joystick3UDTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip.SuspendLayout()
+        Me.StatusStrip.SuspendLayout()
         CType(Me.Joystick3PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Joystick2PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Joystick1PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PCBBackgroundPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CaseBackgroundPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.StatusStrip.SuspendLayout()
+        CType(Me.PCBBackgroundPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ToolStrip1
         '
         Me.ToolStrip1.BackColor = System.Drawing.Color.Gray
         Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.COMSelectToolStripComboBox, Me.ToolStripSeparator1, Me.ConnectCOMToolStripButton, Me.ToolStripSeparator2, Me.DisconnetToolStripButton, Me.ToolStripSeparator3})
-        Me.ToolStrip1.Location = New System.Drawing.Point(0, 28)
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.COMSelectToolStripComboBox, Me.ToolStripSeparator1, Me.ConnectCOMToolStripButton, Me.ToolStripSeparator2, Me.DisconnetToolStripButton, Me.ToolStripSeparator3, Me.RefreshToolStripButton})
+        Me.ToolStrip1.Location = New System.Drawing.Point(0, 30)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(944, 28)
+        Me.ToolStrip1.Size = New System.Drawing.Size(944, 31)
         Me.ToolStrip1.TabIndex = 0
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -153,44 +154,22 @@ Partial Class URCTestForm
         Me.COMSelectToolStripComboBox.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
         Me.COMSelectToolStripComboBox.Font = New System.Drawing.Font("Museo Slab 500", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.COMSelectToolStripComboBox.Name = "COMSelectToolStripComboBox"
-        Me.COMSelectToolStripComboBox.Size = New System.Drawing.Size(121, 28)
+        Me.COMSelectToolStripComboBox.Size = New System.Drawing.Size(121, 31)
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 28)
-        '
-        'ConnectCOMToolStripButton
-        '
-        Me.ConnectCOMToolStripButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
-        Me.ConnectCOMToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ConnectCOMToolStripButton.Font = New System.Drawing.Font("Museo Slab 500", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ConnectCOMToolStripButton.Image = Global.Universal_Remote_Control_Test_Software.My.Resources.Resources.icons8_usb_connector_30
-        Me.ConnectCOMToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ConnectCOMToolStripButton.Name = "ConnectCOMToolStripButton"
-        Me.ConnectCOMToolStripButton.Size = New System.Drawing.Size(29, 25)
-        Me.ConnectCOMToolStripButton.Text = "ToolStripButton1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 31)
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 28)
-        '
-        'DisconnetToolStripButton
-        '
-        Me.DisconnetToolStripButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
-        Me.DisconnetToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.DisconnetToolStripButton.Font = New System.Drawing.Font("Museo Slab 500", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DisconnetToolStripButton.Image = Global.Universal_Remote_Control_Test_Software.My.Resources.Resources.icons8_disconnect_30
-        Me.DisconnetToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.DisconnetToolStripButton.Name = "DisconnetToolStripButton"
-        Me.DisconnetToolStripButton.Size = New System.Drawing.Size(29, 25)
-        Me.DisconnetToolStripButton.Text = "ToolStripButton1"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 31)
         '
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 28)
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 31)
         '
         'COMSerialPort
         '
@@ -584,7 +563,7 @@ Partial Class URCTestForm
         Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ConnectionToolStripMenuItem, Me.ViewToolStripMenuItem, Me.AboutToolStripMenuItem})
         Me.MenuStrip.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip.Name = "MenuStrip"
-        Me.MenuStrip.Size = New System.Drawing.Size(944, 28)
+        Me.MenuStrip.Size = New System.Drawing.Size(944, 30)
         Me.MenuStrip.TabIndex = 40
         Me.MenuStrip.Text = "MenuStrip1"
         '
@@ -594,19 +573,19 @@ Partial Class URCTestForm
         Me.ConnectionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ConnectMenuItem, Me.DisconnectMenuItem})
         Me.ConnectionToolStripMenuItem.Font = New System.Drawing.Font("Museo Slab 500", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ConnectionToolStripMenuItem.Name = "ConnectionToolStripMenuItem"
-        Me.ConnectionToolStripMenuItem.Size = New System.Drawing.Size(124, 24)
+        Me.ConnectionToolStripMenuItem.Size = New System.Drawing.Size(124, 26)
         Me.ConnectionToolStripMenuItem.Text = "Connection"
         '
         'ConnectMenuItem
         '
         Me.ConnectMenuItem.Name = "ConnectMenuItem"
-        Me.ConnectMenuItem.Size = New System.Drawing.Size(165, 26)
+        Me.ConnectMenuItem.Size = New System.Drawing.Size(187, 26)
         Me.ConnectMenuItem.Text = "Connect"
         '
         'DisconnectMenuItem
         '
         Me.DisconnectMenuItem.Name = "DisconnectMenuItem"
-        Me.DisconnectMenuItem.Size = New System.Drawing.Size(165, 26)
+        Me.DisconnectMenuItem.Size = New System.Drawing.Size(187, 26)
         Me.DisconnectMenuItem.Text = "Disconnect"
         '
         'ViewToolStripMenuItem
@@ -615,204 +594,204 @@ Partial Class URCTestForm
         Me.ViewToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Joystick1MenuItem, Me.Jostick2ToolStripMenuItem, Me.Joystick3ToolStripMenuItem, Me.ButtonsMenuItem, Me.BackgroundImageMenuItem})
         Me.ViewToolStripMenuItem.Font = New System.Drawing.Font("Museo Slab 500", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ViewToolStripMenuItem.Name = "ViewToolStripMenuItem"
-        Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(65, 24)
+        Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(65, 26)
         Me.ViewToolStripMenuItem.Text = "View"
         '
         'Joystick1MenuItem
         '
         Me.Joystick1MenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Joy1ToggleLeftRightDataMenuItem, Me.Joy1ToggleLeftRightTrackBarMenuItem, Me.Joy1ToggleUpDownDataMenuItem, Me.Joy1ToggleUpDownTrackBarMenuItem, Me.Joy1TogglePositionGraphMenuItem, Me.Joy1ChangPositionDotColorMenuItem, Me.Joy1SetDefaultJoystickDisplayMenuItem})
         Me.Joystick1MenuItem.Name = "Joystick1MenuItem"
-        Me.Joystick1MenuItem.Size = New System.Drawing.Size(217, 26)
+        Me.Joystick1MenuItem.Size = New System.Drawing.Size(251, 26)
         Me.Joystick1MenuItem.Text = "Joystick 1"
         '
         'Joy1ToggleLeftRightDataMenuItem
         '
         Me.Joy1ToggleLeftRightDataMenuItem.Name = "Joy1ToggleLeftRightDataMenuItem"
-        Me.Joy1ToggleLeftRightDataMenuItem.Size = New System.Drawing.Size(273, 26)
+        Me.Joy1ToggleLeftRightDataMenuItem.Size = New System.Drawing.Size(320, 26)
         Me.Joy1ToggleLeftRightDataMenuItem.Text = "Toggle Left-Right Data"
         '
         'Joy1ToggleLeftRightTrackBarMenuItem
         '
         Me.Joy1ToggleLeftRightTrackBarMenuItem.Name = "Joy1ToggleLeftRightTrackBarMenuItem"
-        Me.Joy1ToggleLeftRightTrackBarMenuItem.Size = New System.Drawing.Size(273, 26)
+        Me.Joy1ToggleLeftRightTrackBarMenuItem.Size = New System.Drawing.Size(320, 26)
         Me.Joy1ToggleLeftRightTrackBarMenuItem.Text = "Toggle Left-Right Track Bar"
         '
         'Joy1ToggleUpDownDataMenuItem
         '
         Me.Joy1ToggleUpDownDataMenuItem.Name = "Joy1ToggleUpDownDataMenuItem"
-        Me.Joy1ToggleUpDownDataMenuItem.Size = New System.Drawing.Size(273, 26)
+        Me.Joy1ToggleUpDownDataMenuItem.Size = New System.Drawing.Size(320, 26)
         Me.Joy1ToggleUpDownDataMenuItem.Text = "Toggle Up-Down Data"
         '
         'Joy1ToggleUpDownTrackBarMenuItem
         '
         Me.Joy1ToggleUpDownTrackBarMenuItem.Name = "Joy1ToggleUpDownTrackBarMenuItem"
-        Me.Joy1ToggleUpDownTrackBarMenuItem.Size = New System.Drawing.Size(273, 26)
+        Me.Joy1ToggleUpDownTrackBarMenuItem.Size = New System.Drawing.Size(320, 26)
         Me.Joy1ToggleUpDownTrackBarMenuItem.Text = "Toggle Up-Down Track Bar"
         '
         'Joy1TogglePositionGraphMenuItem
         '
         Me.Joy1TogglePositionGraphMenuItem.Name = "Joy1TogglePositionGraphMenuItem"
-        Me.Joy1TogglePositionGraphMenuItem.Size = New System.Drawing.Size(273, 26)
+        Me.Joy1TogglePositionGraphMenuItem.Size = New System.Drawing.Size(320, 26)
         Me.Joy1TogglePositionGraphMenuItem.Text = "Toggle Position Graph"
         '
         'Joy1ChangPositionDotColorMenuItem
         '
         Me.Joy1ChangPositionDotColorMenuItem.Name = "Joy1ChangPositionDotColorMenuItem"
-        Me.Joy1ChangPositionDotColorMenuItem.Size = New System.Drawing.Size(273, 26)
+        Me.Joy1ChangPositionDotColorMenuItem.Size = New System.Drawing.Size(320, 26)
         Me.Joy1ChangPositionDotColorMenuItem.Text = "Chang Position Dot Color"
         '
         'Joy1SetDefaultJoystickDisplayMenuItem
         '
         Me.Joy1SetDefaultJoystickDisplayMenuItem.Name = "Joy1SetDefaultJoystickDisplayMenuItem"
-        Me.Joy1SetDefaultJoystickDisplayMenuItem.Size = New System.Drawing.Size(273, 26)
+        Me.Joy1SetDefaultJoystickDisplayMenuItem.Size = New System.Drawing.Size(320, 26)
         Me.Joy1SetDefaultJoystickDisplayMenuItem.Text = "Set Default Joystick Display"
         '
         'Jostick2ToolStripMenuItem
         '
         Me.Jostick2ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Joy2ToggleLeftRightDataMenuItem, Me.Joy2ToggleLeftRightTrackBarMenuItem, Me.Joy2ToggleUpDownDataMenuItem, Me.Joy2ToggleUpDownTrackBarMenuItem, Me.Joy2TogglePositionGraphMenuItem, Me.Joy2ChangePositionDotColorMenuItem, Me.Joy2SetDefaultJoystickDisplayMenuItem})
         Me.Jostick2ToolStripMenuItem.Name = "Jostick2ToolStripMenuItem"
-        Me.Jostick2ToolStripMenuItem.Size = New System.Drawing.Size(217, 26)
+        Me.Jostick2ToolStripMenuItem.Size = New System.Drawing.Size(251, 26)
         Me.Jostick2ToolStripMenuItem.Text = "Joystick 2"
         '
         'Joy2ToggleLeftRightDataMenuItem
         '
         Me.Joy2ToggleLeftRightDataMenuItem.Name = "Joy2ToggleLeftRightDataMenuItem"
-        Me.Joy2ToggleLeftRightDataMenuItem.Size = New System.Drawing.Size(273, 26)
+        Me.Joy2ToggleLeftRightDataMenuItem.Size = New System.Drawing.Size(320, 26)
         Me.Joy2ToggleLeftRightDataMenuItem.Text = "Toggle Left-Right Data"
         '
         'Joy2ToggleLeftRightTrackBarMenuItem
         '
         Me.Joy2ToggleLeftRightTrackBarMenuItem.Name = "Joy2ToggleLeftRightTrackBarMenuItem"
-        Me.Joy2ToggleLeftRightTrackBarMenuItem.Size = New System.Drawing.Size(273, 26)
+        Me.Joy2ToggleLeftRightTrackBarMenuItem.Size = New System.Drawing.Size(320, 26)
         Me.Joy2ToggleLeftRightTrackBarMenuItem.Text = "Toggle Left-Right Track Bar"
         '
         'Joy2ToggleUpDownDataMenuItem
         '
         Me.Joy2ToggleUpDownDataMenuItem.Name = "Joy2ToggleUpDownDataMenuItem"
-        Me.Joy2ToggleUpDownDataMenuItem.Size = New System.Drawing.Size(273, 26)
+        Me.Joy2ToggleUpDownDataMenuItem.Size = New System.Drawing.Size(320, 26)
         Me.Joy2ToggleUpDownDataMenuItem.Text = "Toggle Up-Down Data"
         '
         'Joy2ToggleUpDownTrackBarMenuItem
         '
         Me.Joy2ToggleUpDownTrackBarMenuItem.Name = "Joy2ToggleUpDownTrackBarMenuItem"
-        Me.Joy2ToggleUpDownTrackBarMenuItem.Size = New System.Drawing.Size(273, 26)
+        Me.Joy2ToggleUpDownTrackBarMenuItem.Size = New System.Drawing.Size(320, 26)
         Me.Joy2ToggleUpDownTrackBarMenuItem.Text = "Toggle Up-Down Track Bar"
         '
         'Joy2TogglePositionGraphMenuItem
         '
         Me.Joy2TogglePositionGraphMenuItem.Name = "Joy2TogglePositionGraphMenuItem"
-        Me.Joy2TogglePositionGraphMenuItem.Size = New System.Drawing.Size(273, 26)
+        Me.Joy2TogglePositionGraphMenuItem.Size = New System.Drawing.Size(320, 26)
         Me.Joy2TogglePositionGraphMenuItem.Text = "Toggle Position Graph"
         '
         'Joy2ChangePositionDotColorMenuItem
         '
         Me.Joy2ChangePositionDotColorMenuItem.Name = "Joy2ChangePositionDotColorMenuItem"
-        Me.Joy2ChangePositionDotColorMenuItem.Size = New System.Drawing.Size(273, 26)
+        Me.Joy2ChangePositionDotColorMenuItem.Size = New System.Drawing.Size(320, 26)
         Me.Joy2ChangePositionDotColorMenuItem.Text = "Change Position Dot Color"
         '
         'Joy2SetDefaultJoystickDisplayMenuItem
         '
         Me.Joy2SetDefaultJoystickDisplayMenuItem.Name = "Joy2SetDefaultJoystickDisplayMenuItem"
-        Me.Joy2SetDefaultJoystickDisplayMenuItem.Size = New System.Drawing.Size(273, 26)
+        Me.Joy2SetDefaultJoystickDisplayMenuItem.Size = New System.Drawing.Size(320, 26)
         Me.Joy2SetDefaultJoystickDisplayMenuItem.Text = "Set Default Joystick Display"
         '
         'Joystick3ToolStripMenuItem
         '
         Me.Joystick3ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Joy3ToggleLeftRightDataMenuItem, Me.Joy3ToggleLeftRightTrackBarMenuItem, Me.Joy3ToggleUpDownDataMenuItem, Me.Joy3ToggleUpDownTrackBarMenuItem, Me.Joy3TogglePositionGraphMenuItem, Me.Joy3ChangePositionDotColorMenuItem, Me.Joy3SetDefaultJoystickDisplayMenuItem})
         Me.Joystick3ToolStripMenuItem.Name = "Joystick3ToolStripMenuItem"
-        Me.Joystick3ToolStripMenuItem.Size = New System.Drawing.Size(217, 26)
+        Me.Joystick3ToolStripMenuItem.Size = New System.Drawing.Size(251, 26)
         Me.Joystick3ToolStripMenuItem.Text = "Joystick 3"
         '
         'Joy3ToggleLeftRightDataMenuItem
         '
         Me.Joy3ToggleLeftRightDataMenuItem.Name = "Joy3ToggleLeftRightDataMenuItem"
-        Me.Joy3ToggleLeftRightDataMenuItem.Size = New System.Drawing.Size(273, 26)
+        Me.Joy3ToggleLeftRightDataMenuItem.Size = New System.Drawing.Size(320, 26)
         Me.Joy3ToggleLeftRightDataMenuItem.Text = "Toggle Left-Right Data"
         '
         'Joy3ToggleLeftRightTrackBarMenuItem
         '
         Me.Joy3ToggleLeftRightTrackBarMenuItem.Name = "Joy3ToggleLeftRightTrackBarMenuItem"
-        Me.Joy3ToggleLeftRightTrackBarMenuItem.Size = New System.Drawing.Size(273, 26)
+        Me.Joy3ToggleLeftRightTrackBarMenuItem.Size = New System.Drawing.Size(320, 26)
         Me.Joy3ToggleLeftRightTrackBarMenuItem.Text = "Toggle Left-Right Track Bar"
         '
         'Joy3ToggleUpDownDataMenuItem
         '
         Me.Joy3ToggleUpDownDataMenuItem.Name = "Joy3ToggleUpDownDataMenuItem"
-        Me.Joy3ToggleUpDownDataMenuItem.Size = New System.Drawing.Size(273, 26)
+        Me.Joy3ToggleUpDownDataMenuItem.Size = New System.Drawing.Size(320, 26)
         Me.Joy3ToggleUpDownDataMenuItem.Text = "Toggle Up-Down Data"
         '
         'Joy3ToggleUpDownTrackBarMenuItem
         '
         Me.Joy3ToggleUpDownTrackBarMenuItem.Name = "Joy3ToggleUpDownTrackBarMenuItem"
-        Me.Joy3ToggleUpDownTrackBarMenuItem.Size = New System.Drawing.Size(273, 26)
+        Me.Joy3ToggleUpDownTrackBarMenuItem.Size = New System.Drawing.Size(320, 26)
         Me.Joy3ToggleUpDownTrackBarMenuItem.Text = "Toggle Up-Down Track Bar"
         '
         'Joy3TogglePositionGraphMenuItem
         '
         Me.Joy3TogglePositionGraphMenuItem.Name = "Joy3TogglePositionGraphMenuItem"
-        Me.Joy3TogglePositionGraphMenuItem.Size = New System.Drawing.Size(273, 26)
+        Me.Joy3TogglePositionGraphMenuItem.Size = New System.Drawing.Size(320, 26)
         Me.Joy3TogglePositionGraphMenuItem.Text = "Toggle Position Graph"
         '
         'Joy3ChangePositionDotColorMenuItem
         '
         Me.Joy3ChangePositionDotColorMenuItem.Name = "Joy3ChangePositionDotColorMenuItem"
-        Me.Joy3ChangePositionDotColorMenuItem.Size = New System.Drawing.Size(273, 26)
+        Me.Joy3ChangePositionDotColorMenuItem.Size = New System.Drawing.Size(320, 26)
         Me.Joy3ChangePositionDotColorMenuItem.Text = "Change Position Dot Color"
         '
         'Joy3SetDefaultJoystickDisplayMenuItem
         '
         Me.Joy3SetDefaultJoystickDisplayMenuItem.Name = "Joy3SetDefaultJoystickDisplayMenuItem"
-        Me.Joy3SetDefaultJoystickDisplayMenuItem.Size = New System.Drawing.Size(273, 26)
+        Me.Joy3SetDefaultJoystickDisplayMenuItem.Size = New System.Drawing.Size(320, 26)
         Me.Joy3SetDefaultJoystickDisplayMenuItem.Text = "Set Default Joystick Display"
         '
         'ButtonsMenuItem
         '
         Me.ButtonsMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ChangeButtonOffColorMenuItem, Me.ChangeButtonOnColorMenuItem, Me.SetDefaultButtonColorsMenuItem})
         Me.ButtonsMenuItem.Name = "ButtonsMenuItem"
-        Me.ButtonsMenuItem.Size = New System.Drawing.Size(217, 26)
+        Me.ButtonsMenuItem.Size = New System.Drawing.Size(251, 26)
         Me.ButtonsMenuItem.Text = "Buttons"
         '
         'ChangeButtonOffColorMenuItem
         '
         Me.ChangeButtonOffColorMenuItem.Name = "ChangeButtonOffColorMenuItem"
-        Me.ChangeButtonOffColorMenuItem.Size = New System.Drawing.Size(260, 26)
+        Me.ChangeButtonOffColorMenuItem.Size = New System.Drawing.Size(301, 26)
         Me.ChangeButtonOffColorMenuItem.Text = "Change Button Off Color"
         '
         'ChangeButtonOnColorMenuItem
         '
         Me.ChangeButtonOnColorMenuItem.Name = "ChangeButtonOnColorMenuItem"
-        Me.ChangeButtonOnColorMenuItem.Size = New System.Drawing.Size(260, 26)
+        Me.ChangeButtonOnColorMenuItem.Size = New System.Drawing.Size(301, 26)
         Me.ChangeButtonOnColorMenuItem.Text = "Change Button On Color"
         '
         'SetDefaultButtonColorsMenuItem
         '
         Me.SetDefaultButtonColorsMenuItem.Name = "SetDefaultButtonColorsMenuItem"
-        Me.SetDefaultButtonColorsMenuItem.Size = New System.Drawing.Size(260, 26)
+        Me.SetDefaultButtonColorsMenuItem.Size = New System.Drawing.Size(301, 26)
         Me.SetDefaultButtonColorsMenuItem.Text = "Set Default Button Colors"
         '
         'BackgroundImageMenuItem
         '
         Me.BackgroundImageMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PCBBackgroundMenuItem, Me.CaseBackgroundMenuItem, Me.NoneBackroundMenuItem})
         Me.BackgroundImageMenuItem.Name = "BackgroundImageMenuItem"
-        Me.BackgroundImageMenuItem.Size = New System.Drawing.Size(217, 26)
+        Me.BackgroundImageMenuItem.Size = New System.Drawing.Size(251, 26)
         Me.BackgroundImageMenuItem.Text = "Background Image"
         '
         'PCBBackgroundMenuItem
         '
         Me.PCBBackgroundMenuItem.Name = "PCBBackgroundMenuItem"
-        Me.PCBBackgroundMenuItem.Size = New System.Drawing.Size(128, 26)
+        Me.PCBBackgroundMenuItem.Size = New System.Drawing.Size(138, 26)
         Me.PCBBackgroundMenuItem.Text = "PCB"
         '
         'CaseBackgroundMenuItem
         '
         Me.CaseBackgroundMenuItem.Name = "CaseBackgroundMenuItem"
-        Me.CaseBackgroundMenuItem.Size = New System.Drawing.Size(128, 26)
+        Me.CaseBackgroundMenuItem.Size = New System.Drawing.Size(138, 26)
         Me.CaseBackgroundMenuItem.Text = "Case"
         '
         'NoneBackroundMenuItem
         '
         Me.NoneBackroundMenuItem.Name = "NoneBackroundMenuItem"
-        Me.NoneBackroundMenuItem.Size = New System.Drawing.Size(128, 26)
+        Me.NoneBackroundMenuItem.Size = New System.Drawing.Size(138, 26)
         Me.NoneBackroundMenuItem.Text = "None"
         '
         'AboutToolStripMenuItem
@@ -820,54 +799,8 @@ Partial Class URCTestForm
         Me.AboutToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
         Me.AboutToolStripMenuItem.Font = New System.Drawing.Font("Museo Slab 500", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(73, 24)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(73, 26)
         Me.AboutToolStripMenuItem.Text = "About"
-        '
-        'Joystick3PictureBox
-        '
-        Me.Joystick3PictureBox.Location = New System.Drawing.Point(774, 268)
-        Me.Joystick3PictureBox.Name = "Joystick3PictureBox"
-        Me.Joystick3PictureBox.Size = New System.Drawing.Size(85, 85)
-        Me.Joystick3PictureBox.TabIndex = 39
-        Me.Joystick3PictureBox.TabStop = False
-        '
-        'Joystick2PictureBox
-        '
-        Me.Joystick2PictureBox.Location = New System.Drawing.Point(661, 461)
-        Me.Joystick2PictureBox.Name = "Joystick2PictureBox"
-        Me.Joystick2PictureBox.Size = New System.Drawing.Size(85, 85)
-        Me.Joystick2PictureBox.TabIndex = 38
-        Me.Joystick2PictureBox.TabStop = False
-        '
-        'Joystick1PictureBox
-        '
-        Me.Joystick1PictureBox.Location = New System.Drawing.Point(169, 477)
-        Me.Joystick1PictureBox.Name = "Joystick1PictureBox"
-        Me.Joystick1PictureBox.Size = New System.Drawing.Size(85, 85)
-        Me.Joystick1PictureBox.TabIndex = 37
-        Me.Joystick1PictureBox.TabStop = False
-        '
-        'PCBBackgroundPictureBox
-        '
-        Me.PCBBackgroundPictureBox.BackgroundImage = Global.Universal_Remote_Control_Test_Software.My.Resources.Resources.URC_PCB_1
-        Me.PCBBackgroundPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PCBBackgroundPictureBox.Location = New System.Drawing.Point(6, 64)
-        Me.PCBBackgroundPictureBox.Name = "PCBBackgroundPictureBox"
-        Me.PCBBackgroundPictureBox.Size = New System.Drawing.Size(935, 550)
-        Me.PCBBackgroundPictureBox.TabIndex = 41
-        Me.PCBBackgroundPictureBox.TabStop = False
-        Me.PCBBackgroundPictureBox.Visible = False
-        '
-        'CaseBackgroundPictureBox
-        '
-        Me.CaseBackgroundPictureBox.BackgroundImage = Global.Universal_Remote_Control_Test_Software.My.Resources.Resources.URC_Case_1
-        Me.CaseBackgroundPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.CaseBackgroundPictureBox.Location = New System.Drawing.Point(6, 64)
-        Me.CaseBackgroundPictureBox.Name = "CaseBackgroundPictureBox"
-        Me.CaseBackgroundPictureBox.Size = New System.Drawing.Size(935, 550)
-        Me.CaseBackgroundPictureBox.TabIndex = 42
-        Me.CaseBackgroundPictureBox.TabStop = False
-        Me.CaseBackgroundPictureBox.Visible = False
         '
         'RobotAddressHexLabel
         '
@@ -940,6 +873,85 @@ Partial Class URCTestForm
         Me.ClockTimer.Enabled = True
         Me.ClockTimer.Interval = 1000
         '
+        'Joystick3PictureBox
+        '
+        Me.Joystick3PictureBox.Location = New System.Drawing.Point(774, 268)
+        Me.Joystick3PictureBox.Name = "Joystick3PictureBox"
+        Me.Joystick3PictureBox.Size = New System.Drawing.Size(85, 85)
+        Me.Joystick3PictureBox.TabIndex = 39
+        Me.Joystick3PictureBox.TabStop = False
+        '
+        'Joystick2PictureBox
+        '
+        Me.Joystick2PictureBox.Location = New System.Drawing.Point(661, 461)
+        Me.Joystick2PictureBox.Name = "Joystick2PictureBox"
+        Me.Joystick2PictureBox.Size = New System.Drawing.Size(85, 85)
+        Me.Joystick2PictureBox.TabIndex = 38
+        Me.Joystick2PictureBox.TabStop = False
+        '
+        'Joystick1PictureBox
+        '
+        Me.Joystick1PictureBox.Location = New System.Drawing.Point(169, 477)
+        Me.Joystick1PictureBox.Name = "Joystick1PictureBox"
+        Me.Joystick1PictureBox.Size = New System.Drawing.Size(85, 85)
+        Me.Joystick1PictureBox.TabIndex = 37
+        Me.Joystick1PictureBox.TabStop = False
+        '
+        'ConnectCOMToolStripButton
+        '
+        Me.ConnectCOMToolStripButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.ConnectCOMToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ConnectCOMToolStripButton.Font = New System.Drawing.Font("Museo Slab 500", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ConnectCOMToolStripButton.Image = Global.Universal_Remote_Control_Test_Software.My.Resources.Resources.icons8_usb_connector_30
+        Me.ConnectCOMToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ConnectCOMToolStripButton.Name = "ConnectCOMToolStripButton"
+        Me.ConnectCOMToolStripButton.Size = New System.Drawing.Size(29, 28)
+        Me.ConnectCOMToolStripButton.Text = "ToolStripButton1"
+        '
+        'DisconnetToolStripButton
+        '
+        Me.DisconnetToolStripButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.DisconnetToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.DisconnetToolStripButton.Font = New System.Drawing.Font("Museo Slab 500", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DisconnetToolStripButton.Image = Global.Universal_Remote_Control_Test_Software.My.Resources.Resources.icons8_disconnect_30
+        Me.DisconnetToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.DisconnetToolStripButton.Name = "DisconnetToolStripButton"
+        Me.DisconnetToolStripButton.Size = New System.Drawing.Size(29, 28)
+        Me.DisconnetToolStripButton.Text = "ToolStripButton1"
+        '
+        'RefreshToolStripButton
+        '
+        Me.RefreshToolStripButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.RefreshToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.RefreshToolStripButton.Font = New System.Drawing.Font("Museo Slab 500", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RefreshToolStripButton.Image = Global.Universal_Remote_Control_Test_Software.My.Resources.Resources.icons8_refresh_24
+        Me.RefreshToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.RefreshToolStripButton.Name = "RefreshToolStripButton"
+        Me.RefreshToolStripButton.Size = New System.Drawing.Size(29, 28)
+        Me.RefreshToolStripButton.Text = "ToolStripButton1"
+        '
+        'CaseBackgroundPictureBox
+        '
+        Me.CaseBackgroundPictureBox.BackgroundImage = Global.Universal_Remote_Control_Test_Software.My.Resources.Resources.URC_Case_1
+        Me.CaseBackgroundPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.CaseBackgroundPictureBox.Location = New System.Drawing.Point(6, 64)
+        Me.CaseBackgroundPictureBox.Name = "CaseBackgroundPictureBox"
+        Me.CaseBackgroundPictureBox.Size = New System.Drawing.Size(935, 550)
+        Me.CaseBackgroundPictureBox.TabIndex = 42
+        Me.CaseBackgroundPictureBox.TabStop = False
+        Me.CaseBackgroundPictureBox.Visible = False
+        '
+        'PCBBackgroundPictureBox
+        '
+        Me.PCBBackgroundPictureBox.BackgroundImage = Global.Universal_Remote_Control_Test_Software.My.Resources.Resources.URC_PCB_1
+        Me.PCBBackgroundPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PCBBackgroundPictureBox.Location = New System.Drawing.Point(6, 64)
+        Me.PCBBackgroundPictureBox.Name = "PCBBackgroundPictureBox"
+        Me.PCBBackgroundPictureBox.Size = New System.Drawing.Size(935, 550)
+        Me.PCBBackgroundPictureBox.TabIndex = 41
+        Me.PCBBackgroundPictureBox.TabStop = False
+        Me.PCBBackgroundPictureBox.Visible = False
+        '
         'URCTestForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -1008,13 +1020,13 @@ Partial Class URCTestForm
         CType(Me.Joystick3UDTrackBar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip.ResumeLayout(False)
         Me.MenuStrip.PerformLayout()
+        Me.StatusStrip.ResumeLayout(False)
+        Me.StatusStrip.PerformLayout()
         CType(Me.Joystick3PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Joystick2PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Joystick1PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PCBBackgroundPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CaseBackgroundPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.StatusStrip.ResumeLayout(False)
-        Me.StatusStrip.PerformLayout()
+        CType(Me.PCBBackgroundPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1118,4 +1130,5 @@ Partial Class URCTestForm
     Friend WithEvents BlankStatusStripLabel As ToolStripStatusLabel
     Friend WithEvents COMStatusStripLabel As ToolStripStatusLabel
     Friend WithEvents ClockTimer As Timer
+    Friend WithEvents RefreshToolStripButton As ToolStripButton
 End Class

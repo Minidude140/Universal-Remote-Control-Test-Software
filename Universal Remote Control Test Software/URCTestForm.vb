@@ -570,4 +570,7 @@ Public Class URCTestForm
         ClockStatusStripLabel.Text = currentTime
     End Sub
 
+    Private Sub RefreshToolStripButton_Click(sender As Object, e As EventArgs) Handles RefreshToolStripButton.Click
+        PopulateCOMSelect()
+    End Sub
 End Class
