@@ -56,6 +56,8 @@ Public Class URCTestForm
             'Disable Com Connect.  Enable Com Disconnect
             ConnectCOMToolStripButton.Enabled = False
             DisconnetToolStripButton.Enabled = True
+            'Update Status Strip Label
+            COMStatusStripLabel.Text = "Connected to: " & COMSerialPort.PortName
         Catch ex As Exception
             MsgBox("Sorry Selected COM could not be connected.")
         End Try
@@ -72,6 +74,8 @@ Public Class URCTestForm
         'Disable Disconnect Button.  Enable Connect Button
         ConnectCOMToolStripButton.Enabled = True
         DisconnetToolStripButton.Enabled = False
+        'Updated Status Strip Label
+        COMStatusStripLabel.Text = "Not Connected"
     End Sub
 
     ''' <summary>
@@ -558,5 +562,11 @@ Public Class URCTestForm
     Private Sub CaseBackgroundMenuItem_Click(sender As Object, e As EventArgs) Handles CaseBackgroundMenuItem.Click
         CaseBackgroundPictureBox.Visible = True
         PCBBackgroundPictureBox.Visible = False
+    End Sub
+
+    Private Sub ClockTimer_Tick(sender As Object, e As EventArgs) Handles ClockTimer.Tick
+        Dim currentTime As String
+        currentTime = FormatDateTime(TimeOfDay)
+        ClockStatusStripLabel.Text = currentTime
     End Sub
 End Class

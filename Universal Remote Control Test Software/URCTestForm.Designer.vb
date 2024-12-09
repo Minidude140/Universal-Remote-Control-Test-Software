@@ -116,6 +116,11 @@ Partial Class URCTestForm
         Me.RobotAddressHexLabel = New System.Windows.Forms.Label()
         Me.DecmalLabel = New System.Windows.Forms.Label()
         Me.HexLabel = New System.Windows.Forms.Label()
+        Me.StatusStrip = New System.Windows.Forms.StatusStrip()
+        Me.ClockStatusStripLabel = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.BlankStatusStripLabel = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.COMStatusStripLabel = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.ClockTimer = New System.Windows.Forms.Timer(Me.components)
         Me.ToolStrip1.SuspendLayout()
         CType(Me.Joystick1LRTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Joystick1UDTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -129,6 +134,7 @@ Partial Class URCTestForm
         CType(Me.Joystick1PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PCBBackgroundPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CaseBackgroundPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.StatusStrip.SuspendLayout()
         Me.SuspendLayout()
         '
         'ToolStrip1
@@ -136,9 +142,9 @@ Partial Class URCTestForm
         Me.ToolStrip1.BackColor = System.Drawing.Color.Gray
         Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.COMSelectToolStripComboBox, Me.ToolStripSeparator1, Me.ConnectCOMToolStripButton, Me.ToolStripSeparator2, Me.DisconnetToolStripButton, Me.ToolStripSeparator3})
-        Me.ToolStrip1.Location = New System.Drawing.Point(0, 30)
+        Me.ToolStrip1.Location = New System.Drawing.Point(0, 28)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(944, 31)
+        Me.ToolStrip1.Size = New System.Drawing.Size(944, 28)
         Me.ToolStrip1.TabIndex = 0
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -559,7 +565,7 @@ Partial Class URCTestForm
         Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ConnectionToolStripMenuItem, Me.ViewToolStripMenuItem, Me.AboutToolStripMenuItem})
         Me.MenuStrip.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip.Name = "MenuStrip"
-        Me.MenuStrip.Size = New System.Drawing.Size(944, 30)
+        Me.MenuStrip.Size = New System.Drawing.Size(944, 28)
         Me.MenuStrip.TabIndex = 40
         Me.MenuStrip.Text = "MenuStrip1"
         '
@@ -871,12 +877,49 @@ Partial Class URCTestForm
         Me.HexLabel.Text = "Hex:"
         Me.HexLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'StatusStrip
+        '
+        Me.StatusStrip.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(130, Byte), Integer), CType(CType(130, Byte), Integer))
+        Me.StatusStrip.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.StatusStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClockStatusStripLabel, Me.BlankStatusStripLabel, Me.COMStatusStripLabel})
+        Me.StatusStrip.Location = New System.Drawing.Point(0, 610)
+        Me.StatusStrip.Name = "StatusStrip"
+        Me.StatusStrip.Size = New System.Drawing.Size(944, 26)
+        Me.StatusStrip.TabIndex = 46
+        Me.StatusStrip.Text = "StatusStrip1"
+        '
+        'ClockStatusStripLabel
+        '
+        Me.ClockStatusStripLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.ClockStatusStripLabel.Name = "ClockStatusStripLabel"
+        Me.ClockStatusStripLabel.Size = New System.Drawing.Size(90, 20)
+        Me.ClockStatusStripLabel.Text = "Time of Day"
+        '
+        'BlankStatusStripLabel
+        '
+        Me.BlankStatusStripLabel.Name = "BlankStatusStripLabel"
+        Me.BlankStatusStripLabel.Size = New System.Drawing.Size(181, 20)
+        Me.BlankStatusStripLabel.Text = "                                           "
+        '
+        'COMStatusStripLabel
+        '
+        Me.COMStatusStripLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
+        Me.COMStatusStripLabel.Name = "COMStatusStripLabel"
+        Me.COMStatusStripLabel.Size = New System.Drawing.Size(109, 20)
+        Me.COMStatusStripLabel.Text = "Not Connected"
+        '
+        'ClockTimer
+        '
+        Me.ClockTimer.Enabled = True
+        Me.ClockTimer.Interval = 1000
+        '
         'URCTestForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(944, 618)
+        Me.ClientSize = New System.Drawing.Size(944, 636)
+        Me.Controls.Add(Me.StatusStrip)
         Me.Controls.Add(Me.HexLabel)
         Me.Controls.Add(Me.DecmalLabel)
         Me.Controls.Add(Me.RobotAddressHexLabel)
@@ -943,6 +986,8 @@ Partial Class URCTestForm
         CType(Me.Joystick1PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PCBBackgroundPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CaseBackgroundPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.StatusStrip.ResumeLayout(False)
+        Me.StatusStrip.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1041,4 +1086,9 @@ Partial Class URCTestForm
     Friend WithEvents RobotAddressHexLabel As Label
     Friend WithEvents DecmalLabel As Label
     Friend WithEvents HexLabel As Label
+    Friend WithEvents StatusStrip As StatusStrip
+    Friend WithEvents ClockStatusStripLabel As ToolStripStatusLabel
+    Friend WithEvents BlankStatusStripLabel As ToolStripStatusLabel
+    Friend WithEvents COMStatusStripLabel As ToolStripStatusLabel
+    Friend WithEvents ClockTimer As Timer
 End Class
