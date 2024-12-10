@@ -123,6 +123,7 @@ Partial Class URCTestForm
         Me.RefreshToolStripButton = New System.Windows.Forms.ToolStripButton()
         Me.CaseBackgroundPictureBox = New System.Windows.Forms.PictureBox()
         Me.PCBBackgroundPictureBox = New System.Windows.Forms.PictureBox()
+        Me.URCLabel = New System.Windows.Forms.Label()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.Joystick1LRTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Joystick1UDTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -145,9 +146,9 @@ Partial Class URCTestForm
         Me.ToolStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(130, Byte), Integer), CType(CType(130, Byte), Integer))
         Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.COMSelectToolStripComboBox, Me.ToolStripSeparator1, Me.ConnectCOMToolStripButton, Me.ToolStripSeparator2, Me.DisconnetToolStripButton, Me.ToolStripSeparator3, Me.RefreshToolStripButton})
-        Me.ToolStrip1.Location = New System.Drawing.Point(0, 30)
+        Me.ToolStrip1.Location = New System.Drawing.Point(0, 28)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(944, 31)
+        Me.ToolStrip1.Size = New System.Drawing.Size(944, 28)
         Me.ToolStrip1.TabIndex = 0
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -156,22 +157,22 @@ Partial Class URCTestForm
         Me.COMSelectToolStripComboBox.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
         Me.COMSelectToolStripComboBox.Font = New System.Drawing.Font("Museo Slab 500", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.COMSelectToolStripComboBox.Name = "COMSelectToolStripComboBox"
-        Me.COMSelectToolStripComboBox.Size = New System.Drawing.Size(121, 31)
+        Me.COMSelectToolStripComboBox.Size = New System.Drawing.Size(121, 28)
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 31)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 28)
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 31)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 28)
         '
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 31)
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 28)
         '
         'COMSerialPort
         '
@@ -576,7 +577,7 @@ Partial Class URCTestForm
         Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ConnectionToolStripMenuItem, Me.ViewToolStripMenuItem, Me.AboutToolStripMenuItem})
         Me.MenuStrip.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip.Name = "MenuStrip"
-        Me.MenuStrip.Size = New System.Drawing.Size(944, 30)
+        Me.MenuStrip.Size = New System.Drawing.Size(944, 28)
         Me.MenuStrip.TabIndex = 40
         Me.MenuStrip.Text = "MenuStrip1"
         '
@@ -586,7 +587,7 @@ Partial Class URCTestForm
         Me.ConnectionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ConnectMenuItem, Me.DisconnectMenuItem})
         Me.ConnectionToolStripMenuItem.Font = New System.Drawing.Font("Museo Slab 500", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ConnectionToolStripMenuItem.Name = "ConnectionToolStripMenuItem"
-        Me.ConnectionToolStripMenuItem.Size = New System.Drawing.Size(124, 26)
+        Me.ConnectionToolStripMenuItem.Size = New System.Drawing.Size(124, 24)
         Me.ConnectionToolStripMenuItem.Text = "Connection"
         '
         'ConnectMenuItem
@@ -607,7 +608,7 @@ Partial Class URCTestForm
         Me.ViewToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Joystick1MenuItem, Me.Jostick2ToolStripMenuItem, Me.Joystick3ToolStripMenuItem, Me.ButtonsMenuItem, Me.BackgroundImageMenuItem})
         Me.ViewToolStripMenuItem.Font = New System.Drawing.Font("Museo Slab 500", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ViewToolStripMenuItem.Name = "ViewToolStripMenuItem"
-        Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(65, 26)
+        Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(65, 24)
         Me.ViewToolStripMenuItem.Text = "View"
         '
         'Joystick1MenuItem
@@ -812,7 +813,7 @@ Partial Class URCTestForm
         Me.AboutToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
         Me.AboutToolStripMenuItem.Font = New System.Drawing.Font("Museo Slab 500", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(73, 26)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(73, 24)
         Me.AboutToolStripMenuItem.Text = "About"
         '
         'RobotAddressHexLabel
@@ -890,9 +891,9 @@ Partial Class URCTestForm
         '
         Me.ISULogoPictureBox.BackgroundImage = Global.Universal_Remote_Control_Test_Software.My.Resources.Resources.Gear2020
         Me.ISULogoPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ISULogoPictureBox.Location = New System.Drawing.Point(383, 64)
+        Me.ISULogoPictureBox.Location = New System.Drawing.Point(397, 332)
         Me.ISULogoPictureBox.Name = "ISULogoPictureBox"
-        Me.ISULogoPictureBox.Size = New System.Drawing.Size(188, 159)
+        Me.ISULogoPictureBox.Size = New System.Drawing.Size(188, 172)
         Me.ISULogoPictureBox.TabIndex = 47
         Me.ISULogoPictureBox.TabStop = False
         '
@@ -928,7 +929,7 @@ Partial Class URCTestForm
         Me.ConnectCOMToolStripButton.Image = Global.Universal_Remote_Control_Test_Software.My.Resources.Resources.icons8_usb_connector_30
         Me.ConnectCOMToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ConnectCOMToolStripButton.Name = "ConnectCOMToolStripButton"
-        Me.ConnectCOMToolStripButton.Size = New System.Drawing.Size(29, 28)
+        Me.ConnectCOMToolStripButton.Size = New System.Drawing.Size(29, 25)
         Me.ConnectCOMToolStripButton.Text = "ToolStripButton1"
         '
         'DisconnetToolStripButton
@@ -939,7 +940,7 @@ Partial Class URCTestForm
         Me.DisconnetToolStripButton.Image = Global.Universal_Remote_Control_Test_Software.My.Resources.Resources.icons8_disconnect_30
         Me.DisconnetToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.DisconnetToolStripButton.Name = "DisconnetToolStripButton"
-        Me.DisconnetToolStripButton.Size = New System.Drawing.Size(29, 28)
+        Me.DisconnetToolStripButton.Size = New System.Drawing.Size(29, 25)
         Me.DisconnetToolStripButton.Text = "ToolStripButton1"
         '
         'RefreshToolStripButton
@@ -950,7 +951,7 @@ Partial Class URCTestForm
         Me.RefreshToolStripButton.Image = Global.Universal_Remote_Control_Test_Software.My.Resources.Resources.icons8_refresh_24
         Me.RefreshToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.RefreshToolStripButton.Name = "RefreshToolStripButton"
-        Me.RefreshToolStripButton.Size = New System.Drawing.Size(29, 28)
+        Me.RefreshToolStripButton.Size = New System.Drawing.Size(29, 25)
         Me.RefreshToolStripButton.Text = "ToolStripButton1"
         '
         'CaseBackgroundPictureBox
@@ -975,12 +976,24 @@ Partial Class URCTestForm
         Me.PCBBackgroundPictureBox.TabStop = False
         Me.PCBBackgroundPictureBox.Visible = False
         '
+        'URCLabel
+        '
+        Me.URCLabel.AutoSize = True
+        Me.URCLabel.Font = New System.Drawing.Font("Museo Slab 500", 25.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.URCLabel.Location = New System.Drawing.Point(287, 101)
+        Me.URCLabel.Name = "URCLabel"
+        Me.URCLabel.Size = New System.Drawing.Size(398, 102)
+        Me.URCLabel.TabIndex = 48
+        Me.URCLabel.Text = "Universal Remote" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " Controller"
+        Me.URCLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'URCTestForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(944, 640)
+        Me.Controls.Add(Me.URCLabel)
         Me.Controls.Add(Me.ISULogoPictureBox)
         Me.Controls.Add(Me.StatusStrip)
         Me.Controls.Add(Me.HexLabel)
@@ -1157,4 +1170,5 @@ Partial Class URCTestForm
     Friend WithEvents ClockTimer As Timer
     Friend WithEvents RefreshToolStripButton As ToolStripButton
     Friend WithEvents ISULogoPictureBox As PictureBox
+    Friend WithEvents URCLabel As Label
 End Class
