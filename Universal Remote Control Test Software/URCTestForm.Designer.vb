@@ -114,6 +114,7 @@ Partial Class URCTestForm
         Me.BlankStatusStripLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.COMStatusStripLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ClockTimer = New System.Windows.Forms.Timer(Me.components)
+        Me.ISULogoPictureBox = New System.Windows.Forms.PictureBox()
         Me.Joystick3PictureBox = New System.Windows.Forms.PictureBox()
         Me.Joystick2PictureBox = New System.Windows.Forms.PictureBox()
         Me.Joystick1PictureBox = New System.Windows.Forms.PictureBox()
@@ -131,6 +132,7 @@ Partial Class URCTestForm
         CType(Me.Joystick3UDTrackBar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip.SuspendLayout()
         Me.StatusStrip.SuspendLayout()
+        CType(Me.ISULogoPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Joystick3PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Joystick2PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Joystick1PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -143,9 +145,9 @@ Partial Class URCTestForm
         Me.ToolStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(130, Byte), Integer), CType(CType(130, Byte), Integer), CType(CType(130, Byte), Integer))
         Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.COMSelectToolStripComboBox, Me.ToolStripSeparator1, Me.ConnectCOMToolStripButton, Me.ToolStripSeparator2, Me.DisconnetToolStripButton, Me.ToolStripSeparator3, Me.RefreshToolStripButton})
-        Me.ToolStrip1.Location = New System.Drawing.Point(0, 28)
+        Me.ToolStrip1.Location = New System.Drawing.Point(0, 30)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(944, 28)
+        Me.ToolStrip1.Size = New System.Drawing.Size(944, 31)
         Me.ToolStrip1.TabIndex = 0
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -574,7 +576,7 @@ Partial Class URCTestForm
         Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ConnectionToolStripMenuItem, Me.ViewToolStripMenuItem, Me.AboutToolStripMenuItem})
         Me.MenuStrip.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip.Name = "MenuStrip"
-        Me.MenuStrip.Size = New System.Drawing.Size(944, 28)
+        Me.MenuStrip.Size = New System.Drawing.Size(944, 30)
         Me.MenuStrip.TabIndex = 40
         Me.MenuStrip.Text = "MenuStrip1"
         '
@@ -884,6 +886,16 @@ Partial Class URCTestForm
         Me.ClockTimer.Enabled = True
         Me.ClockTimer.Interval = 1000
         '
+        'ISULogoPictureBox
+        '
+        Me.ISULogoPictureBox.BackgroundImage = Global.Universal_Remote_Control_Test_Software.My.Resources.Resources.Gear2020
+        Me.ISULogoPictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ISULogoPictureBox.Location = New System.Drawing.Point(383, 64)
+        Me.ISULogoPictureBox.Name = "ISULogoPictureBox"
+        Me.ISULogoPictureBox.Size = New System.Drawing.Size(188, 159)
+        Me.ISULogoPictureBox.TabIndex = 47
+        Me.ISULogoPictureBox.TabStop = False
+        '
         'Joystick3PictureBox
         '
         Me.Joystick3PictureBox.Location = New System.Drawing.Point(774, 268)
@@ -969,6 +981,7 @@ Partial Class URCTestForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(231, Byte), Integer), CType(CType(232, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(944, 640)
+        Me.Controls.Add(Me.ISULogoPictureBox)
         Me.Controls.Add(Me.StatusStrip)
         Me.Controls.Add(Me.HexLabel)
         Me.Controls.Add(Me.DecmalLabel)
@@ -1033,6 +1046,7 @@ Partial Class URCTestForm
         Me.MenuStrip.PerformLayout()
         Me.StatusStrip.ResumeLayout(False)
         Me.StatusStrip.PerformLayout()
+        CType(Me.ISULogoPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Joystick3PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Joystick2PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Joystick1PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1142,4 +1156,5 @@ Partial Class URCTestForm
     Friend WithEvents COMStatusStripLabel As ToolStripStatusLabel
     Friend WithEvents ClockTimer As Timer
     Friend WithEvents RefreshToolStripButton As ToolStripButton
+    Friend WithEvents ISULogoPictureBox As PictureBox
 End Class

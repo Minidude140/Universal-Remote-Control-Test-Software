@@ -554,14 +554,17 @@ Public Class URCTestForm
     Private Sub PCBBackgroundMenuItem_Click(sender As Object, e As EventArgs) Handles PCBBackgroundMenuItem.Click
         PCBBackgroundPictureBox.Visible = True
         CaseBackgroundPictureBox.Visible = False
+        ISULogoPictureBox.Visible = False
     End Sub
     Private Sub NoneBackroundMenuItem_Click(sender As Object, e As EventArgs) Handles NoneBackroundMenuItem.Click
         PCBBackgroundPictureBox.Visible = False
         CaseBackgroundPictureBox.Visible = False
+        ISULogoPictureBox.Visible = True
     End Sub
     Private Sub CaseBackgroundMenuItem_Click(sender As Object, e As EventArgs) Handles CaseBackgroundMenuItem.Click
         CaseBackgroundPictureBox.Visible = True
         PCBBackgroundPictureBox.Visible = False
+        ISULogoPictureBox.Visible = False
     End Sub
 
     Private Sub ClockTimer_Tick(sender As Object, e As EventArgs) Handles ClockTimer.Tick
