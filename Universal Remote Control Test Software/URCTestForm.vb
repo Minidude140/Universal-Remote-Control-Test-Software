@@ -326,9 +326,9 @@ Public Class URCTestForm
                         'Save Joystick 1 Up Down Data
                         joystick1UD = data(3)
                         'Save Joystick 2 Up Down Data
-                        joystick2UD = data(4)
+                        joystick1LR = data(4)
                         'Save Joystick 1 Left Right Data
-                        joystick1LR = data(5)
+                        joystick2UD = data(5)
                     Case = 106
                         'Command Byte is an ASCII j save Joystick Data
                         'Save Joystick 2 Left Right Data
